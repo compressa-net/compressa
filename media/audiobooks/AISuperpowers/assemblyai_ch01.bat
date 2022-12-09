@@ -1,0 +1,1 @@
+assemblyai transcribe "AISuperpowers_ch01.mp3" --summarization
