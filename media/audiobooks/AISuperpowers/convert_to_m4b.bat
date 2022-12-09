@@ -1,0 +1,1 @@
+ffmpeg.exe -y -activation_bytes 02386f05 -i  ".\AISuperpowersChinaSiliconValleyandtheNewWorldOrder_ep6.aax" -codec copy "AISuperpowersChinaSiliconValleyandtheNewWorldOrder_ep6.m4b"
