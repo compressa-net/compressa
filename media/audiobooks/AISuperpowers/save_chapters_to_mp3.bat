@@ -1,0 +1,1 @@
+ffmpeg -i %1 -ss {start} -to {end} %1_ch{chid}.mp3

@@ -1,0 +1,1 @@
+ffprobe -i %1 -print_format json -show_chapters > %1_chapters.json
