@@ -10,13 +10,18 @@ Compressa is an book reader application for busy people
 - [ ] Google Translate - translation
 - [ ] GitHub Copilot
 
-## Technical details
-* .NET 7 + MAUI template
-* FFMPEG - convert audible to m4b and mp3 chapter files
+## Steps to completion
+- [x] Start a new solution the basic templates of .NET 7 ASP.NET and MAUI.
+- [x] Use FFMPEG to convert audible audiobooks to m4b and mp3 chapter files
+- [ ] Use the AssemblyAI service to transcribe the chapters, and test their summarization method
 
-## Text compression test
+## Text summary tests
 
-Ideally we could compress the text 4x.
+The target is to have multiple levels of compression.
+(a) a one-liner for the whole chapter
+(b) a ~100 word summary of a chapter, approximately a 64x compression
+(c) a x16 compression of bullet points
+(d) a x4 compression for the sections
 
 ### Input text (1248 words, 7876 characters)
 ```
@@ -39,3 +44,6 @@ Artificial General Intelligence Artificial intelligence (AI) is a branch of comp
 
     Information can persist indefinitely because the cost to replicate it is so tiny. Software can be replicated easily, and Pong can last as long as civilisation does.
 ```
+
+## AssemblyAI
+![image](https://user-images.githubusercontent.com/910321/206804723-7b6ee5c6-5813-4eaf-87d7-3b60e08458fd.png)
