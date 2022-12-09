@@ -73,5 +73,17 @@ namespace Compressa.API.Controllers
 
             return taskId;
         }
+
+        [HttpGet]
+        [Route("transcribechapter/{audiobookName}/{chapterIndex}")]
+        public int TranscribeChapter(string audiobookName, int chapterIndex)
+        {
+            int taskId = Task.Run(() =>
+            {
+                _compressaService.TranscribeChapter(audiobookName, chapterIndex);
+            }).Id;
+
+            return taskId;
+        }
     }
 }

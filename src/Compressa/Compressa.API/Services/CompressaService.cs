@@ -1,7 +1,11 @@
 ﻿using System.Globalization;
+using System.Net.Http.Headers;
 using System.Text.Json;
+using System.Transactions;
+using Compressa.API.Models.AssemblyAI;
 using Compressa.API.Models.Audiobook;
 using FFMpegCore;
+using FFMpegCore.Enums;
 using Microsoft.AspNetCore.Components.Forms;
 using Newtonsoft.Json;
 using Xabe.FFmpeg;
@@ -15,6 +19,10 @@ namespace Compressa.API.Services
         private readonly IConfiguration _config;
         private readonly string _mediaFolder;
         private readonly string? _kindleActivationBytes;
+        private readonly string? _assemblyAIKey;
+        private readonly string? _assemblyAIUrl;
+        private readonly string? _cohereKey;
+        private readonly string? _cohereUrl;
         private readonly Dictionary<string, string> _audiobooks = new Dictionary<string, string>();
 
         public CompressaService(ILogger<CompressaService> logger, IConfiguration configRoot)
@@ -22,8 +30,14 @@ namespace Compressa.API.Services
             _logger = logger;
             _config = configRoot;
 
-            _mediaFolder = _config.GetSection("Compressa")["MediaFolder"] ?? ".\\Media";
-            _kindleActivationBytes = _config.GetSection("Compressa")["Kindle:ActivationBytes"];
+            var compressaSection = _config.GetSection("Compressa");
+
+            _mediaFolder = compressaSection["MediaFolder"] ?? ".\\Media";
+            _kindleActivationBytes = compressaSection["Kindle:ActivationBytes"];
+            _assemblyAIKey = compressaSection["AssemblyAI:APIKey"];
+            _assemblyAIUrl = compressaSection["AssemblyAI:APIURL"];
+            _cohereKey = compressaSection["Cohere:APIKey"];
+            _cohereUrl = compressaSection["Cohere:APIURL"];
         }
 
         public Dictionary<string, string> GetAllAudiobooks()
@@ -43,7 +57,7 @@ namespace Compressa.API.Services
         {
             _audiobooks.TryGetValue(audiobookName, out string filename);
 
-            if (String.IsNullOrEmpty(filename))
+            if ((String.IsNullOrEmpty(filename)) || (!File.Exists(filename)))
             {
                 throw new Exception($"Audiobook file '{audiobookName}' was not found in the database.");
             }
@@ -90,7 +104,7 @@ namespace Compressa.API.Services
 
             filename = ChangeExtension(filename, "_chapters.json");
 
-            if (String.IsNullOrEmpty(filename))
+            if ((String.IsNullOrEmpty(filename)) || (!File.Exists(filename)))
             {
                 throw new Exception($"Audiobook chapters metadata file for '{audiobookName}' was not found.");
             }
@@ -110,7 +124,7 @@ namespace Compressa.API.Services
             _audiobooks.TryGetValue(audiobookName, out string inputFilename);
             inputFilename = ChangeExtension(inputFilename, $".m4b");
 
-            if (String.IsNullOrEmpty(inputFilename))
+            if ((String.IsNullOrEmpty(inputFilename)) || (!File.Exists(inputFilename)))
             {
                 throw new Exception($"Audiobook file '{audiobookName}' was not found in the database.");
             }
@@ -125,20 +139,11 @@ namespace Compressa.API.Services
 
                 TimeSpan duration = endTime - startTime;
 
-                //FFMpegArguments
-                //    .FromFileInput(inputFilename)
-                //    .OutputToFile(chapterFilename, false, options => options
-                //    .WithStartNumber(chapter.Start)
-                //    .WithDuration(duration))
-                //.NotifyOnOutput((data) => _logger.LogInformation(data))
-                //.NotifyOnError((data) => _logger.LogError(data))
-                //.ProcessSynchronously();
-
                 string ffmpegParameters = $"-i \"{inputFilename}\" -ss {startTime} -to {endTime} \"{chapterFilename}\"";
 
                 var ffmpegConversion = FFmpeg.Conversions.New();
                 //ffmpegConversion.OnDataReceived += FfmpegConversion_OnDataReceived;
-                //ffmpegConversion.OnProgress += FfmpegConversion_OnProgress;
+                ffmpegConversion.OnProgress += FfmpegConversion_OnProgress;
 
                 try
                 {
@@ -156,6 +161,78 @@ namespace Compressa.API.Services
         private void FfmpegConversion_OnProgress(object sender, Xabe.FFmpeg.Events.ConversionProgressEventArgs args)
         {
             _logger.LogInformation($"FFMPEG {args.Percent}");
+        }
+
+        public async Task<TranscriptionResponse> TranscribeChapter(string audiobookName, int chapterIndex)
+        {
+            _audiobooks.TryGetValue(audiobookName, out string uploadFilename);
+            uploadFilename = ChangeExtension(uploadFilename, $"_ch{chapterIndex:00}.mp3");
+            string jsonFilename = ChangeExtension(uploadFilename, $".json");
+
+            if (File.Exists(jsonFilename))
+            {
+                return JsonSerializer.Deserialize<TranscriptionResponse>(File.ReadAllText(jsonFilename));
+            }
+
+            if ((String.IsNullOrEmpty(uploadFilename)) || (!File.Exists(uploadFilename)))
+            {
+                throw new Exception($"Chapter {chapterIndex} for the file '{audiobookName}' was not found.");
+            }
+
+            var client = new AssemblyAIApiClient(_assemblyAIKey, _assemblyAIUrl);
+
+            // Upload file
+            var uploadResult = client.UploadFileAsync(uploadFilename).GetAwaiter().GetResult();
+
+            // Submit file for transcription
+            var submissionResult = client.SubmitAudioFileAsync(uploadResult.UploadUrl).GetAwaiter().GetResult();
+            _logger.LogInformation($"File {submissionResult.Id} in status {submissionResult.Status}");
+
+            // Query status of transcription until it's `completed`
+            TranscriptionResponse result = client.GetTranscriptionAsync(submissionResult.Id).GetAwaiter().GetResult();
+            while (!result.Status.Equals("completed"))
+            {
+                _logger.LogInformation($"File {result.Id} in status {result.Status}");
+                Thread.Sleep(15000);
+                result = client.GetTranscriptionAsync(submissionResult.Id).GetAwaiter().GetResult();
+            }
+
+            // Perform post-procesing with the result of the transcription
+            _logger.LogInformation($"File {result.Id} in status {result.Status}");
+            _logger.LogInformation($"{result.Words?.Count} words transcribed.");
+
+            File.WriteAllText(jsonFilename, JsonSerializer.Serialize<TranscriptionResponse>(result, new JsonSerializerOptions() { WriteIndented = true }));
+
+            return result;
+        }
+
+        public async void SummarizeChapter(string text)
+        {
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Post,
+                RequestUri = new Uri("https://api.cohere.ai/generate"),
+                Headers =
+                {
+                    { "accept", "application/json" },
+                    { "Cohere-Version", "2021-11-08" },
+                    { "authorization", "Bearer QtGMnAZxP80Jt6JqwPSVhL0FFV9PvWgFhGwwZa1G" },
+                },
+                Content = new StringContent("{\"model\":\"xlarge\",\"prompt\":\"" + text + "\",\"max_tokens\":40,\"temperature\":0.8,\"k\":0,\"p\":0.75}")
+                {
+                    Headers =
+                    {
+                        ContentType = new MediaTypeHeaderValue("application/json")
+                    }
+                }
+            };
+            using (var response = await client.SendAsync(request))
+            {
+                response.EnsureSuccessStatusCode();
+                var body = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(body);
+            }
         }
     }
 }
