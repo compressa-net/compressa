@@ -1,6 +1,6 @@
+using Compressa.API.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing.Constraints;
-using Xabe.FFmpeg;
 
 namespace Compressa.API.Controllers
 {
@@ -12,15 +12,18 @@ namespace Compressa.API.Controllers
         private readonly IConfiguration _config;
         private readonly string _mediaFolder;
         private readonly string? _kindleActivationBytes;
+        private readonly ICompressaService _compressaService;
         private readonly Dictionary<string, string> _audiobooks = new Dictionary<string, string>();
 
-        public CompressaController(ILogger<CompressaController> logger, IConfiguration configRoot)
+        public CompressaController(ILogger<CompressaController> logger, IConfiguration configRoot, ICompressaService compressaService)
         {
             _logger = logger;
             _config = configRoot;
 
             _mediaFolder = _config.GetSection("Compressa")["MediaFolder"] ?? ".\\Media";
             _kindleActivationBytes = _config.GetSection("Compressa")["Kindle:ActivationBytes"];
+            _compressaService = compressaService;
+            _compressaService.GetAllAudiobooks();
         }
 
         [HttpGet]
@@ -29,12 +32,7 @@ namespace Compressa.API.Controllers
         {
             int taskId = Task.Run(() =>
             {
-                _audiobooks.Clear();
-                foreach (string filename in Directory.GetFiles(_mediaFolder, "*.aax", SearchOption.AllDirectories))
-                {
-                    _audiobooks.Add(Path.GetFileNameWithoutExtension(filename), filename);
-                    _logger.LogInformation($"Found audiobook file at '{filename}'.");
-                }
+                _compressaService.GetAllAudiobooks();
             }).Id;
 
             return taskId;
@@ -46,18 +44,7 @@ namespace Compressa.API.Controllers
         {
             int taskId = Task.Run(() =>
             {
-                _audiobooks.TryGetValue(audiobookName, out string filename);
-
-                if (String.IsNullOrEmpty(filename))
-                {
-                    throw new Exception($"Audiobook file '{audiobookName}' was not found in the database.");
-                }
-
-                string m4bFilename = Path.GetFileNameWithoutExtension(filename) + ".m4b";
-
-                string ffmpegParameters = $"-y -activation_bytes {_kindleActivationBytes} -i {filename} -codec copy {m4bFilename}";
-
-                var fffmpegConversion = FFmpeg.Conversions.New().Start(ffmpegParameters);
+                _compressaService.ConvertAudiobookToM4B(audiobookName);
             }).Id;
 
             return taskId;
@@ -67,7 +54,12 @@ namespace Compressa.API.Controllers
         [Route("extractchaptermetadata/{audiobookName}")]
         public int ExtractChapterMetadata(string audiobookName)
         {
-            return 0;
+            int taskId = Task.Run(() =>
+            {
+                _compressaService.ExtractChapterMetadata(audiobookName);
+            }).Id;
+
+            return taskId;
         }
 
     }

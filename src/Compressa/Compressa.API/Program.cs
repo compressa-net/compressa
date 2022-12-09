@@ -1,4 +1,5 @@
 using Compressa.API.Models.Logging;
+using Compressa.API.Services;
 using Microsoft.Extensions.Logging.Console;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,8 +10,10 @@ builder.Logging.AddConsoleFormatter<CustomSimpleConsoleFormatter, SimpleConsoleF
 builder.Logging.AddConsole(options => options.FormatterName = "customSimpleConsoleFormatter");
 builder.Logging.AddDebug();
 
-// Add services to the container.
+// Add our own service as a singleton
+builder.Services.AddSingleton<ICompressaService, CompressaService>();
 
+// Add services to the container.
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
