@@ -1,0 +1,5376 @@
+{
+  "id": "r7loz4kdn1-a418-4468-8f3a-e97fbf5d67c6",
+  "status": "completed",
+  "acoustic_model": "assemblyai_default",
+  "audio_duration": 373,
+  "audio_url": "https://cdn.assemblyai.com/upload/b5385ec6-1604-4abc-971d-5f4d1091593d",
+  "confidence": 0.948182665173574,
+  "dual_channel": null,
+  "format_text": true,
+  "language_model": "assemblyai_default",
+  "punctuate": true,
+  "text": "This is Audible brilliance Audio presents AI Superpowers China, Silicon Valley, and the New World Order by Kai Fu Lee performed by Michael Nairimore introduction one of the obligations that comes with my work as a venture capitalist VC investor is that I often give speeches about artificial intelligence AI to members of the global business and political elite. One of the joys of my work is that I sometimes get to talk about that very same topic with kindergarteners. Surprisingly, these two distinctly different audiences often ask me the same kinds of questions. During a recent visit to a Beijing kindergarten, a gaggle of five year olds grilled me about our AI future. Are we going to have robot teachers? What if one robot car bumps into another robot car and then we get hurt? Will people marry robots and have babies with them? Are computers going to become so smart that they can boss us around? If robots do everything, then what are we going to do? These kindergarteners questions echoed queries posed by some of the world\u0027s most powerful people, and the interaction was revealing in several ways. First, it spoke to how AI. Has leapt to the forefront of our minds. Just a few years ago, artificial intelligence was a field that lived primarily in academic research labs and science fiction films. The average person may have had some sense that AI. Was about building robots that could think like people, but there was almost no connection between that prospect and our everyday lives. Today, all of that has changed. Articles on the latest AI innovations blanket the pages of our newspapers. Business conferences on leveraging AI to boost profits are happening nearly every day. And governments around the world are releasing their own national plans for harnessing the technology. AI. Is suddenly at the center of public discourse, and for good reason. Major theoretical breakthroughs in AI have finally yielded practical applications that are poised to change our lives. AI. Already powers many of our favorite apps and websites, and in the coming years, AI will be driving our cars, managing our portfolios, manufacturing much of what we buy, and potentially putting us out of our jobs. These uses are full of both promise and potential peril, and we must prepare ourselves for both. My dialogue with the kindergarteners was also revealing because of where it took place not long ago china lagged years, if not decades, behind the United States in artificial intelligence. But over the past three years, China has caught AI. Fever, experiencing a surge of excitement about the field that dwarfs even what we see in the rest of the world. Enthusiasm about AI has spilled over from the technology and business communities into government policymaking, and it has trickled all the way down to kindergarten classrooms in Beijing. This broad based support for the field has both reflected and fed into China\u0027s growing strength in the field. Chinese AI companies and researchers have already made up enormous ground on their american counterparts experimenting with innovative algorithms and business models that promise to revolutionize China\u0027s economy. Together, these businesses and scholars have turned China into a bona fide AI superpower, the only true national counterweight to the United States in this emerging technology. How these two countries choose to compete and cooperate in AI will have dramatic implications for global economics and governance. Finally, during my back and forth with those young students, I stumbled on a deeper truth when it comes to understanding our AI future. We\u0027re all like those kindergarteners. We\u0027re all full of questions without answers, trying to peer into the future with a mixture of childlike wonder and grownup worries. We want to know what AI automation will mean for our jobs and for our sense of purpose. We want to know which people and countries will benefit from this tremendous technology. We wonder whether AI can vault us to lives of material abundance and whether there is space for humanity in a world run by intelligent machines. No one has a crystal ball that can reveal the answers to these questions for us. But that core uncertainty makes it all the more important that we ask these questions and to the best of our abilities, explore the Answers this book is my attempt to do that. I\u0027m no oracle who can perfectly predict our AI future. But in exploring these questions, I can bring my experience as an AI researcher, technology executive, and now venture capitalist investor in both China and the United States. My hope is that this book sheds some light on how we got here and also inspires new conversations about where we go from here. Part of why predicting the ending to our AI story is so difficult is because this isn\u0027t just a story about machines. It\u0027s also a story about human beings, people with free will that allows them to make their own choices and to shape their own destinies. Our AI future will be created by us, and it will reflect the choices we make and the actions we take in that process. I hope we will look deep within ourselves and to each other for the values and wisdom that can guide us in that spirit. Let us begin this exploration.",
+  "utterances": null,
+  "webhook_status_code": null,
+  "webhook_url": null,
+  "words": [
+    {
+      "confidence": 0.9975,
+      "end": 990,
+      "start": 730,
+      "text": "This"
+    },
+    {
+      "confidence": 0.99844,
+      "end": 1294,
+      "start": 1060,
+      "text": "is"
+    },
+    {
+      "confidence": 0.99949,
+      "end": 2030,
+      "start": 1332,
+      "text": "Audible"
+    },
+    {
+      "confidence": 0.26246,
+      "end": 13226,
+      "start": 12610,
+      "text": "brilliance"
+    },
+    {
+      "confidence": 0.99603,
+      "end": 13674,
+      "start": 13258,
+      "text": "Audio"
+    },
+    {
+      "confidence": 0.9651,
+      "end": 14330,
+      "start": 13722,
+      "text": "presents"
+    },
+    {
+      "confidence": 0.62,
+      "end": 14922,
+      "start": 14410,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.90912,
+      "end": 16202,
+      "start": 14986,
+      "text": "Superpowers"
+    },
+    {
+      "confidence": 0.64297,
+      "end": 16810,
+      "start": 16346,
+      "text": "China,"
+    },
+    {
+      "confidence": 0.79326,
+      "end": 17450,
+      "start": 16890,
+      "text": "Silicon"
+    },
+    {
+      "confidence": 0.99017,
+      "end": 17914,
+      "start": 17530,
+      "text": "Valley,"
+    },
+    {
+      "confidence": 1,
+      "end": 18126,
+      "start": 17962,
+      "text": "and"
+    },
+    {
+      "confidence": 1,
+      "end": 18286,
+      "start": 18148,
+      "text": "the"
+    },
+    {
+      "confidence": 1,
+      "end": 18494,
+      "start": 18308,
+      "text": "New"
+    },
+    {
+      "confidence": 0.99901,
+      "end": 18830,
+      "start": 18532,
+      "text": "World"
+    },
+    {
+      "confidence": 0.99878,
+      "end": 19520,
+      "start": 18900,
+      "text": "Order"
+    },
+    {
+      "confidence": 0.99907,
+      "end": 20382,
+      "start": 19970,
+      "text": "by"
+    },
+    {
+      "confidence": 0.16234,
+      "end": 20746,
+      "start": 20436,
+      "text": "Kai"
+    },
+    {
+      "confidence": 0.52041,
+      "end": 21034,
+      "start": 20778,
+      "text": "Fu"
+    },
+    {
+      "confidence": 0.4,
+      "end": 21818,
+      "start": 21082,
+      "text": "Lee"
+    },
+    {
+      "confidence": 0.98287,
+      "end": 22714,
+      "start": 21994,
+      "text": "performed"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 22974,
+      "start": 22762,
+      "text": "by"
+    },
+    {
+      "confidence": 0.99703,
+      "end": 23306,
+      "start": 23012,
+      "text": "Michael"
+    },
+    {
+      "confidence": 0.07352,
+      "end": 24270,
+      "start": 23338,
+      "text": "Nairimore"
+    },
+    {
+      "confidence": 0.60161,
+      "end": 30470,
+      "start": 29290,
+      "text": "introduction"
+    },
+    {
+      "confidence": 1,
+      "end": 32326,
+      "start": 32010,
+      "text": "one"
+    },
+    {
+      "confidence": 1,
+      "end": 32486,
+      "start": 32348,
+      "text": "of"
+    },
+    {
+      "confidence": 1,
+      "end": 32646,
+      "start": 32508,
+      "text": "the"
+    },
+    {
+      "confidence": 0.98735,
+      "end": 33218,
+      "start": 32668,
+      "text": "obligations"
+    },
+    {
+      "confidence": 0.9999,
+      "end": 33574,
+      "start": 33314,
+      "text": "that"
+    },
+    {
+      "confidence": 0.99621,
+      "end": 33814,
+      "start": 33612,
+      "text": "comes"
+    },
+    {
+      "confidence": 0.9999,
+      "end": 34006,
+      "start": 33852,
+      "text": "with"
+    },
+    {
+      "confidence": 0.99983,
+      "end": 34214,
+      "start": 34028,
+      "text": "my"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 34454,
+      "start": 34252,
+      "text": "work"
+    },
+    {
+      "confidence": 0.9997,
+      "end": 34646,
+      "start": 34492,
+      "text": "as"
+    },
+    {
+      "confidence": 1,
+      "end": 34758,
+      "start": 34668,
+      "text": "a"
+    },
+    {
+      "confidence": 0.99954,
+      "end": 35106,
+      "start": 34764,
+      "text": "venture"
+    },
+    {
+      "confidence": 0.99317,
+      "end": 35762,
+      "start": 35138,
+      "text": "capitalist"
+    },
+    {
+      "confidence": 0.72276,
+      "end": 36370,
+      "start": 35826,
+      "text": "VC"
+    },
+    {
+      "confidence": 0.99876,
+      "end": 37186,
+      "start": 36450,
+      "text": "investor"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 37526,
+      "start": 37298,
+      "text": "is"
+    },
+    {
+      "confidence": 0.99984,
+      "end": 37686,
+      "start": 37548,
+      "text": "that"
+    },
+    {
+      "confidence": 1,
+      "end": 37846,
+      "start": 37708,
+      "text": "I"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 38054,
+      "start": 37868,
+      "text": "often"
+    },
+    {
+      "confidence": 0.99966,
+      "end": 38294,
+      "start": 38092,
+      "text": "give"
+    },
+    {
+      "confidence": 0.86832,
+      "end": 38786,
+      "start": 38332,
+      "text": "speeches"
+    },
+    {
+      "confidence": 0.99975,
+      "end": 39062,
+      "start": 38818,
+      "text": "about"
+    },
+    {
+      "confidence": 0.61282,
+      "end": 39682,
+      "start": 39116,
+      "text": "artificial"
+    },
+    {
+      "confidence": 0.91677,
+      "end": 40370,
+      "start": 39746,
+      "text": "intelligence"
+    },
+    {
+      "confidence": 0.54,
+      "end": 40942,
+      "start": 40450,
+      "text": "AI"
+    },
+    {
+      "confidence": 1,
+      "end": 41274,
+      "start": 41026,
+      "text": "to"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 41562,
+      "start": 41312,
+      "text": "members"
+    },
+    {
+      "confidence": 1,
+      "end": 41786,
+      "start": 41616,
+      "text": "of"
+    },
+    {
+      "confidence": 1,
+      "end": 41898,
+      "start": 41808,
+      "text": "the"
+    },
+    {
+      "confidence": 0.91921,
+      "end": 42294,
+      "start": 41904,
+      "text": "global"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 42650,
+      "start": 42342,
+      "text": "business"
+    },
+    {
+      "confidence": 1,
+      "end": 42954,
+      "start": 42720,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99988,
+      "end": 43494,
+      "start": 42992,
+      "text": "political"
+    },
+    {
+      "confidence": 0.9986,
+      "end": 44250,
+      "start": 43542,
+      "text": "elite."
+    },
+    {
+      "confidence": 1,
+      "end": 44986,
+      "start": 44670,
+      "text": "One"
+    },
+    {
+      "confidence": 1,
+      "end": 45098,
+      "start": 45008,
+      "text": "of"
+    },
+    {
+      "confidence": 1,
+      "end": 45178,
+      "start": 45104,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99549,
+      "end": 45494,
+      "start": 45184,
+      "text": "joys"
+    },
+    {
+      "confidence": 1,
+      "end": 45658,
+      "start": 45542,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99902,
+      "end": 45834,
+      "start": 45664,
+      "text": "my"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 46074,
+      "start": 45872,
+      "text": "work"
+    },
+    {
+      "confidence": 0.95607,
+      "end": 46314,
+      "start": 46112,
+      "text": "is"
+    },
+    {
+      "confidence": 0.77606,
+      "end": 46506,
+      "start": 46352,
+      "text": "that"
+    },
+    {
+      "confidence": 0.98,
+      "end": 46714,
+      "start": 46528,
+      "text": "I"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 47098,
+      "start": 46752,
+      "text": "sometimes"
+    },
+    {
+      "confidence": 0.99985,
+      "end": 47386,
+      "start": 47184,
+      "text": "get"
+    },
+    {
+      "confidence": 1,
+      "end": 47546,
+      "start": 47408,
+      "text": "to"
+    },
+    {
+      "confidence": 0.99984,
+      "end": 47754,
+      "start": 47568,
+      "text": "talk"
+    },
+    {
+      "confidence": 0.99232,
+      "end": 48042,
+      "start": 47792,
+      "text": "about"
+    },
+    {
+      "confidence": 0.99978,
+      "end": 48362,
+      "start": 48096,
+      "text": "that"
+    },
+    {
+      "confidence": 0.99991,
+      "end": 48682,
+      "start": 48416,
+      "text": "very"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 49050,
+      "start": 48736,
+      "text": "same"
+    },
+    {
+      "confidence": 0.9977,
+      "end": 49494,
+      "start": 49120,
+      "text": "topic"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 49754,
+      "start": 49542,
+      "text": "with"
+    },
+    {
+      "confidence": 0.91273,
+      "end": 51206,
+      "start": 49792,
+      "text": "kindergarteners."
+    },
+    {
+      "confidence": 0.48024,
+      "end": 52402,
+      "start": 51398,
+      "text": "Surprisingly,"
+    },
+    {
+      "confidence": 0.99965,
+      "end": 52734,
+      "start": 52486,
+      "text": "these"
+    },
+    {
+      "confidence": 0.98,
+      "end": 53022,
+      "start": 52772,
+      "text": "two"
+    },
+    {
+      "confidence": 0.99699,
+      "end": 53594,
+      "start": 53076,
+      "text": "distinctly"
+    },
+    {
+      "confidence": 0.99967,
+      "end": 53902,
+      "start": 53642,
+      "text": "different"
+    },
+    {
+      "confidence": 0.93407,
+      "end": 54554,
+      "start": 53956,
+      "text": "audiences"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 54862,
+      "start": 54602,
+      "text": "often"
+    },
+    {
+      "confidence": 0.99264,
+      "end": 55086,
+      "start": 54916,
+      "text": "ask"
+    },
+    {
+      "confidence": 1,
+      "end": 55294,
+      "start": 55108,
+      "text": "me"
+    },
+    {
+      "confidence": 1,
+      "end": 55486,
+      "start": 55332,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 55742,
+      "start": 55508,
+      "text": "same"
+    },
+    {
+      "confidence": 0.98666,
+      "end": 56106,
+      "start": 55796,
+      "text": "kinds"
+    },
+    {
+      "confidence": 1,
+      "end": 56286,
+      "start": 56138,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 56880,
+      "start": 56308,
+      "text": "questions."
+    },
+    {
+      "confidence": 0.99999,
+      "end": 57854,
+      "start": 57490,
+      "text": "During"
+    },
+    {
+      "confidence": 0.8,
+      "end": 58046,
+      "start": 57892,
+      "text": "a"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 58394,
+      "start": 58068,
+      "text": "recent"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 58746,
+      "start": 58442,
+      "text": "visit"
+    },
+    {
+      "confidence": 1,
+      "end": 58926,
+      "start": 58778,
+      "text": "to"
+    },
+    {
+      "confidence": 1,
+      "end": 59038,
+      "start": 58948,
+      "text": "a"
+    },
+    {
+      "confidence": 0.70254,
+      "end": 59466,
+      "start": 59044,
+      "text": "Beijing"
+    },
+    {
+      "confidence": 0.99276,
+      "end": 60282,
+      "start": 59498,
+      "text": "kindergarten,"
+    },
+    {
+      "confidence": 1,
+      "end": 60526,
+      "start": 60346,
+      "text": "a"
+    },
+    {
+      "confidence": 0.94884,
+      "end": 60906,
+      "start": 60548,
+      "text": "gaggle"
+    },
+    {
+      "confidence": 1,
+      "end": 61086,
+      "start": 60938,
+      "text": "of"
+    },
+    {
+      "confidence": 1,
+      "end": 61294,
+      "start": 61108,
+      "text": "five"
+    },
+    {
+      "confidence": 0.87907,
+      "end": 61486,
+      "start": 61332,
+      "text": "year"
+    },
+    {
+      "confidence": 0.63597,
+      "end": 61866,
+      "start": 61508,
+      "text": "olds"
+    },
+    {
+      "confidence": 0.83246,
+      "end": 62218,
+      "start": 61898,
+      "text": "grilled"
+    },
+    {
+      "confidence": 1,
+      "end": 62366,
+      "start": 62234,
+      "text": "me"
+    },
+    {
+      "confidence": 0.99935,
+      "end": 62622,
+      "start": 62388,
+      "text": "about"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 62846,
+      "start": 62676,
+      "text": "our"
+    },
+    {
+      "confidence": 0.7,
+      "end": 63334,
+      "start": 62868,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.99928,
+      "end": 64020,
+      "start": 63402,
+      "text": "future."
+    },
+    {
+      "confidence": 0.9998,
+      "end": 64946,
+      "start": 64630,
+      "text": "Are"
+    },
+    {
+      "confidence": 0.96498,
+      "end": 65154,
+      "start": 64968,
+      "text": "we"
+    },
+    {
+      "confidence": 0.91148,
+      "end": 65394,
+      "start": 65192,
+      "text": "going"
+    },
+    {
+      "confidence": 1,
+      "end": 65586,
+      "start": 65432,
+      "text": "to"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 65794,
+      "start": 65608,
+      "text": "have"
+    },
+    {
+      "confidence": 0.94839,
+      "end": 66286,
+      "start": 65832,
+      "text": "robot"
+    },
+    {
+      "confidence": 0.99962,
+      "end": 67070,
+      "start": 66318,
+      "text": "teachers?"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 67506,
+      "start": 67230,
+      "text": "What"
+    },
+    {
+      "confidence": 0.99981,
+      "end": 67714,
+      "start": 67528,
+      "text": "if"
+    },
+    {
+      "confidence": 1,
+      "end": 68002,
+      "start": 67752,
+      "text": "one"
+    },
+    {
+      "confidence": 0.99293,
+      "end": 68446,
+      "start": 68056,
+      "text": "robot"
+    },
+    {
+      "confidence": 0.80721,
+      "end": 68770,
+      "start": 68478,
+      "text": "car"
+    },
+    {
+      "confidence": 0.99794,
+      "end": 69166,
+      "start": 68840,
+      "text": "bumps"
+    },
+    {
+      "confidence": 0.9993,
+      "end": 69394,
+      "start": 69198,
+      "text": "into"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 69730,
+      "start": 69432,
+      "text": "another"
+    },
+    {
+      "confidence": 0.98267,
+      "end": 70206,
+      "start": 69800,
+      "text": "robot"
+    },
+    {
+      "confidence": 0.7474,
+      "end": 70530,
+      "start": 70238,
+      "text": "car"
+    },
+    {
+      "confidence": 1,
+      "end": 70834,
+      "start": 70600,
+      "text": "and"
+    },
+    {
+      "confidence": 1,
+      "end": 71074,
+      "start": 70872,
+      "text": "then"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 71266,
+      "start": 71112,
+      "text": "we"
+    },
+    {
+      "confidence": 0.9999,
+      "end": 71474,
+      "start": 71288,
+      "text": "get"
+    },
+    {
+      "confidence": 0.99981,
+      "end": 72286,
+      "start": 71512,
+      "text": "hurt?"
+    },
+    {
+      "confidence": 0.99968,
+      "end": 72882,
+      "start": 72478,
+      "text": "Will"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 73250,
+      "start": 72936,
+      "text": "people"
+    },
+    {
+      "confidence": 0.62013,
+      "end": 73694,
+      "start": 73320,
+      "text": "marry"
+    },
+    {
+      "confidence": 0.99805,
+      "end": 74254,
+      "start": 73742,
+      "text": "robots"
+    },
+    {
+      "confidence": 1,
+      "end": 74514,
+      "start": 74302,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 74754,
+      "start": 74552,
+      "text": "have"
+    },
+    {
+      "confidence": 0.99431,
+      "end": 75194,
+      "start": 74792,
+      "text": "babies"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 75446,
+      "start": 75262,
+      "text": "with"
+    },
+    {
+      "confidence": 0.99413,
+      "end": 76134,
+      "start": 75468,
+      "text": "them?"
+    },
+    {
+      "confidence": 0.60551,
+      "end": 76694,
+      "start": 76332,
+      "text": "Are"
+    },
+    {
+      "confidence": 0.99118,
+      "end": 77266,
+      "start": 76732,
+      "text": "computers"
+    },
+    {
+      "confidence": 0.99989,
+      "end": 77494,
+      "start": 77298,
+      "text": "going"
+    },
+    {
+      "confidence": 1,
+      "end": 77638,
+      "start": 77532,
+      "text": "to"
+    },
+    {
+      "confidence": 0.96766,
+      "end": 77910,
+      "start": 77644,
+      "text": "become"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 78262,
+      "start": 77980,
+      "text": "so"
+    },
+    {
+      "confidence": 0.86525,
+      "end": 78594,
+      "start": 78316,
+      "text": "smart"
+    },
+    {
+      "confidence": 0.60965,
+      "end": 78854,
+      "start": 78642,
+      "text": "that"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 79046,
+      "start": 78892,
+      "text": "they"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 79206,
+      "start": 79068,
+      "text": "can"
+    },
+    {
+      "confidence": 0.98735,
+      "end": 79474,
+      "start": 79228,
+      "text": "boss"
+    },
+    {
+      "confidence": 1,
+      "end": 79734,
+      "start": 79522,
+      "text": "us"
+    },
+    {
+      "confidence": 1,
+      "end": 80360,
+      "start": 79772,
+      "text": "around?"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 81254,
+      "start": 80890,
+      "text": "If"
+    },
+    {
+      "confidence": 0.99948,
+      "end": 81762,
+      "start": 81292,
+      "text": "robots"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 82054,
+      "start": 81826,
+      "text": "do"
+    },
+    {
+      "confidence": 0.99944,
+      "end": 82630,
+      "start": 82092,
+      "text": "everything,"
+    },
+    {
+      "confidence": 0.93,
+      "end": 83094,
+      "start": 82780,
+      "text": "then"
+    },
+    {
+      "confidence": 1,
+      "end": 83286,
+      "start": 83132,
+      "text": "what"
+    },
+    {
+      "confidence": 0.9935,
+      "end": 83446,
+      "start": 83308,
+      "text": "are"
+    },
+    {
+      "confidence": 0.9996,
+      "end": 83654,
+      "start": 83468,
+      "text": "we"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 83894,
+      "start": 83692,
+      "text": "going"
+    },
+    {
+      "confidence": 1,
+      "end": 84086,
+      "start": 83932,
+      "text": "to"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 84680,
+      "start": 84108,
+      "text": "do?"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 86134,
+      "start": 85770,
+      "text": "These"
+    },
+    {
+      "confidence": 0.84628,
+      "end": 87074,
+      "start": 86172,
+      "text": "kindergarteners"
+    },
+    {
+      "confidence": 0.99771,
+      "end": 87478,
+      "start": 87122,
+      "text": "questions"
+    },
+    {
+      "confidence": 0.68947,
+      "end": 87986,
+      "start": 87564,
+      "text": "echoed"
+    },
+    {
+      "confidence": 0.72712,
+      "end": 88482,
+      "start": 88018,
+      "text": "queries"
+    },
+    {
+      "confidence": 0.9999,
+      "end": 88946,
+      "start": 88546,
+      "text": "posed"
+    },
+    {
+      "confidence": 1,
+      "end": 89138,
+      "start": 88978,
+      "text": "by"
+    },
+    {
+      "confidence": 1,
+      "end": 89306,
+      "start": 89164,
+      "text": "some"
+    },
+    {
+      "confidence": 1,
+      "end": 89466,
+      "start": 89328,
+      "text": "of"
+    },
+    {
+      "confidence": 1,
+      "end": 89626,
+      "start": 89488,
+      "text": "the"
+    },
+    {
+      "confidence": 0.94817,
+      "end": 89926,
+      "start": 89648,
+      "text": "world\u0027s"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 90202,
+      "start": 89958,
+      "text": "most"
+    },
+    {
+      "confidence": 0.96243,
+      "end": 90742,
+      "start": 90256,
+      "text": "powerful"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 91466,
+      "start": 90806,
+      "text": "people,"
+    },
+    {
+      "confidence": 1,
+      "end": 91994,
+      "start": 91648,
+      "text": "and"
+    },
+    {
+      "confidence": 1,
+      "end": 92186,
+      "start": 92032,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99977,
+      "end": 92726,
+      "start": 92208,
+      "text": "interaction"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 92954,
+      "start": 92758,
+      "text": "was"
+    },
+    {
+      "confidence": 0.9962,
+      "end": 93366,
+      "start": 92992,
+      "text": "revealing"
+    },
+    {
+      "confidence": 0.97704,
+      "end": 93546,
+      "start": 93398,
+      "text": "in"
+    },
+    {
+      "confidence": 0.94966,
+      "end": 93894,
+      "start": 93568,
+      "text": "several"
+    },
+    {
+      "confidence": 1,
+      "end": 94540,
+      "start": 93942,
+      "text": "ways."
+    },
+    {
+      "confidence": 1,
+      "end": 95322,
+      "start": 94910,
+      "text": "First,"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 95546,
+      "start": 95376,
+      "text": "it"
+    },
+    {
+      "confidence": 0.98865,
+      "end": 95798,
+      "start": 95568,
+      "text": "spoke"
+    },
+    {
+      "confidence": 1,
+      "end": 95946,
+      "start": 95814,
+      "text": "to"
+    },
+    {
+      "confidence": 0.9998,
+      "end": 96154,
+      "start": 95968,
+      "text": "how"
+    },
+    {
+      "confidence": 0.96,
+      "end": 96614,
+      "start": 96192,
+      "text": "AI."
+    },
+    {
+      "confidence": 0.9996,
+      "end": 96874,
+      "start": 96662,
+      "text": "Has"
+    },
+    {
+      "confidence": 0.97022,
+      "end": 97174,
+      "start": 96912,
+      "text": "leapt"
+    },
+    {
+      "confidence": 1,
+      "end": 97386,
+      "start": 97222,
+      "text": "to"
+    },
+    {
+      "confidence": 1,
+      "end": 97546,
+      "start": 97408,
+      "text": "the"
+    },
+    {
+      "confidence": 0.63899,
+      "end": 98038,
+      "start": 97568,
+      "text": "forefront"
+    },
+    {
+      "confidence": 1,
+      "end": 98186,
+      "start": 98054,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99881,
+      "end": 98394,
+      "start": 98208,
+      "text": "our"
+    },
+    {
+      "confidence": 0.83334,
+      "end": 99366,
+      "start": 98432,
+      "text": "minds."
+    },
+    {
+      "confidence": 0.99999,
+      "end": 99866,
+      "start": 99558,
+      "text": "Just"
+    },
+    {
+      "confidence": 0.91,
+      "end": 100026,
+      "start": 99888,
+      "text": "a"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 100234,
+      "start": 100048,
+      "text": "few"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 100474,
+      "start": 100272,
+      "text": "years"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 100762,
+      "start": 100512,
+      "text": "ago,"
+    },
+    {
+      "confidence": 0.71937,
+      "end": 101334,
+      "start": 100816,
+      "text": "artificial"
+    },
+    {
+      "confidence": 0.94709,
+      "end": 101974,
+      "start": 101382,
+      "text": "intelligence"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 102198,
+      "start": 102022,
+      "text": "was"
+    },
+    {
+      "confidence": 1,
+      "end": 102318,
+      "start": 102224,
+      "text": "a"
+    },
+    {
+      "confidence": 0.98131,
+      "end": 102590,
+      "start": 102324,
+      "text": "field"
+    },
+    {
+      "confidence": 1,
+      "end": 102846,
+      "start": 102660,
+      "text": "that"
+    },
+    {
+      "confidence": 0.9993,
+      "end": 103146,
+      "start": 102868,
+      "text": "lived"
+    },
+    {
+      "confidence": 0.63747,
+      "end": 103722,
+      "start": 103178,
+      "text": "primarily"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 103966,
+      "start": 103786,
+      "text": "in"
+    },
+    {
+      "confidence": 0.99706,
+      "end": 104506,
+      "start": 103988,
+      "text": "academic"
+    },
+    {
+      "confidence": 0.7462,
+      "end": 104926,
+      "start": 104538,
+      "text": "research"
+    },
+    {
+      "confidence": 0.99985,
+      "end": 105466,
+      "start": 105028,
+      "text": "labs"
+    },
+    {
+      "confidence": 1,
+      "end": 105694,
+      "start": 105498,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99984,
+      "end": 106074,
+      "start": 105732,
+      "text": "science"
+    },
+    {
+      "confidence": 0.95521,
+      "end": 106554,
+      "start": 106122,
+      "text": "fiction"
+    },
+    {
+      "confidence": 0.99966,
+      "end": 107386,
+      "start": 106602,
+      "text": "films."
+    },
+    {
+      "confidence": 1,
+      "end": 107934,
+      "start": 107578,
+      "text": "The"
+    },
+    {
+      "confidence": 0.99986,
+      "end": 108314,
+      "start": 107972,
+      "text": "average"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 108622,
+      "start": 108362,
+      "text": "person"
+    },
+    {
+      "confidence": 1,
+      "end": 108846,
+      "start": 108676,
+      "text": "may"
+    },
+    {
+      "confidence": 0.9768,
+      "end": 109006,
+      "start": 108868,
+      "text": "have"
+    },
+    {
+      "confidence": 0.52671,
+      "end": 109214,
+      "start": 109028,
+      "text": "had"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 109454,
+      "start": 109252,
+      "text": "some"
+    },
+    {
+      "confidence": 0.50204,
+      "end": 109790,
+      "start": 109492,
+      "text": "sense"
+    },
+    {
+      "confidence": 1,
+      "end": 110094,
+      "start": 109860,
+      "text": "that"
+    },
+    {
+      "confidence": 0.62,
+      "end": 110522,
+      "start": 110132,
+      "text": "AI."
+    },
+    {
+      "confidence": 0.99995,
+      "end": 110766,
+      "start": 110586,
+      "text": "Was"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 111022,
+      "start": 110788,
+      "text": "about"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 111342,
+      "start": 111076,
+      "text": "building"
+    },
+    {
+      "confidence": 0.99957,
+      "end": 111914,
+      "start": 111396,
+      "text": "robots"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 112126,
+      "start": 111962,
+      "text": "that"
+    },
+    {
+      "confidence": 0.99988,
+      "end": 112334,
+      "start": 112148,
+      "text": "could"
+    },
+    {
+      "confidence": 0.99993,
+      "end": 112586,
+      "start": 112372,
+      "text": "think"
+    },
+    {
+      "confidence": 0.93481,
+      "end": 112834,
+      "start": 112628,
+      "text": "like"
+    },
+    {
+      "confidence": 0.99983,
+      "end": 113458,
+      "start": 112872,
+      "text": "people,"
+    },
+    {
+      "confidence": 0.9999,
+      "end": 113906,
+      "start": 113624,
+      "text": "but"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 114066,
+      "start": 113928,
+      "text": "there"
+    },
+    {
+      "confidence": 0.99867,
+      "end": 114226,
+      "start": 114088,
+      "text": "was"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 114482,
+      "start": 114248,
+      "text": "almost"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 114754,
+      "start": 114536,
+      "text": "no"
+    },
+    {
+      "confidence": 0.9972,
+      "end": 115214,
+      "start": 114792,
+      "text": "connection"
+    },
+    {
+      "confidence": 1,
+      "end": 115570,
+      "start": 115262,
+      "text": "between"
+    },
+    {
+      "confidence": 0.99982,
+      "end": 115874,
+      "start": 115640,
+      "text": "that"
+    },
+    {
+      "confidence": 0.56421,
+      "end": 116382,
+      "start": 115912,
+      "text": "prospect"
+    },
+    {
+      "confidence": 1,
+      "end": 116626,
+      "start": 116446,
+      "text": "and"
+    },
+    {
+      "confidence": 0.98585,
+      "end": 116834,
+      "start": 116648,
+      "text": "our"
+    },
+    {
+      "confidence": 0.98373,
+      "end": 117342,
+      "start": 116872,
+      "text": "everyday"
+    },
+    {
+      "confidence": 0.99991,
+      "end": 118020,
+      "start": 117406,
+      "text": "lives."
+    },
+    {
+      "confidence": 1,
+      "end": 119522,
+      "start": 118870,
+      "text": "Today,"
+    },
+    {
+      "confidence": 1,
+      "end": 119954,
+      "start": 119656,
+      "text": "all"
+    },
+    {
+      "confidence": 1,
+      "end": 120146,
+      "start": 119992,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99984,
+      "end": 120354,
+      "start": 120168,
+      "text": "that"
+    },
+    {
+      "confidence": 0.99989,
+      "end": 120594,
+      "start": 120392,
+      "text": "has"
+    },
+    {
+      "confidence": 0.99925,
+      "end": 121518,
+      "start": 120632,
+      "text": "changed."
+    },
+    {
+      "confidence": 0.81298,
+      "end": 122366,
+      "start": 121694,
+      "text": "Articles"
+    },
+    {
+      "confidence": 1,
+      "end": 122546,
+      "start": 122398,
+      "text": "on"
+    },
+    {
+      "confidence": 1,
+      "end": 122658,
+      "start": 122568,
+      "text": "the"
+    },
+    {
+      "confidence": 0.96587,
+      "end": 123102,
+      "start": 122664,
+      "text": "latest"
+    },
+    {
+      "confidence": 1,
+      "end": 123534,
+      "start": 123166,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.99749,
+      "end": 124110,
+      "start": 123582,
+      "text": "innovations"
+    },
+    {
+      "confidence": 0.96851,
+      "end": 124686,
+      "start": 124190,
+      "text": "blanket"
+    },
+    {
+      "confidence": 1,
+      "end": 124818,
+      "start": 124718,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99952,
+      "end": 125166,
+      "start": 124824,
+      "text": "pages"
+    },
+    {
+      "confidence": 1,
+      "end": 125358,
+      "start": 125198,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 125574,
+      "start": 125384,
+      "text": "our"
+    },
+    {
+      "confidence": 0.67098,
+      "end": 126562,
+      "start": 125612,
+      "text": "newspapers."
+    },
+    {
+      "confidence": 0.98291,
+      "end": 127158,
+      "start": 126706,
+      "text": "Business"
+    },
+    {
+      "confidence": 0.80176,
+      "end": 127762,
+      "start": 127244,
+      "text": "conferences"
+    },
+    {
+      "confidence": 0.99,
+      "end": 128054,
+      "start": 127826,
+      "text": "on"
+    },
+    {
+      "confidence": 0.99053,
+      "end": 128514,
+      "start": 128092,
+      "text": "leveraging"
+    },
+    {
+      "confidence": 0.96,
+      "end": 128914,
+      "start": 128562,
+      "text": "AI"
+    },
+    {
+      "confidence": 1,
+      "end": 129126,
+      "start": 128962,
+      "text": "to"
+    },
+    {
+      "confidence": 0.99977,
+      "end": 129426,
+      "start": 129148,
+      "text": "boost"
+    },
+    {
+      "confidence": 0.98662,
+      "end": 129794,
+      "start": 129458,
+      "text": "profits"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 130006,
+      "start": 129842,
+      "text": "are"
+    },
+    {
+      "confidence": 1,
+      "end": 130310,
+      "start": 130028,
+      "text": "happening"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 130706,
+      "start": 130380,
+      "text": "nearly"
+    },
+    {
+      "confidence": 0.99278,
+      "end": 130982,
+      "start": 130738,
+      "text": "every"
+    },
+    {
+      "confidence": 0.99423,
+      "end": 131734,
+      "start": 131036,
+      "text": "day."
+    },
+    {
+      "confidence": 1,
+      "end": 132342,
+      "start": 131932,
+      "text": "And"
+    },
+    {
+      "confidence": 0.99961,
+      "end": 132946,
+      "start": 132396,
+      "text": "governments"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 133222,
+      "start": 132978,
+      "text": "around"
+    },
+    {
+      "confidence": 1,
+      "end": 133398,
+      "start": 133276,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 133622,
+      "start": 133404,
+      "text": "world"
+    },
+    {
+      "confidence": 0.99993,
+      "end": 133894,
+      "start": 133676,
+      "text": "are"
+    },
+    {
+      "confidence": 0.99938,
+      "end": 134306,
+      "start": 133932,
+      "text": "releasing"
+    },
+    {
+      "confidence": 0.98862,
+      "end": 134534,
+      "start": 134338,
+      "text": "their"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 134822,
+      "start": 134572,
+      "text": "own"
+    },
+    {
+      "confidence": 0.99654,
+      "end": 135298,
+      "start": 134876,
+      "text": "national"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 135906,
+      "start": 135394,
+      "text": "plans"
+    },
+    {
+      "confidence": 1,
+      "end": 136086,
+      "start": 135938,
+      "text": "for"
+    },
+    {
+      "confidence": 0.97283,
+      "end": 136626,
+      "start": 136108,
+      "text": "harnessing"
+    },
+    {
+      "confidence": 1,
+      "end": 136854,
+      "start": 136658,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 137480,
+      "start": 136892,
+      "text": "technology."
+    },
+    {
+      "confidence": 0.62,
+      "end": 139110,
+      "start": 138510,
+      "text": "AI."
+    },
+    {
+      "confidence": 0.99973,
+      "end": 139434,
+      "start": 139190,
+      "text": "Is"
+    },
+    {
+      "confidence": 0.84738,
+      "end": 139894,
+      "start": 139472,
+      "text": "suddenly"
+    },
+    {
+      "confidence": 1,
+      "end": 140106,
+      "start": 139942,
+      "text": "at"
+    },
+    {
+      "confidence": 1,
+      "end": 140266,
+      "start": 140128,
+      "text": "the"
+    },
+    {
+      "confidence": 0.96,
+      "end": 140522,
+      "start": 140288,
+      "text": "center"
+    },
+    {
+      "confidence": 0.97,
+      "end": 140794,
+      "start": 140576,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 141082,
+      "start": 140832,
+      "text": "public"
+    },
+    {
+      "confidence": 0.80601,
+      "end": 141974,
+      "start": 141136,
+      "text": "discourse,"
+    },
+    {
+      "confidence": 1,
+      "end": 142394,
+      "start": 142102,
+      "text": "and"
+    },
+    {
+      "confidence": 1,
+      "end": 142586,
+      "start": 142432,
+      "text": "for"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 142794,
+      "start": 142608,
+      "text": "good"
+    },
+    {
+      "confidence": 0.53727,
+      "end": 143420,
+      "start": 142832,
+      "text": "reason."
+    },
+    {
+      "confidence": 0.99983,
+      "end": 144842,
+      "start": 144430,
+      "text": "Major"
+    },
+    {
+      "confidence": 0.99943,
+      "end": 145494,
+      "start": 144896,
+      "text": "theoretical"
+    },
+    {
+      "confidence": 0.92987,
+      "end": 146086,
+      "start": 145542,
+      "text": "breakthroughs"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 146266,
+      "start": 146118,
+      "text": "in"
+    },
+    {
+      "confidence": 0.83,
+      "end": 146662,
+      "start": 146288,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 146906,
+      "start": 146726,
+      "text": "have"
+    },
+    {
+      "confidence": 0.98547,
+      "end": 147258,
+      "start": 146928,
+      "text": "finally"
+    },
+    {
+      "confidence": 0.99065,
+      "end": 147766,
+      "start": 147344,
+      "text": "yielded"
+    },
+    {
+      "confidence": 0.9997,
+      "end": 148262,
+      "start": 147798,
+      "text": "practical"
+    },
+    {
+      "confidence": 0.99991,
+      "end": 149046,
+      "start": 148326,
+      "text": "applications"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 149178,
+      "start": 149078,
+      "text": "that"
+    },
+    {
+      "confidence": 0.87328,
+      "end": 149306,
+      "start": 149184,
+      "text": "are"
+    },
+    {
+      "confidence": 0.60582,
+      "end": 149702,
+      "start": 149328,
+      "text": "poised"
+    },
+    {
+      "confidence": 1,
+      "end": 149946,
+      "start": 149766,
+      "text": "to"
+    },
+    {
+      "confidence": 0.9999,
+      "end": 150214,
+      "start": 149968,
+      "text": "change"
+    },
+    {
+      "confidence": 0.84003,
+      "end": 150494,
+      "start": 150272,
+      "text": "our"
+    },
+    {
+      "confidence": 0.98003,
+      "end": 151166,
+      "start": 150532,
+      "text": "lives."
+    },
+    {
+      "confidence": 0.99,
+      "end": 151834,
+      "start": 151348,
+      "text": "AI."
+    },
+    {
+      "confidence": 0.99969,
+      "end": 152286,
+      "start": 151882,
+      "text": "Already"
+    },
+    {
+      "confidence": 0.97584,
+      "end": 152826,
+      "start": 152388,
+      "text": "powers"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 153054,
+      "start": 152858,
+      "text": "many"
+    },
+    {
+      "confidence": 0.64,
+      "end": 153294,
+      "start": 153092,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 153486,
+      "start": 153332,
+      "text": "our"
+    },
+    {
+      "confidence": 0.99553,
+      "end": 153866,
+      "start": 153508,
+      "text": "favorite"
+    },
+    {
+      "confidence": 0.93599,
+      "end": 154186,
+      "start": 153898,
+      "text": "apps"
+    },
+    {
+      "confidence": 1,
+      "end": 154414,
+      "start": 154218,
+      "text": "and"
+    },
+    {
+      "confidence": 0.95334,
+      "end": 155338,
+      "start": 154452,
+      "text": "websites,"
+    },
+    {
+      "confidence": 0.98,
+      "end": 155694,
+      "start": 155434,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 155886,
+      "start": 155732,
+      "text": "in"
+    },
+    {
+      "confidence": 1,
+      "end": 155998,
+      "start": 155908,
+      "text": "the"
+    },
+    {
+      "confidence": 0.68692,
+      "end": 156270,
+      "start": 156004,
+      "text": "coming"
+    },
+    {
+      "confidence": 0.99987,
+      "end": 156814,
+      "start": 156340,
+      "text": "years,"
+    },
+    {
+      "confidence": 0.92,
+      "end": 157354,
+      "start": 156932,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.99991,
+      "end": 157566,
+      "start": 157402,
+      "text": "will"
+    },
+    {
+      "confidence": 1,
+      "end": 157726,
+      "start": 157588,
+      "text": "be"
+    },
+    {
+      "confidence": 0.56409,
+      "end": 158042,
+      "start": 157748,
+      "text": "driving"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 158334,
+      "start": 158106,
+      "text": "our"
+    },
+    {
+      "confidence": 0.98,
+      "end": 159066,
+      "start": 158372,
+      "text": "cars,"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 159706,
+      "start": 159178,
+      "text": "managing"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 159982,
+      "start": 159738,
+      "text": "our"
+    },
+    {
+      "confidence": 0.85168,
+      "end": 161018,
+      "start": 160036,
+      "text": "portfolios,"
+    },
+    {
+      "confidence": 0.51,
+      "end": 161882,
+      "start": 161114,
+      "text": "manufacturing"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 162174,
+      "start": 161946,
+      "text": "much"
+    },
+    {
+      "confidence": 1,
+      "end": 162366,
+      "start": 162212,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 162538,
+      "start": 162388,
+      "text": "what"
+    },
+    {
+      "confidence": 0.99993,
+      "end": 162754,
+      "start": 162564,
+      "text": "we"
+    },
+    {
+      "confidence": 0.99754,
+      "end": 163138,
+      "start": 162792,
+      "text": "buy,"
+    },
+    {
+      "confidence": 1,
+      "end": 163474,
+      "start": 163224,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 164126,
+      "start": 163512,
+      "text": "potentially"
+    },
+    {
+      "confidence": 0.99945,
+      "end": 164514,
+      "start": 164238,
+      "text": "putting"
+    },
+    {
+      "confidence": 1,
+      "end": 164754,
+      "start": 164552,
+      "text": "us"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 164898,
+      "start": 164792,
+      "text": "out"
+    },
+    {
+      "confidence": 1,
+      "end": 165026,
+      "start": 164904,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 165234,
+      "start": 165048,
+      "text": "our"
+    },
+    {
+      "confidence": 0.99991,
+      "end": 166130,
+      "start": 165272,
+      "text": "jobs."
+    },
+    {
+      "confidence": 0.99998,
+      "end": 167074,
+      "start": 166710,
+      "text": "These"
+    },
+    {
+      "confidence": 0.97882,
+      "end": 167486,
+      "start": 167112,
+      "text": "uses"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 167666,
+      "start": 167518,
+      "text": "are"
+    },
+    {
+      "confidence": 0.99993,
+      "end": 167874,
+      "start": 167688,
+      "text": "full"
+    },
+    {
+      "confidence": 1,
+      "end": 168066,
+      "start": 167912,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99932,
+      "end": 168274,
+      "start": 168088,
+      "text": "both"
+    },
+    {
+      "confidence": 0.67141,
+      "end": 168782,
+      "start": 168312,
+      "text": "promise"
+    },
+    {
+      "confidence": 0.93,
+      "end": 169170,
+      "start": 168846,
+      "text": "and"
+    },
+    {
+      "confidence": 0.9997,
+      "end": 169662,
+      "start": 169240,
+      "text": "potential"
+    },
+    {
+      "confidence": 0.99886,
+      "end": 170414,
+      "start": 169726,
+      "text": "peril,"
+    },
+    {
+      "confidence": 1,
+      "end": 170834,
+      "start": 170542,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 171122,
+      "start": 170872,
+      "text": "we"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 171442,
+      "start": 171176,
+      "text": "must"
+    },
+    {
+      "confidence": 0.86887,
+      "end": 171918,
+      "start": 171496,
+      "text": "prepare"
+    },
+    {
+      "confidence": 0.98344,
+      "end": 172398,
+      "start": 171934,
+      "text": "ourselves"
+    },
+    {
+      "confidence": 1,
+      "end": 172706,
+      "start": 172494,
+      "text": "for"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 173300,
+      "start": 172728,
+      "text": "both."
+    },
+    {
+      "confidence": 0.99995,
+      "end": 174706,
+      "start": 174390,
+      "text": "My"
+    },
+    {
+      "confidence": 0.9251,
+      "end": 175246,
+      "start": 174728,
+      "text": "dialogue"
+    },
+    {
+      "confidence": 1,
+      "end": 175378,
+      "start": 175278,
+      "text": "with"
+    },
+    {
+      "confidence": 1,
+      "end": 175470,
+      "start": 175384,
+      "text": "the"
+    },
+    {
+      "confidence": 0.8992,
+      "end": 176306,
+      "start": 175480,
+      "text": "kindergarteners"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 176486,
+      "start": 176338,
+      "text": "was"
+    },
+    {
+      "confidence": 0.99986,
+      "end": 176742,
+      "start": 176508,
+      "text": "also"
+    },
+    {
+      "confidence": 0.96538,
+      "end": 177314,
+      "start": 176796,
+      "text": "revealing"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 177574,
+      "start": 177362,
+      "text": "because"
+    },
+    {
+      "confidence": 0.7,
+      "end": 177814,
+      "start": 177612,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 178102,
+      "start": 177852,
+      "text": "where"
+    },
+    {
+      "confidence": 0.99989,
+      "end": 178326,
+      "start": 178156,
+      "text": "it"
+    },
+    {
+      "confidence": 0.99947,
+      "end": 178534,
+      "start": 178348,
+      "text": "took"
+    },
+    {
+      "confidence": 0.79334,
+      "end": 179160,
+      "start": 178572,
+      "text": "place"
+    },
+    {
+      "confidence": 0.99991,
+      "end": 180214,
+      "start": 179850,
+      "text": "not"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 180454,
+      "start": 180252,
+      "text": "long"
+    },
+    {
+      "confidence": 1,
+      "end": 180838,
+      "start": 180492,
+      "text": "ago"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 181362,
+      "start": 180924,
+      "text": "china"
+    },
+    {
+      "confidence": 0.99555,
+      "end": 181794,
+      "start": 181426,
+      "text": "lagged"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 182150,
+      "start": 181842,
+      "text": "years,"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 182406,
+      "start": 182220,
+      "text": "if"
+    },
+    {
+      "confidence": 0.99991,
+      "end": 182662,
+      "start": 182428,
+      "text": "not"
+    },
+    {
+      "confidence": 0.99106,
+      "end": 183282,
+      "start": 182716,
+      "text": "decades,"
+    },
+    {
+      "confidence": 1,
+      "end": 183622,
+      "start": 183346,
+      "text": "behind"
+    },
+    {
+      "confidence": 1,
+      "end": 183846,
+      "start": 183676,
+      "text": "the"
+    },
+    {
+      "confidence": 0.84,
+      "end": 184198,
+      "start": 183868,
+      "text": "United"
+    },
+    {
+      "confidence": 1,
+      "end": 184582,
+      "start": 184284,
+      "text": "States"
+    },
+    {
+      "confidence": 0.74128,
+      "end": 184806,
+      "start": 184636,
+      "text": "in"
+    },
+    {
+      "confidence": 0.78382,
+      "end": 185362,
+      "start": 184828,
+      "text": "artificial"
+    },
+    {
+      "confidence": 0.96292,
+      "end": 186290,
+      "start": 185426,
+      "text": "intelligence."
+    },
+    {
+      "confidence": 0.99998,
+      "end": 186774,
+      "start": 186450,
+      "text": "But"
+    },
+    {
+      "confidence": 1,
+      "end": 187014,
+      "start": 186812,
+      "text": "over"
+    },
+    {
+      "confidence": 1,
+      "end": 187206,
+      "start": 187052,
+      "text": "the"
+    },
+    {
+      "confidence": 1,
+      "end": 187510,
+      "start": 187228,
+      "text": "past"
+    },
+    {
+      "confidence": 1,
+      "end": 187814,
+      "start": 187580,
+      "text": "three"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 188390,
+      "start": 187852,
+      "text": "years,"
+    },
+    {
+      "confidence": 0.96765,
+      "end": 189042,
+      "start": 188540,
+      "text": "China"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 189346,
+      "start": 189106,
+      "text": "has"
+    },
+    {
+      "confidence": 0.99913,
+      "end": 189702,
+      "start": 189388,
+      "text": "caught"
+    },
+    {
+      "confidence": 0.97,
+      "end": 190134,
+      "start": 189766,
+      "text": "AI."
+    },
+    {
+      "confidence": 0.99983,
+      "end": 190822,
+      "start": 190182,
+      "text": "Fever,"
+    },
+    {
+      "confidence": 0.96076,
+      "end": 191734,
+      "start": 190966,
+      "text": "experiencing"
+    },
+    {
+      "confidence": 1,
+      "end": 191946,
+      "start": 191782,
+      "text": "a"
+    },
+    {
+      "confidence": 0.99929,
+      "end": 192246,
+      "start": 191968,
+      "text": "surge"
+    },
+    {
+      "confidence": 1,
+      "end": 192426,
+      "start": 192278,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99787,
+      "end": 192934,
+      "start": 192448,
+      "text": "excitement"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 193194,
+      "start": 192982,
+      "text": "about"
+    },
+    {
+      "confidence": 1,
+      "end": 193386,
+      "start": 193232,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 193642,
+      "start": 193408,
+      "text": "field"
+    },
+    {
+      "confidence": 0.57392,
+      "end": 193914,
+      "start": 193696,
+      "text": "that"
+    },
+    {
+      "confidence": 0.90094,
+      "end": 194406,
+      "start": 193952,
+      "text": "dwarfs"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 194634,
+      "start": 194438,
+      "text": "even"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 194874,
+      "start": 194672,
+      "text": "what"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 195066,
+      "start": 194912,
+      "text": "we"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 195274,
+      "start": 195088,
+      "text": "see"
+    },
+    {
+      "confidence": 0.60873,
+      "end": 195466,
+      "start": 195312,
+      "text": "in"
+    },
+    {
+      "confidence": 1,
+      "end": 195578,
+      "start": 195488,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 195754,
+      "start": 195584,
+      "text": "rest"
+    },
+    {
+      "confidence": 1,
+      "end": 195898,
+      "start": 195792,
+      "text": "of"
+    },
+    {
+      "confidence": 0.59,
+      "end": 196026,
+      "start": 195904,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 196620,
+      "start": 196048,
+      "text": "world."
+    },
+    {
+      "confidence": 0.46082,
+      "end": 198166,
+      "start": 197230,
+      "text": "Enthusiasm"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 198442,
+      "start": 198198,
+      "text": "about"
+    },
+    {
+      "confidence": 0.96,
+      "end": 198854,
+      "start": 198496,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.99871,
+      "end": 199066,
+      "start": 198902,
+      "text": "has"
+    },
+    {
+      "confidence": 0.65786,
+      "end": 199446,
+      "start": 199088,
+      "text": "spilled"
+    },
+    {
+      "confidence": 1,
+      "end": 199722,
+      "start": 199478,
+      "text": "over"
+    },
+    {
+      "confidence": 0.99613,
+      "end": 199994,
+      "start": 199776,
+      "text": "from"
+    },
+    {
+      "confidence": 1,
+      "end": 200138,
+      "start": 200032,
+      "text": "the"
+    },
+    {
+      "confidence": 0.62588,
+      "end": 200554,
+      "start": 200144,
+      "text": "technology"
+    },
+    {
+      "confidence": 0.99,
+      "end": 200906,
+      "start": 200672,
+      "text": "and"
+    },
+    {
+      "confidence": 0.9779,
+      "end": 201258,
+      "start": 200928,
+      "text": "business"
+    },
+    {
+      "confidence": 0.99765,
+      "end": 202006,
+      "start": 201344,
+      "text": "communities"
+    },
+    {
+      "confidence": 0.99957,
+      "end": 202442,
+      "start": 202118,
+      "text": "into"
+    },
+    {
+      "confidence": 0.99985,
+      "end": 202858,
+      "start": 202496,
+      "text": "government"
+    },
+    {
+      "confidence": 0.47502,
+      "end": 204002,
+      "start": 202944,
+      "text": "policymaking,"
+    },
+    {
+      "confidence": 1,
+      "end": 204334,
+      "start": 204086,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99987,
+      "end": 204526,
+      "start": 204372,
+      "text": "it"
+    },
+    {
+      "confidence": 0.99923,
+      "end": 204734,
+      "start": 204548,
+      "text": "has"
+    },
+    {
+      "confidence": 0.99814,
+      "end": 205114,
+      "start": 204772,
+      "text": "trickled"
+    },
+    {
+      "confidence": 1,
+      "end": 205326,
+      "start": 205162,
+      "text": "all"
+    },
+    {
+      "confidence": 1,
+      "end": 205438,
+      "start": 205348,
+      "text": "the"
+    },
+    {
+      "confidence": 0.62389,
+      "end": 205614,
+      "start": 205444,
+      "text": "way"
+    },
+    {
+      "confidence": 0.52843,
+      "end": 205854,
+      "start": 205652,
+      "text": "down"
+    },
+    {
+      "confidence": 0.66,
+      "end": 206094,
+      "start": 205892,
+      "text": "to"
+    },
+    {
+      "confidence": 0.81964,
+      "end": 206874,
+      "start": 206132,
+      "text": "kindergarten"
+    },
+    {
+      "confidence": 0.99939,
+      "end": 207546,
+      "start": 206922,
+      "text": "classrooms"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 207726,
+      "start": 207578,
+      "text": "in"
+    },
+    {
+      "confidence": 0.992,
+      "end": 208590,
+      "start": 207748,
+      "text": "Beijing."
+    },
+    {
+      "confidence": 0.99998,
+      "end": 209742,
+      "start": 209330,
+      "text": "This"
+    },
+    {
+      "confidence": 0.9999,
+      "end": 210058,
+      "start": 209796,
+      "text": "broad"
+    },
+    {
+      "confidence": 0.51749,
+      "end": 210398,
+      "start": 210074,
+      "text": "based"
+    },
+    {
+      "confidence": 0.99993,
+      "end": 210830,
+      "start": 210484,
+      "text": "support"
+    },
+    {
+      "confidence": 0.88,
+      "end": 211134,
+      "start": 210900,
+      "text": "for"
+    },
+    {
+      "confidence": 1,
+      "end": 211326,
+      "start": 211172,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 211582,
+      "start": 211348,
+      "text": "field"
+    },
+    {
+      "confidence": 0.997,
+      "end": 211806,
+      "start": 211636,
+      "text": "has"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 212062,
+      "start": 211828,
+      "text": "both"
+    },
+    {
+      "confidence": 0.99854,
+      "end": 212646,
+      "start": 212116,
+      "text": "reflected"
+    },
+    {
+      "confidence": 1,
+      "end": 212914,
+      "start": 212698,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99455,
+      "end": 213262,
+      "start": 212952,
+      "text": "fed"
+    },
+    {
+      "confidence": 0.99991,
+      "end": 213554,
+      "start": 213326,
+      "text": "into"
+    },
+    {
+      "confidence": 0.89029,
+      "end": 214046,
+      "start": 213592,
+      "text": "China\u0027s"
+    },
+    {
+      "confidence": 0.99918,
+      "end": 214414,
+      "start": 214078,
+      "text": "growing"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 214846,
+      "start": 214462,
+      "text": "strength"
+    },
+    {
+      "confidence": 0.99977,
+      "end": 215026,
+      "start": 214878,
+      "text": "in"
+    },
+    {
+      "confidence": 1,
+      "end": 215138,
+      "start": 215048,
+      "text": "the"
+    },
+    {
+      "confidence": 0.65578,
+      "end": 215700,
+      "start": 215144,
+      "text": "field."
+    },
+    {
+      "confidence": 0.99899,
+      "end": 216766,
+      "start": 216150,
+      "text": "Chinese"
+    },
+    {
+      "confidence": 0.35,
+      "end": 217134,
+      "start": 216798,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.88518,
+      "end": 217586,
+      "start": 217182,
+      "text": "companies"
+    },
+    {
+      "confidence": 1,
+      "end": 217954,
+      "start": 217688,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 218622,
+      "start": 217992,
+      "text": "researchers"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 218962,
+      "start": 218686,
+      "text": "have"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 219378,
+      "start": 219016,
+      "text": "already"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 219666,
+      "start": 219464,
+      "text": "made"
+    },
+    {
+      "confidence": 0.8468,
+      "end": 219874,
+      "start": 219688,
+      "text": "up"
+    },
+    {
+      "confidence": 0.99153,
+      "end": 220334,
+      "start": 219912,
+      "text": "enormous"
+    },
+    {
+      "confidence": 0.9516,
+      "end": 220782,
+      "start": 220382,
+      "text": "ground"
+    },
+    {
+      "confidence": 1,
+      "end": 221026,
+      "start": 220846,
+      "text": "on"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 221234,
+      "start": 221048,
+      "text": "their"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 221618,
+      "start": 221272,
+      "text": "american"
+    },
+    {
+      "confidence": 0.99197,
+      "end": 222702,
+      "start": 221704,
+      "text": "counterparts"
+    },
+    {
+      "confidence": 0.78332,
+      "end": 223598,
+      "start": 222846,
+      "text": "experimenting"
+    },
+    {
+      "confidence": 0.98261,
+      "end": 223794,
+      "start": 223614,
+      "text": "with"
+    },
+    {
+      "confidence": 0.87001,
+      "end": 224334,
+      "start": 223832,
+      "text": "innovative"
+    },
+    {
+      "confidence": 0.376,
+      "end": 225018,
+      "start": 224382,
+      "text": "algorithms"
+    },
+    {
+      "confidence": 0.73,
+      "end": 225254,
+      "start": 225054,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 225638,
+      "start": 225292,
+      "text": "business"
+    },
+    {
+      "confidence": 0.97837,
+      "end": 226194,
+      "start": 225724,
+      "text": "models"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 226454,
+      "start": 226242,
+      "text": "that"
+    },
+    {
+      "confidence": 0.80725,
+      "end": 226834,
+      "start": 226492,
+      "text": "promise"
+    },
+    {
+      "confidence": 1,
+      "end": 227046,
+      "start": 226882,
+      "text": "to"
+    },
+    {
+      "confidence": 0.70549,
+      "end": 227842,
+      "start": 227068,
+      "text": "revolutionize"
+    },
+    {
+      "confidence": 0.99991,
+      "end": 228386,
+      "start": 227906,
+      "text": "China\u0027s"
+    },
+    {
+      "confidence": 0.51495,
+      "end": 229190,
+      "start": 228418,
+      "text": "economy."
+    },
+    {
+      "confidence": 0.98581,
+      "end": 230214,
+      "start": 229610,
+      "text": "Together,"
+    },
+    {
+      "confidence": 0.99977,
+      "end": 230662,
+      "start": 230332,
+      "text": "these"
+    },
+    {
+      "confidence": 0.82175,
+      "end": 231314,
+      "start": 230716,
+      "text": "businesses"
+    },
+    {
+      "confidence": 0.98,
+      "end": 231622,
+      "start": 231362,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99831,
+      "end": 232194,
+      "start": 231676,
+      "text": "scholars"
+    },
+    {
+      "confidence": 0.99959,
+      "end": 232454,
+      "start": 232242,
+      "text": "have"
+    },
+    {
+      "confidence": 0.80653,
+      "end": 232834,
+      "start": 232492,
+      "text": "turned"
+    },
+    {
+      "confidence": 0.73472,
+      "end": 233202,
+      "start": 232882,
+      "text": "China"
+    },
+    {
+      "confidence": 0.99467,
+      "end": 233542,
+      "start": 233266,
+      "text": "into"
+    },
+    {
+      "confidence": 1,
+      "end": 233718,
+      "start": 233596,
+      "text": "a"
+    },
+    {
+      "confidence": 0.99986,
+      "end": 233986,
+      "start": 233724,
+      "text": "bona"
+    },
+    {
+      "confidence": 0.81632,
+      "end": 234370,
+      "start": 234018,
+      "text": "fide"
+    },
+    {
+      "confidence": 0.91,
+      "end": 234882,
+      "start": 234450,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.68747,
+      "end": 235990,
+      "start": 234946,
+      "text": "superpower,"
+    },
+    {
+      "confidence": 1,
+      "end": 236646,
+      "start": 236330,
+      "text": "the"
+    },
+    {
+      "confidence": 1,
+      "end": 236902,
+      "start": 236668,
+      "text": "only"
+    },
+    {
+      "confidence": 0.7562,
+      "end": 237222,
+      "start": 236956,
+      "text": "true"
+    },
+    {
+      "confidence": 0.77839,
+      "end": 237710,
+      "start": 237276,
+      "text": "national"
+    },
+    {
+      "confidence": 0.79274,
+      "end": 238406,
+      "start": 237810,
+      "text": "counterweight"
+    },
+    {
+      "confidence": 1,
+      "end": 238538,
+      "start": 238438,
+      "text": "to"
+    },
+    {
+      "confidence": 0.97,
+      "end": 238666,
+      "start": 238544,
+      "text": "the"
+    },
+    {
+      "confidence": 0.96,
+      "end": 239018,
+      "start": 238688,
+      "text": "United"
+    },
+    {
+      "confidence": 1,
+      "end": 239402,
+      "start": 239104,
+      "text": "States"
+    },
+    {
+      "confidence": 0.7299,
+      "end": 239626,
+      "start": 239456,
+      "text": "in"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 239786,
+      "start": 239648,
+      "text": "this"
+    },
+    {
+      "confidence": 0.99378,
+      "end": 240294,
+      "start": 239808,
+      "text": "emerging"
+    },
+    {
+      "confidence": 0.99979,
+      "end": 240940,
+      "start": 240342,
+      "text": "technology."
+    },
+    {
+      "confidence": 0.99999,
+      "end": 242234,
+      "start": 241870,
+      "text": "How"
+    },
+    {
+      "confidence": 0.9999,
+      "end": 242474,
+      "start": 242272,
+      "text": "these"
+    },
+    {
+      "confidence": 1,
+      "end": 242714,
+      "start": 242512,
+      "text": "two"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 243094,
+      "start": 242752,
+      "text": "countries"
+    },
+    {
+      "confidence": 0.52036,
+      "end": 243402,
+      "start": 243142,
+      "text": "choose"
+    },
+    {
+      "confidence": 1,
+      "end": 243626,
+      "start": 243456,
+      "text": "to"
+    },
+    {
+      "confidence": 0.96269,
+      "end": 244006,
+      "start": 243648,
+      "text": "compete"
+    },
+    {
+      "confidence": 1,
+      "end": 244234,
+      "start": 244038,
+      "text": "and"
+    },
+    {
+      "confidence": 0.45505,
+      "end": 244934,
+      "start": 244272,
+      "text": "cooperate"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 245146,
+      "start": 244982,
+      "text": "in"
+    },
+    {
+      "confidence": 0.7,
+      "end": 245958,
+      "start": 245168,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 246426,
+      "start": 246134,
+      "text": "will"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 246634,
+      "start": 246448,
+      "text": "have"
+    },
+    {
+      "confidence": 0.99969,
+      "end": 247142,
+      "start": 246672,
+      "text": "dramatic"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 247830,
+      "start": 247206,
+      "text": "implications"
+    },
+    {
+      "confidence": 1,
+      "end": 248154,
+      "start": 247910,
+      "text": "for"
+    },
+    {
+      "confidence": 0.97587,
+      "end": 248534,
+      "start": 248192,
+      "text": "global"
+    },
+    {
+      "confidence": 0.99968,
+      "end": 249174,
+      "start": 248582,
+      "text": "economics"
+    },
+    {
+      "confidence": 1,
+      "end": 249482,
+      "start": 249222,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99608,
+      "end": 250330,
+      "start": 249536,
+      "text": "governance."
+    },
+    {
+      "confidence": 0.99919,
+      "end": 251966,
+      "start": 251410,
+      "text": "Finally,"
+    },
+    {
+      "confidence": 0.89193,
+      "end": 252382,
+      "start": 252068,
+      "text": "during"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 252654,
+      "start": 252436,
+      "text": "my"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 252894,
+      "start": 252692,
+      "text": "back"
+    },
+    {
+      "confidence": 1,
+      "end": 253086,
+      "start": 252932,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99926,
+      "end": 253386,
+      "start": 253108,
+      "text": "forth"
+    },
+    {
+      "confidence": 0.86988,
+      "end": 253614,
+      "start": 253418,
+      "text": "with"
+    },
+    {
+      "confidence": 0.99987,
+      "end": 253854,
+      "start": 253652,
+      "text": "those"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 254142,
+      "start": 253892,
+      "text": "young"
+    },
+    {
+      "confidence": 0.99961,
+      "end": 254702,
+      "start": 254196,
+      "text": "students,"
+    },
+    {
+      "confidence": 1,
+      "end": 255134,
+      "start": 254836,
+      "text": "I"
+    },
+    {
+      "confidence": 0.99974,
+      "end": 255546,
+      "start": 255172,
+      "text": "stumbled"
+    },
+    {
+      "confidence": 1,
+      "end": 255726,
+      "start": 255578,
+      "text": "on"
+    },
+    {
+      "confidence": 1,
+      "end": 255838,
+      "start": 255748,
+      "text": "a"
+    },
+    {
+      "confidence": 0.99941,
+      "end": 256234,
+      "start": 255844,
+      "text": "deeper"
+    },
+    {
+      "confidence": 0.97439,
+      "end": 257018,
+      "start": 256282,
+      "text": "truth"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 257486,
+      "start": 257194,
+      "text": "when"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 257646,
+      "start": 257508,
+      "text": "it"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 257854,
+      "start": 257668,
+      "text": "comes"
+    },
+    {
+      "confidence": 1,
+      "end": 258046,
+      "start": 257892,
+      "text": "to"
+    },
+    {
+      "confidence": 0.945,
+      "end": 258714,
+      "start": 258068,
+      "text": "understanding"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 258926,
+      "start": 258762,
+      "text": "our"
+    },
+    {
+      "confidence": 0.84,
+      "end": 259354,
+      "start": 258948,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.99987,
+      "end": 259998,
+      "start": 259402,
+      "text": "future."
+    },
+    {
+      "confidence": 0.95947,
+      "end": 260586,
+      "start": 260164,
+      "text": "We\u0027re"
+    },
+    {
+      "confidence": 1,
+      "end": 260814,
+      "start": 260618,
+      "text": "all"
+    },
+    {
+      "confidence": 0.99987,
+      "end": 261102,
+      "start": 260852,
+      "text": "like"
+    },
+    {
+      "confidence": 0.99973,
+      "end": 261374,
+      "start": 261156,
+      "text": "those"
+    },
+    {
+      "confidence": 0.99058,
+      "end": 262586,
+      "start": 261412,
+      "text": "kindergarteners."
+    },
+    {
+      "confidence": 0.99632,
+      "end": 262938,
+      "start": 262698,
+      "text": "We\u0027re"
+    },
+    {
+      "confidence": 1,
+      "end": 263134,
+      "start": 262954,
+      "text": "all"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 263374,
+      "start": 263172,
+      "text": "full"
+    },
+    {
+      "confidence": 1,
+      "end": 263566,
+      "start": 263412,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 263966,
+      "start": 263588,
+      "text": "questions"
+    },
+    {
+      "confidence": 0.99985,
+      "end": 264394,
+      "start": 264068,
+      "text": "without"
+    },
+    {
+      "confidence": 0.99939,
+      "end": 265118,
+      "start": 264452,
+      "text": "answers,"
+    },
+    {
+      "confidence": 0.9998,
+      "end": 265522,
+      "start": 265214,
+      "text": "trying"
+    },
+    {
+      "confidence": 1,
+      "end": 265746,
+      "start": 265576,
+      "text": "to"
+    },
+    {
+      "confidence": 0.98811,
+      "end": 266014,
+      "start": 265768,
+      "text": "peer"
+    },
+    {
+      "confidence": 0.99966,
+      "end": 266274,
+      "start": 266062,
+      "text": "into"
+    },
+    {
+      "confidence": 1,
+      "end": 266466,
+      "start": 266312,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 266722,
+      "start": 266488,
+      "text": "future"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 266946,
+      "start": 266776,
+      "text": "with"
+    },
+    {
+      "confidence": 1,
+      "end": 267058,
+      "start": 266968,
+      "text": "a"
+    },
+    {
+      "confidence": 0.99974,
+      "end": 267406,
+      "start": 267064,
+      "text": "mixture"
+    },
+    {
+      "confidence": 1,
+      "end": 267586,
+      "start": 267438,
+      "text": "of"
+    },
+    {
+      "confidence": 0.92711,
+      "end": 268254,
+      "start": 267608,
+      "text": "childlike"
+    },
+    {
+      "confidence": 0.99967,
+      "end": 268610,
+      "start": 268302,
+      "text": "wonder"
+    },
+    {
+      "confidence": 1,
+      "end": 268914,
+      "start": 268680,
+      "text": "and"
+    },
+    {
+      "confidence": 0.653,
+      "end": 269422,
+      "start": 268952,
+      "text": "grownup"
+    },
+    {
+      "confidence": 0.99963,
+      "end": 270210,
+      "start": 269486,
+      "text": "worries."
+    },
+    {
+      "confidence": 0.99895,
+      "end": 271154,
+      "start": 270790,
+      "text": "We"
+    },
+    {
+      "confidence": 0.99986,
+      "end": 271346,
+      "start": 271192,
+      "text": "want"
+    },
+    {
+      "confidence": 1,
+      "end": 271506,
+      "start": 271368,
+      "text": "to"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 271762,
+      "start": 271528,
+      "text": "know"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 272082,
+      "start": 271816,
+      "text": "what"
+    },
+    {
+      "confidence": 0.99,
+      "end": 272494,
+      "start": 272136,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.51388,
+      "end": 273070,
+      "start": 272542,
+      "text": "automation"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 273346,
+      "start": 273150,
+      "text": "will"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 273602,
+      "start": 273368,
+      "text": "mean"
+    },
+    {
+      "confidence": 1,
+      "end": 273826,
+      "start": 273656,
+      "text": "for"
+    },
+    {
+      "confidence": 0.83828,
+      "end": 274082,
+      "start": 273848,
+      "text": "our"
+    },
+    {
+      "confidence": 0.87842,
+      "end": 274654,
+      "start": 274136,
+      "text": "jobs"
+    },
+    {
+      "confidence": 0.58,
+      "end": 274962,
+      "start": 274702,
+      "text": "and"
+    },
+    {
+      "confidence": 1,
+      "end": 275186,
+      "start": 275016,
+      "text": "for"
+    },
+    {
+      "confidence": 0.99974,
+      "end": 275394,
+      "start": 275208,
+      "text": "our"
+    },
+    {
+      "confidence": 0.99979,
+      "end": 275634,
+      "start": 275432,
+      "text": "sense"
+    },
+    {
+      "confidence": 0.96,
+      "end": 275874,
+      "start": 275672,
+      "text": "of"
+    },
+    {
+      "confidence": 0.98178,
+      "end": 276610,
+      "start": 275912,
+      "text": "purpose."
+    },
+    {
+      "confidence": 0.99998,
+      "end": 277278,
+      "start": 276950,
+      "text": "We"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 277398,
+      "start": 277304,
+      "text": "want"
+    },
+    {
+      "confidence": 0.7,
+      "end": 277526,
+      "start": 277404,
+      "text": "to"
+    },
+    {
+      "confidence": 1,
+      "end": 277686,
+      "start": 277548,
+      "text": "know"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 277894,
+      "start": 277708,
+      "text": "which"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 278182,
+      "start": 277932,
+      "text": "people"
+    },
+    {
+      "confidence": 0.97,
+      "end": 278454,
+      "start": 278236,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99919,
+      "end": 278834,
+      "start": 278492,
+      "text": "countries"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 279094,
+      "start": 278882,
+      "text": "will"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 279506,
+      "start": 279132,
+      "text": "benefit"
+    },
+    {
+      "confidence": 1,
+      "end": 279734,
+      "start": 279538,
+      "text": "from"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 279974,
+      "start": 279772,
+      "text": "this"
+    },
+    {
+      "confidence": 0.99871,
+      "end": 280514,
+      "start": 280012,
+      "text": "tremendous"
+    },
+    {
+      "confidence": 0.99989,
+      "end": 281160,
+      "start": 280562,
+      "text": "technology."
+    },
+    {
+      "confidence": 0.99998,
+      "end": 282294,
+      "start": 281930,
+      "text": "We"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 282630,
+      "start": 282332,
+      "text": "wonder"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 282982,
+      "start": 282700,
+      "text": "whether"
+    },
+    {
+      "confidence": 0.82,
+      "end": 283394,
+      "start": 283036,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.66202,
+      "end": 283654,
+      "start": 283442,
+      "text": "can"
+    },
+    {
+      "confidence": 0.39697,
+      "end": 283986,
+      "start": 283692,
+      "text": "vault"
+    },
+    {
+      "confidence": 1,
+      "end": 284166,
+      "start": 284018,
+      "text": "us"
+    },
+    {
+      "confidence": 0.95,
+      "end": 284374,
+      "start": 284188,
+      "text": "to"
+    },
+    {
+      "confidence": 0.99989,
+      "end": 284710,
+      "start": 284412,
+      "text": "lives"
+    },
+    {
+      "confidence": 1,
+      "end": 285014,
+      "start": 284780,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 285490,
+      "start": 285052,
+      "text": "material"
+    },
+    {
+      "confidence": 0.95134,
+      "end": 286178,
+      "start": 285570,
+      "text": "abundance"
+    },
+    {
+      "confidence": 1,
+      "end": 286534,
+      "start": 286274,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 286822,
+      "start": 286572,
+      "text": "whether"
+    },
+    {
+      "confidence": 0.99993,
+      "end": 287046,
+      "start": 286876,
+      "text": "there"
+    },
+    {
+      "confidence": 0.99986,
+      "end": 287206,
+      "start": 287068,
+      "text": "is"
+    },
+    {
+      "confidence": 0.72335,
+      "end": 287462,
+      "start": 287228,
+      "text": "space"
+    },
+    {
+      "confidence": 0.98,
+      "end": 287734,
+      "start": 287516,
+      "text": "for"
+    },
+    {
+      "confidence": 0.95919,
+      "end": 288322,
+      "start": 287772,
+      "text": "humanity"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 288566,
+      "start": 288386,
+      "text": "in"
+    },
+    {
+      "confidence": 1,
+      "end": 288678,
+      "start": 288588,
+      "text": "a"
+    },
+    {
+      "confidence": 0.99959,
+      "end": 288902,
+      "start": 288684,
+      "text": "world"
+    },
+    {
+      "confidence": 0.95458,
+      "end": 289222,
+      "start": 288956,
+      "text": "run"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 289494,
+      "start": 289276,
+      "text": "by"
+    },
+    {
+      "confidence": 0.99947,
+      "end": 290078,
+      "start": 289532,
+      "text": "intelligent"
+    },
+    {
+      "confidence": 0.67377,
+      "end": 290810,
+      "start": 290114,
+      "text": "machines."
+    },
+    {
+      "confidence": 0.99995,
+      "end": 291914,
+      "start": 291550,
+      "text": "No"
+    },
+    {
+      "confidence": 1,
+      "end": 292154,
+      "start": 291952,
+      "text": "one"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 292346,
+      "start": 292192,
+      "text": "has"
+    },
+    {
+      "confidence": 1,
+      "end": 292458,
+      "start": 292368,
+      "text": "a"
+    },
+    {
+      "confidence": 0.99716,
+      "end": 292806,
+      "start": 292464,
+      "text": "crystal"
+    },
+    {
+      "confidence": 0.99726,
+      "end": 293126,
+      "start": 292838,
+      "text": "ball"
+    },
+    {
+      "confidence": 0.99993,
+      "end": 293354,
+      "start": 293158,
+      "text": "that"
+    },
+    {
+      "confidence": 0.9998,
+      "end": 293546,
+      "start": 293392,
+      "text": "can"
+    },
+    {
+      "confidence": 0.94656,
+      "end": 293926,
+      "start": 293568,
+      "text": "reveal"
+    },
+    {
+      "confidence": 1,
+      "end": 294106,
+      "start": 293958,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 294518,
+      "start": 294128,
+      "text": "answers"
+    },
+    {
+      "confidence": 1,
+      "end": 294666,
+      "start": 294534,
+      "text": "to"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 294922,
+      "start": 294688,
+      "text": "these"
+    },
+    {
+      "confidence": 0.99991,
+      "end": 295338,
+      "start": 294976,
+      "text": "questions"
+    },
+    {
+      "confidence": 1,
+      "end": 295626,
+      "start": 295424,
+      "text": "for"
+    },
+    {
+      "confidence": 1,
+      "end": 296074,
+      "start": 295648,
+      "text": "us."
+    },
+    {
+      "confidence": 0.58717,
+      "end": 296474,
+      "start": 296192,
+      "text": "But"
+    },
+    {
+      "confidence": 0.99981,
+      "end": 296714,
+      "start": 296512,
+      "text": "that"
+    },
+    {
+      "confidence": 0.47989,
+      "end": 297094,
+      "start": 296752,
+      "text": "core"
+    },
+    {
+      "confidence": 0.52222,
+      "end": 297910,
+      "start": 297142,
+      "text": "uncertainty"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 298234,
+      "start": 297990,
+      "text": "makes"
+    },
+    {
+      "confidence": 0.99987,
+      "end": 298426,
+      "start": 298272,
+      "text": "it"
+    },
+    {
+      "confidence": 1,
+      "end": 298586,
+      "start": 298448,
+      "text": "all"
+    },
+    {
+      "confidence": 1,
+      "end": 298746,
+      "start": 298608,
+      "text": "the"
+    },
+    {
+      "confidence": 1,
+      "end": 299002,
+      "start": 298768,
+      "text": "more"
+    },
+    {
+      "confidence": 0.99901,
+      "end": 299370,
+      "start": 299056,
+      "text": "important"
+    },
+    {
+      "confidence": 0.81407,
+      "end": 299626,
+      "start": 299440,
+      "text": "that"
+    },
+    {
+      "confidence": 0.99989,
+      "end": 299834,
+      "start": 299648,
+      "text": "we"
+    },
+    {
+      "confidence": 0.99905,
+      "end": 300134,
+      "start": 299872,
+      "text": "ask"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 300414,
+      "start": 300192,
+      "text": "these"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 301038,
+      "start": 300452,
+      "text": "questions"
+    },
+    {
+      "confidence": 0.51,
+      "end": 301678,
+      "start": 301204,
+      "text": "and"
+    },
+    {
+      "confidence": 1,
+      "end": 301918,
+      "start": 301764,
+      "text": "to"
+    },
+    {
+      "confidence": 0.89,
+      "end": 302046,
+      "start": 301924,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 302254,
+      "start": 302068,
+      "text": "best"
+    },
+    {
+      "confidence": 1,
+      "end": 302446,
+      "start": 302292,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 302654,
+      "start": 302468,
+      "text": "our"
+    },
+    {
+      "confidence": 0.7742,
+      "end": 303258,
+      "start": 302692,
+      "text": "abilities,"
+    },
+    {
+      "confidence": 0.99975,
+      "end": 303882,
+      "start": 303354,
+      "text": "explore"
+    },
+    {
+      "confidence": 1,
+      "end": 304126,
+      "start": 303946,
+      "text": "the"
+    },
+    {
+      "confidence": 0.92055,
+      "end": 304990,
+      "start": 304148,
+      "text": "Answers"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 305854,
+      "start": 305490,
+      "text": "this"
+    },
+    {
+      "confidence": 0.99969,
+      "end": 306142,
+      "start": 305892,
+      "text": "book"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 306366,
+      "start": 306196,
+      "text": "is"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 306526,
+      "start": 306388,
+      "text": "my"
+    },
+    {
+      "confidence": 0.99639,
+      "end": 306906,
+      "start": 306548,
+      "text": "attempt"
+    },
+    {
+      "confidence": 1,
+      "end": 307086,
+      "start": 306938,
+      "text": "to"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 307246,
+      "start": 307108,
+      "text": "do"
+    },
+    {
+      "confidence": 0.99956,
+      "end": 307840,
+      "start": 307268,
+      "text": "that."
+    },
+    {
+      "confidence": 0.9869,
+      "end": 308746,
+      "start": 308290,
+      "text": "I\u0027m"
+    },
+    {
+      "confidence": 0.99827,
+      "end": 308974,
+      "start": 308778,
+      "text": "no"
+    },
+    {
+      "confidence": 0.99884,
+      "end": 309514,
+      "start": 309012,
+      "text": "oracle"
+    },
+    {
+      "confidence": 0.99987,
+      "end": 309726,
+      "start": 309562,
+      "text": "who"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 309886,
+      "start": 309748,
+      "text": "can"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 310394,
+      "start": 309908,
+      "text": "perfectly"
+    },
+    {
+      "confidence": 0.75244,
+      "end": 310794,
+      "start": 310442,
+      "text": "predict"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 311054,
+      "start": 310842,
+      "text": "our"
+    },
+    {
+      "confidence": 0.97,
+      "end": 311434,
+      "start": 311092,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.9987,
+      "end": 312126,
+      "start": 311482,
+      "text": "future."
+    },
+    {
+      "confidence": 0.80052,
+      "end": 312654,
+      "start": 312308,
+      "text": "But"
+    },
+    {
+      "confidence": 0.721,
+      "end": 312894,
+      "start": 312692,
+      "text": "in"
+    },
+    {
+      "confidence": 0.97494,
+      "end": 313466,
+      "start": 312932,
+      "text": "exploring"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 313754,
+      "start": 313498,
+      "text": "these"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 314178,
+      "start": 313812,
+      "text": "questions,"
+    },
+    {
+      "confidence": 1,
+      "end": 314418,
+      "start": 314264,
+      "text": "I"
+    },
+    {
+      "confidence": 0.95991,
+      "end": 314594,
+      "start": 314424,
+      "text": "can"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 314786,
+      "start": 314632,
+      "text": "bring"
+    },
+    {
+      "confidence": 0.83934,
+      "end": 314994,
+      "start": 314808,
+      "text": "my"
+    },
+    {
+      "confidence": 0.99358,
+      "end": 315474,
+      "start": 315032,
+      "text": "experience"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 315826,
+      "start": 315592,
+      "text": "as"
+    },
+    {
+      "confidence": 0.99898,
+      "end": 315986,
+      "start": 315848,
+      "text": "an"
+    },
+    {
+      "confidence": 0.99,
+      "end": 316334,
+      "start": 316008,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.99941,
+      "end": 317166,
+      "start": 316382,
+      "text": "researcher,"
+    },
+    {
+      "confidence": 0.9998,
+      "end": 317794,
+      "start": 317278,
+      "text": "technology"
+    },
+    {
+      "confidence": 0.92003,
+      "end": 318670,
+      "start": 317912,
+      "text": "executive,"
+    },
+    {
+      "confidence": 1,
+      "end": 318994,
+      "start": 318750,
+      "text": "and"
+    },
+    {
+      "confidence": 1,
+      "end": 319282,
+      "start": 319032,
+      "text": "now"
+    },
+    {
+      "confidence": 0.99923,
+      "end": 319694,
+      "start": 319336,
+      "text": "venture"
+    },
+    {
+      "confidence": 0.99086,
+      "end": 320254,
+      "start": 319742,
+      "text": "capitalist"
+    },
+    {
+      "confidence": 0.82452,
+      "end": 320814,
+      "start": 320302,
+      "text": "investor"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 320978,
+      "start": 320862,
+      "text": "in"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 321154,
+      "start": 320984,
+      "text": "both"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 321534,
+      "start": 321192,
+      "text": "China"
+    },
+    {
+      "confidence": 1,
+      "end": 321794,
+      "start": 321582,
+      "text": "and"
+    },
+    {
+      "confidence": 1,
+      "end": 321986,
+      "start": 321832,
+      "text": "the"
+    },
+    {
+      "confidence": 1,
+      "end": 322338,
+      "start": 322008,
+      "text": "United"
+    },
+    {
+      "confidence": 0.99,
+      "end": 323060,
+      "start": 322424,
+      "text": "States."
+    },
+    {
+      "confidence": 0.99999,
+      "end": 324146,
+      "start": 323830,
+      "text": "My"
+    },
+    {
+      "confidence": 1,
+      "end": 324354,
+      "start": 324168,
+      "text": "hope"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 324594,
+      "start": 324392,
+      "text": "is"
+    },
+    {
+      "confidence": 0.99962,
+      "end": 324786,
+      "start": 324632,
+      "text": "that"
+    },
+    {
+      "confidence": 0.99993,
+      "end": 324946,
+      "start": 324808,
+      "text": "this"
+    },
+    {
+      "confidence": 0.99984,
+      "end": 325154,
+      "start": 324968,
+      "text": "book"
+    },
+    {
+      "confidence": 0.66902,
+      "end": 325566,
+      "start": 325192,
+      "text": "sheds"
+    },
+    {
+      "confidence": 0.99982,
+      "end": 325794,
+      "start": 325598,
+      "text": "some"
+    },
+    {
+      "confidence": 0.99249,
+      "end": 326130,
+      "start": 325832,
+      "text": "light"
+    },
+    {
+      "confidence": 1,
+      "end": 326398,
+      "start": 326200,
+      "text": "on"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 326566,
+      "start": 326424,
+      "text": "how"
+    },
+    {
+      "confidence": 0.99962,
+      "end": 326774,
+      "start": 326588,
+      "text": "we"
+    },
+    {
+      "confidence": 0.99981,
+      "end": 327014,
+      "start": 326812,
+      "text": "got"
+    },
+    {
+      "confidence": 0.99536,
+      "end": 327350,
+      "start": 327052,
+      "text": "here"
+    },
+    {
+      "confidence": 0.9,
+      "end": 327702,
+      "start": 327420,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 328118,
+      "start": 327756,
+      "text": "also"
+    },
+    {
+      "confidence": 0.99978,
+      "end": 328866,
+      "start": 328204,
+      "text": "inspires"
+    },
+    {
+      "confidence": 1,
+      "end": 329094,
+      "start": 328898,
+      "text": "new"
+    },
+    {
+      "confidence": 0.9889,
+      "end": 329778,
+      "start": 329132,
+      "text": "conversations"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 330182,
+      "start": 329874,
+      "text": "about"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 330454,
+      "start": 330236,
+      "text": "where"
+    },
+    {
+      "confidence": 0.99995,
+      "end": 330646,
+      "start": 330492,
+      "text": "we"
+    },
+    {
+      "confidence": 0.92929,
+      "end": 330902,
+      "start": 330668,
+      "text": "go"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 331174,
+      "start": 330956,
+      "text": "from"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 331800,
+      "start": 331212,
+      "text": "here."
+    },
+    {
+      "confidence": 0.99997,
+      "end": 333286,
+      "start": 332970,
+      "text": "Part"
+    },
+    {
+      "confidence": 1,
+      "end": 333494,
+      "start": 333308,
+      "text": "of"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 333734,
+      "start": 333532,
+      "text": "why"
+    },
+    {
+      "confidence": 0.99982,
+      "end": 334226,
+      "start": 333772,
+      "text": "predicting"
+    },
+    {
+      "confidence": 1,
+      "end": 334406,
+      "start": 334258,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99905,
+      "end": 334706,
+      "start": 334428,
+      "text": "ending"
+    },
+    {
+      "confidence": 1,
+      "end": 334934,
+      "start": 334738,
+      "text": "to"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 335126,
+      "start": 334972,
+      "text": "our"
+    },
+    {
+      "confidence": 0.77,
+      "end": 335554,
+      "start": 335148,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.9996,
+      "end": 335910,
+      "start": 335602,
+      "text": "story"
+    },
+    {
+      "confidence": 0.99881,
+      "end": 336166,
+      "start": 335980,
+      "text": "is"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 336374,
+      "start": 336188,
+      "text": "so"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 336902,
+      "start": 336412,
+      "text": "difficult"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 337334,
+      "start": 337036,
+      "text": "is"
+    },
+    {
+      "confidence": 0.99989,
+      "end": 337718,
+      "start": 337372,
+      "text": "because"
+    },
+    {
+      "confidence": 0.99987,
+      "end": 338054,
+      "start": 337804,
+      "text": "this"
+    },
+    {
+      "confidence": 0.99898,
+      "end": 338386,
+      "start": 338092,
+      "text": "isn\u0027t"
+    },
+    {
+      "confidence": 0.99981,
+      "end": 338614,
+      "start": 338418,
+      "text": "just"
+    },
+    {
+      "confidence": 0.98,
+      "end": 338806,
+      "start": 338652,
+      "text": "a"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 339110,
+      "start": 338828,
+      "text": "story"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 339510,
+      "start": 339180,
+      "text": "about"
+    },
+    {
+      "confidence": 0.97749,
+      "end": 340386,
+      "start": 339580,
+      "text": "machines."
+    },
+    {
+      "confidence": 0.99902,
+      "end": 341026,
+      "start": 340578,
+      "text": "It\u0027s"
+    },
+    {
+      "confidence": 0.99992,
+      "end": 341302,
+      "start": 341058,
+      "text": "also"
+    },
+    {
+      "confidence": 1,
+      "end": 341526,
+      "start": 341356,
+      "text": "a"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 341782,
+      "start": 341548,
+      "text": "story"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 342102,
+      "start": 341836,
+      "text": "about"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 342422,
+      "start": 342156,
+      "text": "human"
+    },
+    {
+      "confidence": 0.99982,
+      "end": 343282,
+      "start": 342476,
+      "text": "beings,"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 343782,
+      "start": 343426,
+      "text": "people"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 344054,
+      "start": 343836,
+      "text": "with"
+    },
+    {
+      "confidence": 0.99989,
+      "end": 344342,
+      "start": 344092,
+      "text": "free"
+    },
+    {
+      "confidence": 0.99092,
+      "end": 344758,
+      "start": 344396,
+      "text": "will"
+    },
+    {
+      "confidence": 0.93415,
+      "end": 345094,
+      "start": 344844,
+      "text": "that"
+    },
+    {
+      "confidence": 0.99993,
+      "end": 345458,
+      "start": 345132,
+      "text": "allows"
+    },
+    {
+      "confidence": 0.82822,
+      "end": 345654,
+      "start": 345474,
+      "text": "them"
+    },
+    {
+      "confidence": 1,
+      "end": 345846,
+      "start": 345692,
+      "text": "to"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 346054,
+      "start": 345868,
+      "text": "make"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 346246,
+      "start": 346092,
+      "text": "their"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 346454,
+      "start": 346268,
+      "text": "own"
+    },
+    {
+      "confidence": 0.83836,
+      "end": 346994,
+      "start": 346492,
+      "text": "choices"
+    },
+    {
+      "confidence": 1,
+      "end": 347254,
+      "start": 347042,
+      "text": "and"
+    },
+    {
+      "confidence": 1,
+      "end": 347446,
+      "start": 347292,
+      "text": "to"
+    },
+    {
+      "confidence": 0.94855,
+      "end": 347746,
+      "start": 347468,
+      "text": "shape"
+    },
+    {
+      "confidence": 0.99994,
+      "end": 347974,
+      "start": 347778,
+      "text": "their"
+    },
+    {
+      "confidence": 0.99989,
+      "end": 348214,
+      "start": 348012,
+      "text": "own"
+    },
+    {
+      "confidence": 0.9799,
+      "end": 349110,
+      "start": 348252,
+      "text": "destinies."
+    },
+    {
+      "confidence": 0.9948,
+      "end": 350334,
+      "start": 349970,
+      "text": "Our"
+    },
+    {
+      "confidence": 0.98,
+      "end": 350794,
+      "start": 350372,
+      "text": "AI"
+    },
+    {
+      "confidence": 0.99965,
+      "end": 351198,
+      "start": 350842,
+      "text": "future"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 351486,
+      "start": 351284,
+      "text": "will"
+    },
+    {
+      "confidence": 1,
+      "end": 351646,
+      "start": 351508,
+      "text": "be"
+    },
+    {
+      "confidence": 0.99408,
+      "end": 352154,
+      "start": 351668,
+      "text": "created"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 352366,
+      "start": 352202,
+      "text": "by"
+    },
+    {
+      "confidence": 0.99,
+      "end": 352766,
+      "start": 352388,
+      "text": "us,"
+    },
+    {
+      "confidence": 1,
+      "end": 353134,
+      "start": 352868,
+      "text": "and"
+    },
+    {
+      "confidence": 0.99948,
+      "end": 353326,
+      "start": 353172,
+      "text": "it"
+    },
+    {
+      "confidence": 0.99984,
+      "end": 353486,
+      "start": 353348,
+      "text": "will"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 353834,
+      "start": 353508,
+      "text": "reflect"
+    },
+    {
+      "confidence": 0.99,
+      "end": 354046,
+      "start": 353882,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99958,
+      "end": 354506,
+      "start": 354068,
+      "text": "choices"
+    },
+    {
+      "confidence": 0.99993,
+      "end": 354686,
+      "start": 354538,
+      "text": "we"
+    },
+    {
+      "confidence": 0.86086,
+      "end": 354942,
+      "start": 354708,
+      "text": "make"
+    },
+    {
+      "confidence": 1,
+      "end": 355166,
+      "start": 354996,
+      "text": "and"
+    },
+    {
+      "confidence": 1,
+      "end": 355326,
+      "start": 355188,
+      "text": "the"
+    },
+    {
+      "confidence": 0.74753,
+      "end": 355722,
+      "start": 355348,
+      "text": "actions"
+    },
+    {
+      "confidence": 0.99987,
+      "end": 356014,
+      "start": 355786,
+      "text": "we"
+    },
+    {
+      "confidence": 0.99986,
+      "end": 356640,
+      "start": 356052,
+      "text": "take"
+    },
+    {
+      "confidence": 0.99996,
+      "end": 357694,
+      "start": 357330,
+      "text": "in"
+    },
+    {
+      "confidence": 0.99958,
+      "end": 357934,
+      "start": 357732,
+      "text": "that"
+    },
+    {
+      "confidence": 1,
+      "end": 358462,
+      "start": 357972,
+      "text": "process."
+    },
+    {
+      "confidence": 0.96,
+      "end": 358894,
+      "start": 358596,
+      "text": "I"
+    },
+    {
+      "confidence": 0.99998,
+      "end": 359086,
+      "start": 358932,
+      "text": "hope"
+    },
+    {
+      "confidence": 0.99979,
+      "end": 359246,
+      "start": 359108,
+      "text": "we"
+    },
+    {
+      "confidence": 0.99918,
+      "end": 359406,
+      "start": 359268,
+      "text": "will"
+    },
+    {
+      "confidence": 0.99988,
+      "end": 359614,
+      "start": 359428,
+      "text": "look"
+    },
+    {
+      "confidence": 0.99944,
+      "end": 359914,
+      "start": 359652,
+      "text": "deep"
+    },
+    {
+      "confidence": 0.99997,
+      "end": 360222,
+      "start": 359962,
+      "text": "within"
+    },
+    {
+      "confidence": 0.99744,
+      "end": 360906,
+      "start": 360276,
+      "text": "ourselves"
+    },
+    {
+      "confidence": 1,
+      "end": 361390,
+      "start": 361018,
+      "text": "and"
+    },
+    {
+      "confidence": 1,
+      "end": 361694,
+      "start": 361460,
+      "text": "to"
+    },
+    {
+      "confidence": 0.99999,
+      "end": 361934,
+      "start": 361732,
+      "text": "each"
+    },
+    {
+      "confidence": 0.99901,
+      "end": 362270,
+      "start": 361972,
+      "text": "other"
+    },
+    {
+      "confidence": 1,
+      "end": 362574,
+      "start": 362340,
+      "text": "for"
+    },
+    {
+      "confidence": 1,
+      "end": 362766,
+      "start": 362612,
+      "text": "the"
+    },
+    {
+      "confidence": 0.99926,
+      "end": 363306,
+      "start": 362788,
+      "text": "values"
+    },
+    {
+      "confidence": 1,
+      "end": 363486,
+      "start": 363338,
+      "text": "and"
+    },
+    {
+      "confidence": 0.9921,
+      "end": 363914,
+      "start": 363508,
+      "text": "wisdom"
+    },
+    {
+      "confidence": 0.99727,
+      "end": 364222,
+      "start": 363962,
+      "text": "that"
+    },
+    {
+      "confidence": 0.99951,
+      "end": 364446,
+      "start": 364276,
+      "text": "can"
+    },
+    {
+      "confidence": 0.97699,
+      "end": 364714,
+      "start": 364468,
+      "text": "guide"
+    },
+    {
+      "confidence": 1,
+      "end": 365360,
+      "start": 364762,
+      "text": "us"
+    },
+    {
+      "confidence": 0.99986,
+      "end": 366766,
+      "start": 366450,
+      "text": "in"
+    },
+    {
+      "confidence": 0.9983,
+      "end": 366974,
+      "start": 366788,
+      "text": "that"
+    },
+    {
+      "confidence": 0.67858,
+      "end": 367578,
+      "start": 367012,
+      "text": "spirit."
+    },
+    {
+      "confidence": 0.72022,
+      "end": 367934,
+      "start": 367674,
+      "text": "Let"
+    },
+    {
+      "confidence": 1,
+      "end": 368222,
+      "start": 367972,
+      "text": "us"
+    },
+    {
+      "confidence": 1,
+      "end": 368590,
+      "start": 368276,
+      "text": "begin"
+    },
+    {
+      "confidence": 0.99887,
+      "end": 368942,
+      "start": 368660,
+      "text": "this"
+    },
+    {
+      "confidence": 0.99972,
+      "end": 369450,
+      "start": 368996,
+      "text": "exploration."
+    }
+  ]
+}
