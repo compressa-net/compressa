@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Globalization;
+using System.Text.Json;
 using Compressa.API.Models.Audiobook;
 using FFMpegCore;
 using Microsoft.AspNetCore.Components.Forms;
@@ -102,6 +103,59 @@ namespace Compressa.API.Services
             }
 
             return chapters.Chapters;
+        }
+
+        public void SaveChaptersAsMP3s(string audiobookName)
+        {
+            _audiobooks.TryGetValue(audiobookName, out string inputFilename);
+            inputFilename = ChangeExtension(inputFilename, $".m4b");
+
+            if (String.IsNullOrEmpty(inputFilename))
+            {
+                throw new Exception($"Audiobook file '{audiobookName}' was not found in the database.");
+            }
+
+            int chapterIndex = 0;
+            foreach (Chapter chapter in ExtractChapterMetadata(audiobookName))
+            {
+                string chapterFilename = ChangeExtension(inputFilename, $"_ch{++chapterIndex:00}.mp3");
+
+                TimeSpan startTime = TimeSpan.FromSeconds(Single.Parse(chapter.StartTime, CultureInfo.InvariantCulture));
+                TimeSpan endTime = TimeSpan.FromSeconds(Single.Parse(chapter.EndTime, CultureInfo.InvariantCulture));
+
+                TimeSpan duration = endTime - startTime;
+
+                //FFMpegArguments
+                //    .FromFileInput(inputFilename)
+                //    .OutputToFile(chapterFilename, false, options => options
+                //    .WithStartNumber(chapter.Start)
+                //    .WithDuration(duration))
+                //.NotifyOnOutput((data) => _logger.LogInformation(data))
+                //.NotifyOnError((data) => _logger.LogError(data))
+                //.ProcessSynchronously();
+
+                string ffmpegParameters = $"-i \"{inputFilename}\" -ss {startTime} -to {endTime} \"{chapterFilename}\"";
+
+                var ffmpegConversion = FFmpeg.Conversions.New();
+                //ffmpegConversion.OnDataReceived += FfmpegConversion_OnDataReceived;
+                //ffmpegConversion.OnProgress += FfmpegConversion_OnProgress;
+
+                try
+                {
+                    _logger.LogInformation($"FFMPEG Running 'ffmpeg {ffmpegParameters}'...");
+                    ffmpegConversion.Start(ffmpegParameters).Wait();
+                    _logger.LogInformation($"Generated '{chapterFilename}' successfully.");
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError($"Generation of '{chapterFilename}' failed with error: {ex.Message}");
+                }
+            }
+        }
+
+        private void FfmpegConversion_OnProgress(object sender, Xabe.FFmpeg.Events.ConversionProgressEventArgs args)
+        {
+            _logger.LogInformation($"FFMPEG {args.Percent}");
         }
     }
 }

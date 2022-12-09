@@ -62,5 +62,16 @@ namespace Compressa.API.Controllers
             return taskId;
         }
 
+        [HttpGet]
+        [Route("savechaptersasmp3s/{audiobookName}")]
+        public int SaveChaptersAsMP3s(string audiobookName)
+        {
+            int taskId = Task.Run(() =>
+            {
+                _compressaService.SaveChaptersAsMP3s(audiobookName);
+            }).Id;
+
+            return taskId;
+        }
     }
 }
