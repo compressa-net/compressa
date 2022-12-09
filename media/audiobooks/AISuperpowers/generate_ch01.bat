@@ -1,0 +1,1 @@
+ffmpeg -i "c:\Work\compressa\media\audiobooks\AISuperpowers\AISuperpowers.m4b" -ss 00:00:00 -to 00:06:13.0979919 "c:\Work\compressa\media\audiobooks\AISuperpowers\AISuperpowers_ch01.mp3"
