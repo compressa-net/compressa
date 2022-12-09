@@ -1,4 +1,4 @@
-namespace Compressa.API
+namespace Compressa.API.Models
 {
     public class WeatherForecast
     {
