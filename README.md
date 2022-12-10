@@ -1,4 +1,4 @@
-# Compressa
+# Compressa.NET
 Books, podcasts summarized for busy people
 
 ![image](https://user-images.githubusercontent.com/910321/206859280-2b3876af-a662-453b-8c8d-1251c61cf15e.png)
