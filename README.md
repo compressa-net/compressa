@@ -6,7 +6,7 @@ Compressa is an book reader application for busy people
 - [x] AssemblyAI - audio to text, chapter summary
 - [x] co:here - text compression (!! generated low quality summaries, I can't use them.)
 - [x] wordtune - text compression (!! they don't have a public API, I can't use them.)
-- [ ] ChatGPT - text compression
+- [ ] ChatGPT - text compression (works very good, but no public API available yet)
 - [ ] Uberduck - text-to-speech
 - [x] Microsoft Speech Studio - customized text-to-speech (!! seems like a good option for custom voices, but needs special permission from Microsoft)
 - [ ] Google Translate - translation
