@@ -21,7 +21,7 @@ Books for busy people
 - [x] List available audiobooks
 - [ ] Show the summaries for at least one book
 - [ ] Make the UI capable to change zoom levels amoung 4 levels (list of books, chapters + x64 summary, x16 summary and x4 summary)
-- [ ] Setup the domain and publish the app to [compressa.net](https://www.compressa.net)
+- [ ] Setup the domain and publish the app to [app.compressa.net](https://app.compressa.net)
 - [ ] Make a 2 minute video
 - [ ] Submit the project on Devpost
 
