@@ -64,3 +64,5 @@ Input text: 2nd chapter of AI Superpowers, 7465 words, 45855 characters
 Output summaries
 * gist: 324 words, 2104 characters, x21 ratio
 * paragraph: 324 words, 2104 characters, x21 ratio
+* bullets: 324 words, 2104 characters, x21 ratio
+* verbose bullets: 324 words, 2104 characters, x21 ratio
