@@ -61,7 +61,7 @@ namespace Compressa.API.Models.AssemblyAI
         /// </summary>
         /// <param name="audioUrl">The URL where the file is hosted</param>
         /// <returns>A <see cref="Task{TranscriptionResponse}"/></returns>
-        public async Task<TranscriptionResponse> SubmitAudioFileAsync(string audioUrl, bool summarization = false, string summaryModel = "catchy", string summaryType = "headline")
+        public async Task<TranscriptionResponse> SubmitAudioFileAsync(string audioUrl, bool summarization, string summaryModel, string summaryType)
         {
             using (HttpClient httpClient = new HttpClient())
             {
@@ -70,9 +70,9 @@ namespace Compressa.API.Models.AssemblyAI
                 var json = new
                 {
                     audio_url = audioUrl,
-                    summarization = true,
-                    summary_model = "informative",
-                    summary_type = "bullets"
+                    summarization = summarization,
+                    summary_model = summaryModel,
+                    summary_type = summaryType
                 };
 
                 StringContent payload = new StringContent(JsonConvert.SerializeObject(json), Encoding.UTF8, "application/json");
