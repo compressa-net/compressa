@@ -1,3 +1,5 @@
+using Compressa.GUI.Services;
+
 namespace Compressa.GUI.Models;
 
 public static class AppData
@@ -8,22 +10,27 @@ public static class AppData
 
     public static List<Item> Items = new List<Item>
     {
-        new Item(){ Title = "Japchae", Price    = 13.99, Quantity = 1, Image = "japchae.png", Category = ItemCategory.Acquisition},
-        new Item(){ Title = "Jajangmyeon", Price = 14.99, Quantity = 1, Image = "jajangmyeon.png", Category = ItemCategory.Acquisition},
-        new Item(){ Title = "Janchi Guksu", Price = 12.99, Quantity = 1, Image = "janchi_guksu.png", Category = ItemCategory.Acquisition},
-        new Item(){ Title = "Budae Jjigae", Price = 14.99, Quantity = 1, Image = "budae_jjigae.png", Category = ItemCategory.Acquisition},
-        new Item(){ Title = "Naengmyeon", Price = 12.99, Quantity = 1, Image = "naengmyeon.png", Category = ItemCategory.Acquisition},
-        new Item(){ Title = "Soda", Price = 2.50, Quantity = 1, Category = ItemCategory.Filtering, Image = "soda.png"},
-        new Item(){ Title = "Iced Tea", Price = 3.50, Quantity = 1, Category = ItemCategory.Filtering, Image = "iced_tea.png"},
-        new Item(){ Title = "Hot Tea", Price = 4.00, Quantity = 1, Category = ItemCategory.Filtering, Image = "tea.png"},
-        new Item(){ Title = "Coffee", Price = 4.00, Quantity = 1, Category = ItemCategory.Filtering, Image = "coffee.png"},
-        new Item(){ Title = "Milk", Price = 5.00, Quantity = 1, Category = ItemCategory.Filtering, Image = "milk.png"},
+        new Item(){ Title = "Japchae", Price    = 13.99, Quantity = 1, Image = "japchae.png", Category = ItemCategory.Business},
+        new Item(){ Title = "Jajangmyeon", Price = 14.99, Quantity = 1, Image = "jajangmyeon.png", Category = ItemCategory.Business},
+        new Item(){ Title = "Janchi Guksu", Price = 12.99, Quantity = 1, Image = "janchi_guksu.png", Category = ItemCategory.Business},
+        new Item(){ Title = "Budae Jjigae", Price = 14.99, Quantity = 1, Image = "budae_jjigae.png", Category = ItemCategory.Business},
+        new Item(){ Title = "Naengmyeon", Price = 12.99, Quantity = 1, Image = "naengmyeon.png", Category = ItemCategory.Business},
+        new Item(){ Title = "Soda", Price = 2.50, Quantity = 1, Category = ItemCategory.Relationships, Image = "soda.png"},
+        new Item(){ Title = "Iced Tea", Price = 3.50, Quantity = 1, Category = ItemCategory.Relationships, Image = "iced_tea.png"},
+        new Item(){ Title = "Hot Tea", Price = 4.00, Quantity = 1, Category = ItemCategory.Relationships, Image = "tea.png"},
+        new Item(){ Title = "Coffee", Price = 4.00, Quantity = 1, Category = ItemCategory.Relationships, Image = "coffee.png"},
+        new Item(){ Title = "Milk", Price = 5.00, Quantity = 1, Category = ItemCategory.Relationships, Image = "milk.png"},
     };
 
-    public static List<Order> Orders { get; set; } = GenerateOrders();
+    public static List<Order> Orders { get; set; } = GenerateOrders(null);
 
-    private static List<Order> GenerateOrders()
+    private static List<Order> GenerateOrders(ICompressaClientService compressaClientService)
     {
+        if (compressaClientService != null)
+        {
+            var items = compressaClientService.GetAllMetadataAsync();
+        }
+
         random.Shuffle(Tables);
         List<Order> orders = new List<Order>();
         for (int i = 0; i < Tables.Count; i++)

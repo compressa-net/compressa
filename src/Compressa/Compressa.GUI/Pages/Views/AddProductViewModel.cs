@@ -7,7 +7,7 @@ public partial class AddProductViewModel
     Item item = new Item();
 
     [ObservableProperty]
-    string category = ItemCategory.Acquisition.ToString();
+    string category = ItemCategory.Business.ToString();
 
     [ObservableProperty]
     string imagePath = "noimage.png";

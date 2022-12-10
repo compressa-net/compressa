@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Maui;
+using Compressa.GUI.Services;
 using Microsoft.Maui.LifecycleEvents;
 using Microsoft.Maui.Platform;
 using SkiaSharp.Views.Maui.Controls.Hosting;
@@ -21,6 +22,10 @@ public static class MauiProgram
     public static MauiApp CreateMauiApp()
     {
         var builder = MauiApp.CreateBuilder();
+
+        // Add our own service as a singleton
+        builder.Services.AddSingleton<ICompressaClientService, CompressaClientService>();
+
         builder
             .UseMauiApp<App>()
             .UseBarcodeReader()

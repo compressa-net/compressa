@@ -13,11 +13,11 @@
 		<EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
 
 		<!-- Display name -->
-		<ApplicationTitle>BBD Body Monitor</ApplicationTitle>
+		<ApplicationTitle>Compressa</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.biobalancedetector.app</ApplicationId>
-		<ApplicationIdGuid>f0de844c-74c0-4e2a-9f5a-9f3bfc54a1b1</ApplicationIdGuid>		                   
+		<ApplicationId>net.compressa.app</ApplicationId>
+		<ApplicationIdGuid>7f2410fb-9bfd-443f-b586-7cfeb42cbf06</ApplicationIdGuid>		                   
 
 		<!-- Versions -->
 		<ApplicationVersion>1</ApplicationVersion>

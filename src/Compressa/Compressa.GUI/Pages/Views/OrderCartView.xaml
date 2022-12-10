@@ -13,7 +13,7 @@
     </ContentView.BindingContext>
 
     <Grid RowDefinitions="*,108">
-        <ScrollView>
+        <ScrollView IsVisible="false">
             <VerticalStackLayout Margin="24" Spacing="20">
                 <Label 
                     Text="Session #3014"
@@ -94,7 +94,7 @@
             </VerticalStackLayout>
         </ScrollView>
         <Button Text="Close Panel" HorizontalOptions="Fill" Margin="24" Grid.Row="1"
-                Command="{Binding PlaceOrderCommand}"/>
+                Command="{Binding PlaceOrderCommand}" IsVisible="false"/>
 
     </Grid>
 </ContentView>

@@ -32,13 +32,13 @@
 
 
     <Grid RowDefinitions="100,70,*"
-          ColumnDefinitions="*,400"
+          ColumnDefinitions="100,*,100"
           Margin="24,24,0,0"
           x:Name="PageGrid">
 
 
 
-        <ScrollView Grid.Row="2">
+        <ScrollView Grid.Column="1" Grid.Row="2">
             <Grid RowDefinitions="70,*">
 
                 <l:HorizontalWrapLayout Grid.Row="1" Spacing="20"
@@ -79,12 +79,13 @@
 
         </ScrollView>
 
-        <VerticalStackLayout VerticalOptions="Center">
-            <Label Text="Dashboard" Style="{StaticResource LargeTitle}"/>
-            <Label Text="{Binding Source={x:Static system:DateTime.Now}, StringFormat='{0:yyyy-MM-dd, HH:mm}'}"/>
+        <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+            <Label Text="Your Audiobook Library" Style="{StaticResource LargeTitle}"/>
+            <Label Text="You have 7 audiobook summaries"/>
         </VerticalStackLayout>
 
         <Border
+            Grid.Column="1"
             HorizontalOptions="End"
             Margin="0,0,24,0"
             HeightRequest="48"
@@ -102,7 +103,7 @@
                        VerticalOptions="Center"
                        />
                 <Entry Background="Transparent"
-                       Placeholder="Search for datasets, devices, filters, etc."
+                       Placeholder="Search for titles, authors, etc."
                        PlaceholderColor="{StaticResource TextSecondary}"
                        TextColor="White"
                        VerticalOptions="Center"
@@ -115,7 +116,7 @@
         </Border>
 
         <!-- Tab Control -->
-        <Grid Grid.Row="1">
+        <Grid Grid.Column="1" Grid.Row="1">
             <BoxView Style="{StaticResource HRule}"
                      Margin="0,48,0,0"
                      VerticalOptions="Start"
@@ -127,11 +128,11 @@
                                    >
                 <BindableLayout.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
-                        <x:String>Acquisition</x:String>
-                        <x:String>Filtering</x:String>
-                        <x:String>Recording</x:String>
-                        <x:String>PostProcessing</x:String>
-                        <x:String>MachineLearning</x:String>
+                        <x:String>Business</x:String>
+                        <x:String>Finance</x:String>
+                        <x:String>Lucid Dreaming</x:String>
+                        <x:String>Relationships</x:String>
+                        <x:String>Technology</x:String>
                     </x:Array>
                 </BindableLayout.ItemsSource>
                 <BindableLayout.ItemTemplate>
@@ -185,7 +186,7 @@
 
         </Grid>
 
-        <v:OrderCartView Grid.Column="1" Grid.RowSpan="3"/>
+        <v:OrderCartView Grid.Column="1" Grid.RowSpan="3" IsVisible="false"/>
 
     </Grid>
 </ContentPage>
