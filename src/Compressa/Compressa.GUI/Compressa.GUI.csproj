@@ -82,5 +82,20 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\Compressa.Common\Compressa.Common.csproj" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Pages\PodcastsPage.xaml.cs">
+	    <DependentUpon>PodcastsPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\AudiobooksPage.xaml.cs">
+	    <DependentUpon>AudiobooksPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Pages\PodcastsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
 	
 </Project>

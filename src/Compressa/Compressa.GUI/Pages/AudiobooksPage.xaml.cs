@@ -4,11 +4,11 @@ using Compressa.GUI.Messages;
 
 namespace Compressa.GUI.Pages;
 
-public partial class HomePage : ContentPage
+public partial class AudiobooksPage : ContentPage
 {
 
 
-    public HomePage()
+    public AudiobooksPage()
     {
         InitializeComponent();
 

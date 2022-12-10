@@ -8,13 +8,13 @@
              xmlns:m="clr-namespace:Compressa.GUI.Models"
              xmlns:l="clr-namespace:CustomLayouts"
              xmlns:system="clr-namespace:System;assembly=System.Runtime"
-             x:DataType="pages:HomeViewModel"
-             x:Class="Compressa.GUI.Pages.HomePage"
+             x:DataType="pages:AudiobooksViewModel"
+             x:Class="Compressa.GUI.Pages.AudiobooksPage"
              Shell.NavBarIsVisible="False"
-             Title="HomePage">
+             Title="Audiobook library">
 
     <ContentPage.BindingContext>
-        <pages:HomeViewModel/>
+        <pages:AudiobooksViewModel/>
     </ContentPage.BindingContext>
 
     <ContentPage.MenuBarItems>

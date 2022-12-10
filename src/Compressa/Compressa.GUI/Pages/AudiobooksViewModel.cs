@@ -1,7 +1,7 @@
 ﻿namespace Compressa.GUI.Pages;
 
 [INotifyPropertyChanged]
-public partial class HomeViewModel
+public partial class AudiobooksViewModel
 {
     [ObservableProperty]
     ObservableCollection<Item> _products;
@@ -18,7 +18,7 @@ public partial class HomeViewModel
         OnPropertyChanged(nameof(Products));
     }
 
-    public HomeViewModel()
+    public AudiobooksViewModel()
     {
         _products = new ObservableCollection<Item>(
             AppData.Items.Where(x => x.Category == ItemCategory.Business).ToList()
@@ -28,12 +28,12 @@ public partial class HomeViewModel
     [RelayCommand]
     async Task Preferences()
     {
-        await Shell.Current.GoToAsync($"{nameof(SettingsPage)}?sub=appearance");
+        await Shell.Current.GoToAsync($"{nameof(EmptyPage)}?sub=appearance");
     }
 
     [RelayCommand]
     async Task AddProduct()
     {
-        MessagingCenter.Send<HomeViewModel, string>(this, "action", "add");
+        MessagingCenter.Send<AudiobooksViewModel, string>(this, "action", "add");
     }
 }
