@@ -62,7 +62,7 @@
                                                      Spacing="6">
                                     
                                     <HorizontalStackLayout Margin="0" Spacing="10">
-                                        <Button Text="{x:Static fa:FontAwesomeIcons.FolderOpen}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked" Padding="5" WidthRequest="150"/>
+                                        <Button Text="{x:Static fa:FontAwesomeIcons.FolderOpen}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked" Padding="5" WidthRequest="160"/>
                                     </HorizontalStackLayout>
 
                                     <Label Text="{Binding Name}" HorizontalOptions="Center" Style="{StaticResource Title2}" HorizontalTextAlignment="Center"/>

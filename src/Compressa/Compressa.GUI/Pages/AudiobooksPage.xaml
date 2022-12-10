@@ -63,8 +63,8 @@
                                                      Spacing="6">
 
                                     <HorizontalStackLayout Margin="0" Spacing="10">
-                                        <Button Text="{x:Static fa:FontAwesomeIcons.BookOpen}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked" Padding="5" WidthRequest="75"/>
-                                        <Button Text="{x:Static fa:FontAwesomeIcons.CommentDots}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked" Padding="5" WidthRequest="75"/>
+                                        <Button Text="{x:Static fa:FontAwesomeIcons.BookOpen}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked" Padding="5" WidthRequest="160"/>
+                                        <!--<Button Text="{x:Static fa:FontAwesomeIcons.CommentDots}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked" Padding="5" WidthRequest="75"/>-->
                                     </HorizontalStackLayout>
 
                                     <Label Text="{Binding Title}" HorizontalOptions="Center" Style="{StaticResource Title2}" HorizontalTextAlignment="Center"/>

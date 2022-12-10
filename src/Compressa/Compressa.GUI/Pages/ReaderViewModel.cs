@@ -1,4 +1,6 @@
-﻿namespace Compressa.GUI.Pages;
+﻿using System.Text.RegularExpressions;
+
+namespace Compressa.GUI.Pages;
 
 [INotifyPropertyChanged]
 public partial class ReaderViewModel
@@ -33,7 +35,11 @@ public partial class ReaderViewModel
             _textBlocks.Clear();
             foreach (var tb in newTextBlocks)
             {
-                tb.Text = tb.Text?.Replace("-", Environment.NewLine + "•").Trim();                
+                tb.Text = tb.Text?.Replace("- ", Environment.NewLine + "• ").Trim();
+                if (tb.Text != null)
+                {
+                    tb.Text = Regex.Unescape(tb.Text);
+                }
                 _textBlocks.Add(tb);
             }
         }
