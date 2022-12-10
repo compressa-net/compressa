@@ -21,6 +21,8 @@ Compressa is an book reader application for busy people
 - [ ] List available audiobooks
 - [ ] Show the summaries for at least one book
 - [ ] Make the UI capable to change zoom levels amoung 4 levels (list of books, chapters + x64 summary, x16 summary and x4 summary)
+- [ ] Make a 2 minute video
+- [ ] Submit the project on Devpost
 
 ## Text summary tests
 
