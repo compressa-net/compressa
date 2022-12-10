@@ -3,13 +3,16 @@ using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Transactions;
 using Compressa.API.Models.AssemblyAI;
-using Compressa.API.Models.Audiobook;
 using Compressa.API.Models.Cohere;
+using Compressa.API.Models.FFMPEG;
+using Compressa.API.Models.Metadata;
 using FFMpegCore;
+using FFMpegCore.Builders.MetaData;
 using FFMpegCore.Enums;
 using Microsoft.AspNetCore.Components.Forms;
 using Newtonsoft.Json;
 using Xabe.FFmpeg;
+using Audiobook = Compressa.API.Models.Metadata.Audiobook;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Compressa.API.Services
@@ -112,7 +115,7 @@ namespace Compressa.API.Services
 
             var chapters = JsonSerializer.Deserialize<ChaptersMetadata>(File.ReadAllText(filename));
 
-            foreach (Chapter chapter in chapters.Chapters)
+            foreach (var chapter in chapters.Chapters)
             {
                 _logger.LogInformation($"Chapter {chapter.StartTime} - {chapter.EndTime} - {chapter.Tags.Title}");
             }
@@ -144,7 +147,7 @@ namespace Compressa.API.Services
 
                 var ffmpegConversion = FFmpeg.Conversions.New();
                 //ffmpegConversion.OnDataReceived += FfmpegConversion_OnDataReceived;
-                ffmpegConversion.OnProgress += FfmpegConversion_OnProgress;
+                //ffmpegConversion.OnProgress += FfmpegConversion_OnProgress;
 
                 try
                 {
@@ -164,16 +167,11 @@ namespace Compressa.API.Services
             _logger.LogInformation($"FFMPEG {args.Percent}");
         }
 
-        public async Task<TranscriptionResponse> TranscribeChapter(string audiobookName, int chapterIndex)
+        public async Task<AudiobookChapter> TranscribeChapter(string audiobookName, int chapterIndex)
         {
             _audiobooks.TryGetValue(audiobookName, out string uploadFilename);
+            string metadataFilename = ChangeExtension(uploadFilename, $".json");
             uploadFilename = ChangeExtension(uploadFilename, $"_ch{chapterIndex:00}.mp3");
-            string jsonFilename = ChangeExtension(uploadFilename, $".json");
-
-            if (File.Exists(jsonFilename))
-            {
-                return JsonSerializer.Deserialize<TranscriptionResponse>(File.ReadAllText(jsonFilename));
-            }
 
             if ((String.IsNullOrEmpty(uploadFilename)) || (!File.Exists(uploadFilename)))
             {
@@ -186,11 +184,94 @@ namespace Compressa.API.Services
             _logger.LogInformation($"Uploading '{uploadFilename}' to AssemblyAI.");
             var uploadResult = client.UploadFileAsync(uploadFilename).GetAwaiter().GetResult();
 
-            TranscriptionResponse result = GetSummary(client, uploadResult, "informative", "bullets");
 
-            File.WriteAllText(jsonFilename, JsonSerializer.Serialize<TranscriptionResponse>(result, new JsonSerializerOptions() { WriteIndented = true }));
+            MetadataRoot metadata = LoadOrCreateMetadata(metadataFilename);
+            var chapters = new List<AudiobookChapter>(metadata.Audiobook.Chapters);
+            var chapterToEdit = chapters.FirstOrDefault(ch => ch.Index == chapterIndex);
 
-            return result;
+            if (chapterToEdit == null)
+            {
+                chapterToEdit = new AudiobookChapter();
+                chapterToEdit.Index = chapterIndex;
+                
+                var m4bChapters = ExtractChapterMetadata(audiobookName);
+                var matchedM4BChapter = m4bChapters.FirstOrDefault(ch => ch.Id == chapterIndex - 1);                
+                if (matchedM4BChapter != null)
+                {
+                    chapterToEdit.Title = matchedM4BChapter.Tags.Title;
+                    chapterToEdit.StartTime = TimeSpan.FromSeconds(Single.Parse(matchedM4BChapter.StartTime, CultureInfo.InvariantCulture));
+                    chapterToEdit.EndTime = TimeSpan.FromSeconds(Single.Parse(matchedM4BChapter.EndTime, CultureInfo.InvariantCulture));                    
+                }
+                
+                chapters.Add(chapterToEdit);
+                metadata.Audiobook.Chapters = chapters.ToArray();
+            }
+
+            if (String.IsNullOrEmpty(chapterToEdit.GistSummary))
+            {
+                TranscriptionResponse result = GetSummary(client, uploadResult, "catchy", "gist");
+                chapterToEdit.GistSummary = result.Summary;
+                UpdateMetadataFile(metadataFilename, metadata, chapterToEdit, result);
+            }
+
+            if (String.IsNullOrEmpty(chapterToEdit.ParagraphSummary))
+            {
+                TranscriptionResponse result = GetSummary(client, uploadResult, "informative", "paragraph");
+                chapterToEdit.ParagraphSummary = result.Summary;
+                UpdateMetadataFile(metadataFilename, metadata, chapterToEdit, result);
+            }
+
+            if (String.IsNullOrEmpty(chapterToEdit.BulletsSummary))
+            {
+                TranscriptionResponse result = GetSummary(client, uploadResult, "informative", "bullets");
+                chapterToEdit.BulletsSummary = result.Summary;
+                UpdateMetadataFile(metadataFilename, metadata, chapterToEdit, result);
+            }
+
+            if (String.IsNullOrEmpty(chapterToEdit.BulletsVerboseSummary))
+            {
+                TranscriptionResponse result = GetSummary(client, uploadResult, "informative", "bullets_verbose");
+                chapterToEdit.BulletsVerboseSummary = result.Summary;
+                UpdateMetadataFile(metadataFilename, metadata, chapterToEdit, result);
+            }
+
+            return chapterToEdit;
+        }
+
+        private void UpdateMetadataFile(string metadataFilename, MetadataRoot metadata, AudiobookChapter chapterToEdit, TranscriptionResponse result)
+        {
+            if (String.IsNullOrEmpty(chapterToEdit.Transcript))
+            {
+                chapterToEdit.Transcript = result.Text;
+                chapterToEdit.Words = result.Words.Select(w => Models.Metadata.Word.FromAssemblyAI(w)).ToArray();
+            }
+
+            File.WriteAllText(metadataFilename, JsonSerializer.Serialize<MetadataRoot>(metadata, new JsonSerializerOptions() { WriteIndented = true }));
+        }
+
+        private static MetadataRoot LoadOrCreateMetadata(string metadataFilename)
+        {
+            MetadataRoot metadata;
+            if (File.Exists(metadataFilename))
+            {
+                metadata = JsonSerializer.Deserialize<MetadataRoot>(File.ReadAllText(metadataFilename));
+            }
+            else
+            {
+                metadata = new MetadataRoot();
+            }
+
+            if (metadata.Audiobook == null)
+            {
+                metadata.Audiobook = new Audiobook();
+            }
+
+            if (metadata.Audiobook.Chapters == null)
+            {
+                metadata.Audiobook.Chapters = new AudiobookChapter[0];
+            }
+
+            return metadata;
         }
 
         private TranscriptionResponse GetSummary(AssemblyAIApiClient client, UploadAudioResponse uploadResult, string summaryModel, string summaryType)
