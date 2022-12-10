@@ -1,6 +1,7 @@
 {
   "Version": 1,
   "Audiobook": {
+	"Id": "rework",
     "Title": "Rework",
     "Author": "Jason Fried, David Heinemeier Hansson",
     "NarratedBy": "Mike Chamberlain",

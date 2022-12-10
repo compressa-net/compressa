@@ -1,6 +1,7 @@
 {
   "Version": 1,
   "Audiobook": {
+	"Id": "superintelligence",
     "Title": "Superintelligence",
     "Subtitle": "Paths, Dangers, Strategies",
     "Author": "Nick Bostrom",

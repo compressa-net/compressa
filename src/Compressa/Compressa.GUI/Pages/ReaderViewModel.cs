@@ -15,19 +15,26 @@ public partial class ReaderViewModel
     {
         IEnumerable<TextBlock> newTextBlocks = null;
 
+        var chapters = AppData.Audiobooks.FirstOrDefault(ab => ab.Meta.Id == "aisuperpowers")?.Meta.Chapters;
+
+        if (chapters == null)
+        {
+            return;
+        }
+
         if (summaryType == "Chapters")
         {
-            newTextBlocks = AppData.Audiobooks[0].Meta.Chapters.Select(ch => new TextBlock { Title = ch.Title, Subtitle = ch.GistSummary, Text = ch.ParagraphSummary });
+            newTextBlocks = chapters.Select(ch => new TextBlock { Title = ch.Title, Subtitle = ch.GistSummary, Text = ch.ParagraphSummary });
         }
 
         if (summaryType == "Bullet points")
         {
-            newTextBlocks = AppData.Audiobooks[0].Meta.Chapters.Select(ch => new TextBlock { Title = ch.Title, Subtitle = ch.GistSummary, Text = ch.BulletsVerboseSummary });
+            newTextBlocks = chapters.Select(ch => new TextBlock { Title = ch.Title, Subtitle = ch.GistSummary, Text = ch.BulletsVerboseSummary });
         }
 
         if (summaryType == "Summaries")
         {
-            newTextBlocks = AppData.Audiobooks[0].Meta.Chapters.Select(ch => new TextBlock { Title = ch.Title, Subtitle = ch.GistSummary, Text = String.Join(Environment.NewLine + Environment.NewLine, ch.Segments.Select(s => s.ChatGPTResponse ?? "")) });
+            newTextBlocks = chapters.Select(ch => new TextBlock { Title = ch.Title, Subtitle = ch.GistSummary, Text = String.Join(Environment.NewLine + Environment.NewLine, ch.Segments.Select(s => s.ChatGPTResponse ?? "")), Sentiment = (ch.Segments.Length == 0 ? 0.0f : ch.Segments.Average(s => s.Sentiment?.Positive - s.Sentiment?.Negative ?? 0.0f)) });
         }
 
         if (newTextBlocks != null)

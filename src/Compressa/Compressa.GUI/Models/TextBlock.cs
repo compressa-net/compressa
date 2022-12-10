@@ -16,4 +16,7 @@ public partial class TextBlock
 
     [ObservableProperty]
     string text;
+
+    [ObservableProperty]
+    float sentiment;
 }
