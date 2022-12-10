@@ -11,15 +11,23 @@ Books, podcasts summarized for busy people
 
 
 ## AI services that were explored
-- [x] Stable Diffusion - logo
-- [x] AssemblyAI - audio to text, chapter summary
-- [x] co:here - text compression (!! generated low quality summaries, I can't use them.)
-- [x] wordtune - text compression (!! they don't have a public API, I can't use them.)
-- [ ] ChatGPT - text compression (works very good, but no public API available yet)
-- [ ] Uberduck - text-to-speech (sounds good, integration should be straightforward)
-- [x] Microsoft Speech Studio - customized text-to-speech (!! seems like a good option for custom voices, but needs special permission)
-- [ ] Google Translate - translation
-- [x] GitHub Copilot - programming
+&check; Stable Diffusion - logo
+
+&check; AssemblyAI - audio to text, chapter summary
+
+&cross; co:here - text compression (!! generated low quality summaries, I can't use them.)
+
+&cross; wordtune - text compression (!! they don't have a public API, I can't use them.)
+
+&check; ChatGPT - text compression (works very good, but no public API available yet)
+
+&cross; Uberduck - text-to-speech (sounds good, integration should be straightforward)
+
+&cross; Microsoft Speech Studio - customized text-to-speech (!! seems like a good option for custom voices, but needs special permission)
+
+&cross; Google Translate - translation
+
+&check; GitHub Copilot - programming
 
 ## Steps to completion
 - [x] Start a new solution the basic templates of .NET 7 ASP.NET and MAUI.
