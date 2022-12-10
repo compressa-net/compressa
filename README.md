@@ -22,6 +22,8 @@ Books for busy people
 - [ ] Show the summaries for at least one book
 - [ ] Make the UI capable to change zoom levels amoung 4 levels (list of books, chapters + x64 summary, x16 summary and x4 summary)
 - [ ] Setup the domain and publish the app to [app.compressa.net](https://app.compressa.net)
+- [ ] (optional) Generate AI-voices for the summaries
+- [ ] (optional) Use Google Translate API to translate the summaries to Spanish
 - [ ] Make a 2 minute video
 - [ ] Submit the project on Devpost
 
