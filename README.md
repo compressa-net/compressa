@@ -1,5 +1,5 @@
 # Compressa
-Kindle for busy people
+Books for busy people
 
 ## AI services that were explored
 - [x] Stable Diffusion - logo
