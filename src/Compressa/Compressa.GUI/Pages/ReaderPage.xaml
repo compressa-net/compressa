@@ -8,13 +8,13 @@
              xmlns:m="clr-namespace:Compressa.GUI.Models"
              xmlns:l="clr-namespace:CustomLayouts"
              xmlns:system="clr-namespace:System;assembly=System.Runtime"
-             x:DataType="pages:HomeViewModel"
-             x:Class="Compressa.GUI.Pages.HomePage"
+             x:DataType="pages:ReaderViewModel"
+             x:Class="Compressa.GUI.Pages.ReaderPage"
              Shell.NavBarIsVisible="False"
              Title="Audiobook library">
 
     <ContentPage.BindingContext>
-        <pages:HomeViewModel/>
+        <pages:ReaderViewModel/>
     </ContentPage.BindingContext>
 
     <ContentPage.MenuBarItems>
@@ -36,22 +36,21 @@
           Margin="24,24,0,0"
           x:Name="PageGrid">
 
-
-
+        <Label Grid.Column="0" Grid.Row="2" FontSize="80" Text="{x:Static fa:FontAwesomeIcons.AngleLeft}" FontFamily="FontAwesome" VerticalOptions="Start" HorizontalOptions="Center" TextColor="{StaticResource Primary}"/>
+        <Label Grid.Column="2" Grid.Row="2" FontSize="80" Text="{x:Static fa:FontAwesomeIcons.AngleRight}" FontFamily="FontAwesome" VerticalOptions="Start" HorizontalOptions="Center" TextColor="{StaticResource Primary}"/>
         <ScrollView Grid.Column="1" Grid.Row="2">
             <Grid RowDefinitions="70,*">
 
                 <l:HorizontalWrapLayout Grid.Row="1" Spacing="20"
-                                       BindableLayout.ItemsSource="{Binding Sources}"
+                                       BindableLayout.ItemsSource="{Binding Products}"
                                        >
                     <BindableLayout.ItemTemplate>
-                        <DataTemplate x:DataType="m:Source">
+                        <DataTemplate x:DataType="m:Item">
                             <Grid RowDefinitions="30,230" WidthRequest="200">
                                 <Border Background="{StaticResource DarkBg2Brush}"
                                         Stroke="{StaticResource DarkBg2Brush}"
                                         StrokeThickness="1"
                                         Grid.Row="1"
-                                        
                                         >
                                     <Border.StrokeShape>
                                         <RoundRectangle CornerRadius="16"/>
@@ -63,12 +62,13 @@
                                                      VerticalOptions="End"
                                                      Spacing="6">
 
-                                    <Label Text="{Binding Name}" HorizontalOptions="Center" Style="{StaticResource Title2}" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding ItemCount}" HorizontalOptions="Center"/>
-                                    <Label Text="{Binding ItemCount}" HorizontalOptions="Center" Style="{StaticResource Subhead}"/>
+                                    <Label Text="{Binding Title}" HorizontalOptions="Center" Style="{StaticResource Title2}" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Author}" HorizontalOptions="Center" Style="{StaticResource Author}"/>
+                                    <!--<Label Text="20 Bowls available" HorizontalOptions="Center" Style="{StaticResource Subhead}"/>-->
                                 </VerticalStackLayout>
-                                <Label Grid.RowSpan="2" FontSize="80" Margin="0,60,0,0"
-                                    Text="{Binding Image}" FontFamily="FontAwesome" VerticalOptions="Start" HorizontalOptions="Center" TextColor="{StaticResource Primary}"/>
+                                <Image
+                                    Grid.RowSpan="2" WidthRequest="132" HeightRequest="132"
+                                    Source="{Binding Image}" VerticalOptions="Start" HorizontalOptions="Center"/>
                             </Grid>
                         </DataTemplate>
                     </BindableLayout.ItemTemplate>
@@ -80,8 +80,8 @@
         </ScrollView>
 
         <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
-            <Label Text="Compressa.NET" Style="{StaticResource LargeTitle}"/>
-            <Label Text="Books, podcasts summarized for busy people"/>
+            <Label Text="Your Audiobook Library" Style="{StaticResource LargeTitle}"/>
+            <Label Text="You have 7 audiobook summaries"/>
         </VerticalStackLayout>
 
         <Border
