@@ -1,4 +1,4 @@
-﻿namespace Compressa.API.Models.Metadata
+﻿namespace Compressa.Models.Metadata
 {
     public class Segment
     {

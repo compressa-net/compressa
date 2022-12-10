@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Compressa.API.Models.Metadata
+namespace Compressa.Models.Metadata
 {
     public class AudiobookChapter
     {

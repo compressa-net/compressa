@@ -1,7 +1,7 @@
 ﻿using Compressa.API.Models.AssemblyAI;
 using Compressa.API.Models.Cohere;
 using Compressa.API.Models.FFMPEG;
-using Compressa.API.Models.Metadata;
+using Compressa.Models.Metadata;
 
 namespace Compressa.API.Services
 {

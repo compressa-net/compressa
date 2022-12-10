@@ -1,4 +1,4 @@
-using Compressa.API.Models.Metadata;
+using Compressa.Models.Metadata;
 using Compressa.API.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing.Constraints;

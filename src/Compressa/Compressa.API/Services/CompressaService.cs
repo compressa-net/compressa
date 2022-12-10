@@ -5,14 +5,14 @@ using System.Transactions;
 using Compressa.API.Models.AssemblyAI;
 using Compressa.API.Models.Cohere;
 using Compressa.API.Models.FFMPEG;
-using Compressa.API.Models.Metadata;
+using Compressa.Models.Metadata;
 using FFMpegCore;
 using FFMpegCore.Builders.MetaData;
 using FFMpegCore.Enums;
 using Microsoft.AspNetCore.Components.Forms;
 using Newtonsoft.Json;
 using Xabe.FFmpeg;
-using Audiobook = Compressa.API.Models.Metadata.Audiobook;
+using Audiobook = Compressa.Models.Metadata.Audiobook;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Compressa.API.Services
@@ -308,7 +308,7 @@ namespace Compressa.API.Services
                 if (String.IsNullOrEmpty(chapterToEdit.Transcript))
                 {
                     chapterToEdit.Transcript = result.Text;
-                    chapterToEdit.Words = result.Words.Select(w => Models.Metadata.Word.FromAssemblyAI(w)).ToArray();
+                    chapterToEdit.Words = result.Words.Select(w => Compressa.Models.Metadata.Word.FromAssemblyAI(w.Start, w.End, w.Text, w.Confidence)).ToArray();
                 }
             }
 
