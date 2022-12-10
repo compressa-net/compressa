@@ -219,7 +219,7 @@ namespace Compressa.API.Services
             }
 
             int summaryGenerationErrors = 0;
-            if (String.IsNullOrEmpty(chapterToEdit.GistSummary))
+            if (String.IsNullOrEmpty(chapterToEdit.GistSummary) && (summaryGenerationErrors == 0))
             {
                 _logger.LogInformation($"Generating gist summary for '{uploadFilename}'.");
                 TranscriptionResponse result = GetSummary(client, uploadResult, "catchy", "gist");
@@ -234,7 +234,7 @@ namespace Compressa.API.Services
                 }
             }
 
-            if (String.IsNullOrEmpty(chapterToEdit.ParagraphSummary))
+            if (String.IsNullOrEmpty(chapterToEdit.ParagraphSummary) && (summaryGenerationErrors == 0))
             {
                 _logger.LogInformation($"Generating paragraph summary for '{uploadFilename}'.");
                 TranscriptionResponse result = GetSummary(client, uploadResult, "informative", "paragraph");
@@ -249,7 +249,7 @@ namespace Compressa.API.Services
                 }
             }
 
-            if (String.IsNullOrEmpty(chapterToEdit.BulletsSummary))
+            if (String.IsNullOrEmpty(chapterToEdit.BulletsSummary) && (summaryGenerationErrors == 0))
             {
                 _logger.LogInformation($"Generating bullets summary for '{uploadFilename}'.");
                 TranscriptionResponse result = GetSummary(client, uploadResult, "informative", "bullets");
@@ -264,7 +264,7 @@ namespace Compressa.API.Services
                 }
             }
 
-            if (String.IsNullOrEmpty(chapterToEdit.BulletsVerboseSummary))
+            if (String.IsNullOrEmpty(chapterToEdit.BulletsVerboseSummary) && (summaryGenerationErrors == 0))
             {
                 _logger.LogInformation($"Generating verbose bullets summary for '{uploadFilename}'.");
                 TranscriptionResponse result = GetSummary(client, uploadResult, "informative", "bullets_verbose");
@@ -282,18 +282,34 @@ namespace Compressa.API.Services
             if (summaryGenerationErrors > 0)
             {
                 _logger.LogError($"Summary generation failed for '{uploadFilename}' on {summaryGenerationErrors} occasion(s). I'll try to upload the file again, and retry.");
-                return TranscribeChapter(audiobookName, chapterIndex);
+                return TranscribeChapter(audiobookName, chapterIndex).Result;
             }
+
+            // If we have all the summaries, we can zoom in further and ask ChatGPT to generate the responses to the segment prompts
+            chapterToEdit.GenerateSegmentsAndPrompts();
+            foreach (var segment in chapterToEdit.Segments)
+            {
+                if (String.IsNullOrEmpty(segment.ChatGPTResponse))
+                {
+                    // TODO: ask ChatGPT to generate the response to the prompt
+                    UpdateMetadataFile(metadataFilename, metadata, chapterToEdit, null);
+                }
+            }
+
+            _logger.LogInformation($"Transcription and summarization was completed for '{uploadFilename}'.");
 
             return chapterToEdit;
         }
 
         private void UpdateMetadataFile(string metadataFilename, MetadataRoot metadata, AudiobookChapter chapterToEdit, TranscriptionResponse result)
         {
-            if (String.IsNullOrEmpty(chapterToEdit.Transcript))
+            if (result != null)
             {
-                chapterToEdit.Transcript = result.Text;
-                chapterToEdit.Words = result.Words.Select(w => Models.Metadata.Word.FromAssemblyAI(w)).ToArray();
+                if (String.IsNullOrEmpty(chapterToEdit.Transcript))
+                {
+                    chapterToEdit.Transcript = result.Text;
+                    chapterToEdit.Words = result.Words.Select(w => Models.Metadata.Word.FromAssemblyAI(w)).ToArray();
+                }
             }
 
             File.WriteAllText(metadataFilename, JsonSerializer.Serialize<MetadataRoot>(metadata, new JsonSerializerOptions() { WriteIndented = true }));
