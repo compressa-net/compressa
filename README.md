@@ -66,7 +66,7 @@ Artificial General Intelligence Artificial intelligence (AI) is a branch of comp
 * `gist`: 11 words, 73 characters, x630 ratio
 * `paragraph`: 56 words, 362 characters, x126 ratio
 * `bullets`: 324 words, 2104 characters, x21 ratio
-* `verbose bullets`: 324 words, 2104 characters, x21 ratio
+* `verbose bullets`: 327 words, 2104 characters, x21 ratio
 
 ### Conclusion
 - `gist` would be great for chapter titles
