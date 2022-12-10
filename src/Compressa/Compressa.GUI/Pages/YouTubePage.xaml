@@ -68,7 +68,7 @@
                                 </VerticalStackLayout>
                                 <Image
                                     Grid.RowSpan="2" VerticalOptions="Start"
-                                    Source="{Binding Image, FallbackValue=food_01.png}" HorizontalOptions="Center"/>
+                                    Source="{Binding ImageFilename, FallbackValue=food_01.png}" HorizontalOptions="Center"/>
                             </Grid>
                         </DataTemplate>
                     </BindableLayout.ItemTemplate>

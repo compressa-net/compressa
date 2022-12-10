@@ -19,7 +19,7 @@ public partial class HomeViewModel
     public HomeViewModel()
     {
         _products = new ObservableCollection<Item>(
-            AppData.Items.ToList()
+            AppData.Audiobooks.ToList()
         );
 
         _sources = new ObservableCollection<Source>(

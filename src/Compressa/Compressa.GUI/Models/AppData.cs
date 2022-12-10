@@ -1,5 +1,7 @@
 using Compressa.GUI.Services;
+using Compressa.Models.Metadata;
 using FontAwesome;
+using System.Text.Json;
 
 namespace Compressa.GUI.Models;
 
@@ -16,15 +18,15 @@ public static class AppData
         new Source(){ Name = "YouTube channels", Description = "YouTube channels", ItemCount = "0 channels", Image = FontAwesomeIcons.Video},
     };
 
-    public static List<Item> Items = new List<Item>
+    public static List<Item> Audiobooks = new List<Item>
     {
-        new Item(){ Title = "AI Superpowers", Author = "Kai-Fu Lee", Image = "aisuperpowers.jpg", Category = ItemCategory.Technology},
-        new Item(){ Title = "Flow", Author = "Mihaly Csikszentmihalyi", Image = "flow.jpg", Category = ItemCategory.Relationships},
-        new Item(){ Title = "Rework", Author = "Jason Fried, David Heinemeier Hansson", Image = "rework.jpg", Category = ItemCategory.Business},
-        new Item(){ Title = "Rich Dad Poor Dad", Author = "Robert T. Kiyosaki", Image = "richdadpoordad.jpg", Category = ItemCategory.Finance},
-        new Item(){ Title = "Superintelligence", Author = "Kai-Fu Lee", Image = "superintelligence.jpg", Category = ItemCategory.Technology},
-        new Item(){ Title = "The China Study", Author = "Kai-Fu Lee", Image = "thechinastudy.jpg", Category = ItemCategory.Health},
-        new Item(){ Title = "The Five Love Languages", Author = "Kai-Fu Lee", Image = "thefivelovelanguages.jpg", Category = ItemCategory.Relationships},
+        new Item(){ Id = "aisuperpowers", Title = "AI Superpowers", Author = "Kai-Fu Lee", Category = ItemCategory.Technology},
+        new Item(){ Id = "flow",Title = "Flow", Author = "Mihaly Csikszentmihalyi", Category = ItemCategory.Relationships},
+        new Item(){ Id = "rework",Title = "Rework", Author = "Jason Fried, David Heinemeier Hansson", Category = ItemCategory.Business},
+        new Item(){ Id = "richdadpoordad",Title = "Rich Dad Poor Dad", Author = "Robert T. Kiyosaki", Category = ItemCategory.Finance},
+        new Item(){ Id = "superintelligence",Title = "Superintelligence", Author = "Kai-Fu Lee", Category = ItemCategory.Technology},
+        new Item(){ Id = "thechinastudy",Title = "The China Study", Author = "Kai-Fu Lee", Category = ItemCategory.Health},
+        new Item(){ Id = "thefivelovelanguages",Title = "The Five Love Languages", Author = "Kai-Fu Lee", Category = ItemCategory.Relationships},
     };
 
     public static List<Order> Orders { get; set; } = GenerateOrders(null);
@@ -35,7 +37,7 @@ public static class AppData
         {
             var items = compressaClientService.GetAllMetadataAsync();
         }
-
+       
         random.Shuffle(Tables);
         List<Order> orders = new List<Order>();
         for (int i = 0; i < Tables.Count; i++)
@@ -54,12 +56,21 @@ public static class AppData
 
     private static List<Item> GenerateItems()
     {
+        string metadataCacheFilename = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources\\Metadata\\getallmetadata.json");
+        MetadataRoot[] metadata = JsonSerializer.Deserialize<MetadataRoot[]>(File.ReadAllText(metadataCacheFilename));
+
         List<Item> items = new List<Item>();
-        int numItems = random.Next(1, Items.Count - 1);
-        random.Shuffle(Items);
-        for (int i = 0; i < numItems; i++)
+        for (int i = 0; i < Audiobooks.Count; i++)
         {
-            items.Add(Items[i]);
+            var audiobookMeta = metadata.FirstOrDefault(x => x.Audiobook.Id == Audiobooks[i].Id);
+
+            if (audiobookMeta != null)
+            {
+                Audiobooks[i].Meta = audiobookMeta.Audiobook;
+                Audiobooks[i].ImageFilename = metadata[i].Audiobook.Id + ".jpg";
+
+                items.Add(Audiobooks[i]);
+            }
         }
 
         return items;

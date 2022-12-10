@@ -13,7 +13,7 @@ public partial class ReaderViewModel
     {
         ItemCategory category = (ItemCategory)Enum.Parse(typeof(ItemCategory), cat);
         _products = new ObservableCollection<Item>(
-            AppData.Items.Where(x => x.Category == category).ToList()
+            AppData.Audiobooks.Where(x => x.Category == category).ToList()
         );
         OnPropertyChanged(nameof(Products));
     }
@@ -21,7 +21,7 @@ public partial class ReaderViewModel
     public ReaderViewModel()
     {
         _products = new ObservableCollection<Item>(
-            AppData.Items.ToList()
+            AppData.Audiobooks.ToList()
         );
     }
 

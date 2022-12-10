@@ -1,8 +1,13 @@
+using Compressa.Models.Metadata;
+
 namespace Compressa.GUI.Models;
 
 [INotifyPropertyChanged]
 public partial class Item
 {
+    [ObservableProperty]
+    string id;
+
     [ObservableProperty]
     string title;
 
@@ -10,7 +15,7 @@ public partial class Item
     int quantity;
 
     [ObservableProperty]
-    string image;
+    string imageFilename;
 
     [ObservableProperty]
     double price;
@@ -23,6 +28,9 @@ public partial class Item
 
     [ObservableProperty]
     string summary;
+
+    [ObservableProperty]
+    Audiobook meta;
 
     partial void OnQuantityChanged(int value)
     {

@@ -20,7 +20,7 @@ public partial class AddProductViewModel
     {
         ItemCategory cat = (ItemCategory)Enum.Parse(typeof(ItemCategory), category);
         item.Category = cat;
-        AppData.Items.Add(item);
+        AppData.Audiobooks.Add(item);
 
         MessagingCenter.Send<AddProductViewModel, string>(this, "action", "done");
     }
@@ -34,7 +34,7 @@ public partial class AddProductViewModel
         };
 
         var file = await PickAndShow(options);
-        Item.Image = ImagePath = file.FullPath;
+        Item.ImageFilename = ImagePath = file.FullPath;
     }
 
     public async Task<FileResult> PickAndShow(PickOptions options)

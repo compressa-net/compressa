@@ -29,7 +29,11 @@
 			HeightRequest="60" WidthRequest="60"
 			VerticalOptions="Start" HorizontalOptions="Start"
 			Clicked="ImageButton_Clicked"
-			Source="{FontImage FontFamily=Fabric, Color=White, Glyph={x:Static i:FabIconFont.ClosePane},Size=32}"/>
+			Source="{FontImage FontFamily=Fabric, Color=White, Glyph={x:Static i:FabIconFont.ClosePane},Size=32}">
+	  <ImageButton.GestureRecognizers>
+		  <ClickGestureRecognizer/>
+	  </ImageButton.GestureRecognizers>
+		</ImageButton>
 
         <!--<Grid
 			Grid.Row="3"

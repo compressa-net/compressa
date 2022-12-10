@@ -2,6 +2,8 @@ using Compressa.Models.Metadata;
 using Compressa.API.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing.Constraints;
+using FFMpegCore.Builders.MetaData;
+using System.Text.Json;
 
 namespace Compressa.API.Controllers
 {
@@ -115,7 +117,11 @@ namespace Compressa.API.Controllers
         [Route("getallmetadata")]
         public MetadataRoot[] GetAllMetadata(bool includeSummaries)
         {
-            return _compressaService.GetAllMetadata(includeSummaries);
+            var metadataCache = _compressaService.GetAllMetadata(includeSummaries);
+
+            //System.IO.File.WriteAllText("metadataCache.json", JsonSerializer.Serialize<MetadataRoot[]>(metadataCache, new JsonSerializerOptions() { WriteIndented = true }));
+
+            return metadataCache;
         }
     }
 }

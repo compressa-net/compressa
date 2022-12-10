@@ -47,7 +47,7 @@
                                 <HorizontalStackLayout Spacing="8">
                                     <Image WidthRequest="40" HeightRequest="40"
                                            Aspect="AspectFit"
-                                           Source="{Binding Image}"/>
+                                           Source="{Binding ImageFilename}"/>
 
                                     <Label Style="{StaticResource Headline}">
                                         <Label.FormattedText>

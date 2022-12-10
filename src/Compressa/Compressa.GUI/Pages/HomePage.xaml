@@ -51,7 +51,6 @@
                                         Stroke="{StaticResource DarkBg2Brush}"
                                         StrokeThickness="1"
                                         Grid.Row="1"
-                                        
                                         >
                                     <Border.StrokeShape>
                                         <RoundRectangle CornerRadius="16"/>
@@ -65,7 +64,7 @@
 
                                     <Label Text="{Binding Name}" HorizontalOptions="Center" Style="{StaticResource Title2}" HorizontalTextAlignment="Center"/>
                                     <Label Text="{Binding ItemCount}" HorizontalOptions="Center"/>
-                                    <Label Text="{Binding ItemCount}" HorizontalOptions="Center" Style="{StaticResource Subhead}"/>
+                                    <!--<Label Text="{Binding ItemCount}" HorizontalOptions="Center" Style="{StaticResource Subhead}"/>-->
                                 </VerticalStackLayout>
                                 <Label Grid.RowSpan="2" FontSize="80" Margin="0,60,0,0"
                                     Text="{Binding Image}" FontFamily="FontAwesome" VerticalOptions="Start" HorizontalOptions="Center" TextColor="{StaticResource Primary}"/>

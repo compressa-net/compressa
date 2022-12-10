@@ -68,7 +68,7 @@
                                 </VerticalStackLayout>
                                 <Image
                                     Grid.RowSpan="2" WidthRequest="132" HeightRequest="132"
-                                    Source="{Binding Image}" VerticalOptions="Start" HorizontalOptions="Center"/>
+                                    Source="{Binding ImageFilename}" VerticalOptions="Start" HorizontalOptions="Center"/>
                             </Grid>
                         </DataTemplate>
                     </BindableLayout.ItemTemplate>
