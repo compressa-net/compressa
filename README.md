@@ -72,3 +72,12 @@ Artificial General Intelligence Artificial intelligence (AI) is a branch of comp
 - `gist` would be great for chapter titles
 - `paragraph` will be shown under the chapter header
 - `verbose bullets` will be the first level of zoom
+
+## ChatGPT
+
+The chatbot could generate the summary with lowest zoom level. The target compression would be x4.
+
+### Input text (340 sentences, 7465 words, 45855 characters)
+2nd chapter of AI Superpowers, diveded into ~60-sentence parts.
+
+`Summarize the following text with approximately 15 sentences:`
