@@ -1,5 +1,7 @@
-﻿using System.Text;
+﻿using Newtonsoft.Json;
+using System.Text;
 using System.Text.Json;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Compressa.API.Models.AssemblyAI
 {
@@ -59,13 +61,36 @@ namespace Compressa.API.Models.AssemblyAI
         /// </summary>
         /// <param name="audioUrl">The URL where the file is hosted</param>
         /// <returns>A <see cref="Task{TranscriptionResponse}"/></returns>
-        public Task<TranscriptionResponse> SubmitAudioFileAsync(string audioUrl)
+        public async Task<TranscriptionResponse> SubmitAudioFileAsync(string audioUrl, bool summarization = false, string summaryModel = "catchy", string summaryType = "headline")
         {
-            var request = new HttpRequestMessage(HttpMethod.Post, "v2/transcript");
-            var requestBody = JsonSerializer.Serialize(new TranscriptionRequest { AudioUrl = audioUrl });
-            request.Content = new StringContent(requestBody, Encoding.UTF8, "application/json");
+            using (HttpClient httpClient = new HttpClient())
+            {
+                httpClient.DefaultRequestHeaders.Add("Authorization", "6f315bd8dd8d4dc9b3658af66656b013");
 
-            return SendRequestAsync<TranscriptionResponse>(request);
+                var json = new
+                {
+                    audio_url = audioUrl,
+                    summarization = true,
+                    summary_model = "informative",
+                    summary_type = "bullets"
+                };
+
+                StringContent payload = new StringContent(JsonConvert.SerializeObject(json), Encoding.UTF8, "application/json");
+                HttpResponseMessage response = await httpClient.PostAsync("https://api.assemblyai.com/v2/transcript", payload);
+                response.EnsureSuccessStatusCode();
+
+                var responseJson = response.Content.ReadAsStringAsync();
+
+                return JsonSerializer.DeserializeAsync<TranscriptionResponse>(responseJson.Result);
+            }
+
+            //var request = new HttpRequestMessage(HttpMethod.Post, "v2/transcript");
+            //var requestBody = JsonSerializer.Serialize(new TranscriptionRequest { AudioUrl = audioUrl, Summarization = summarization, SummaryModel = summaryModel, SummaryType = summaryType });
+            //request.Content = new StringContent(requestBody, Encoding.UTF8, "application/json");
+
+            //requestBody = requestBody.Replace("true", "True");
+
+            //return SendRequestAsync<TranscriptionResponse>(request);
         }
 
         /// <summary>

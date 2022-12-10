@@ -182,10 +182,11 @@ namespace Compressa.API.Services
             var client = new AssemblyAIApiClient(_assemblyAIKey, _assemblyAIUrl);
 
             // Upload file
+            _logger.LogInformation($"Uploading '{uploadFilename}' to AssemblyAI.");
             var uploadResult = client.UploadFileAsync(uploadFilename).GetAwaiter().GetResult();
 
             // Submit file for transcription
-            var submissionResult = client.SubmitAudioFileAsync(uploadResult.UploadUrl).GetAwaiter().GetResult();
+            var submissionResult = client.SubmitAudioFileAsync(uploadResult.UploadUrl, true, "informative", "bullets").GetAwaiter().GetResult();
             _logger.LogInformation($"File {submissionResult.Id} in status {submissionResult.Status}");
 
             // Query status of transcription until it's `completed`
