@@ -119,9 +119,21 @@ namespace Compressa.API.Controllers
         {
             var metadataCache = _compressaService.GetAllMetadata(includeSummaries);
 
-            //System.IO.File.WriteAllText("metadataCache.json", JsonSerializer.Serialize<MetadataRoot[]>(metadataCache, new JsonSerializerOptions() { WriteIndented = true }));
+            //System.IO.File.WriteAllText("getallmetadata.json", JsonSerializer.Serialize<MetadataRoot[]>(metadataCache, new JsonSerializerOptions() { WriteIndented = true }));
 
             return metadataCache;
+        }
+        
+        [HttpGet]
+        [Route("getsentiment/{audiobookName}/{chapterIndex}")]
+        public int GetSentiment(string audiobookName, int chapterIndex)
+        {
+            int taskId = Task.Run(() =>
+            {
+                _compressaService.GetSentiment(audiobookName, chapterIndex);
+            }).Id;
+
+            return taskId;
         }
     }
 }

@@ -15,5 +15,6 @@ namespace Compressa.API.Services
         Task<GenerateResponse> SummarizeChapter(string audiobookName, int chapterIndex);
         Audiobook TranscribeAudiobook(string audiobookName);
         MetadataRoot[] GetAllMetadata(bool includeSummaries);
+        Task<Segment[]> GetSentiment(string audiobookName, int chapterIndex);
     }
 }

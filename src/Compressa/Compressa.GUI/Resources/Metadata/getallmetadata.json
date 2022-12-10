@@ -30,7 +30,12 @@
             {
               "Index": 0,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": "China is catching up to the US in the field of artificial intelligence (AI), according to venture capitalist and AI expert Kai Fu Lee. In a new book, Lee argues that China\u0027s enthusiasm for the field, from business to government and even kindergarten classrooms, means it is now a \u0027bona fide AI superpower\u0027. Lee also suggests that the US has become complacent about its AI capabilities, and warns of the potential disruption to the job market and global order that widespread adoption of the technology could bring. \u0027AI has leapt to the forefront of our minds,\u0027 Lee writes. \u0027Just a few years ago, artificial intelligence was a field that lived primarily in academic research labs and science fiction films.\u0027"
+              "ChatGPTResponse": "China is catching up to the US in the field of artificial intelligence (AI), according to venture capitalist and AI expert Kai Fu Lee. In a new book, Lee argues that China\u0027s enthusiasm for the field, from business to government and even kindergarten classrooms, means it is now a \u0027bona fide AI superpower\u0027. Lee also suggests that the US has become complacent about its AI capabilities, and warns of the potential disruption to the job market and global order that widespread adoption of the technology could bring. \u0027AI has leapt to the forefront of our minds,\u0027 Lee writes. \u0027Just a few years ago, artificial intelligence was a field that lived primarily in academic research labs and science fiction films.\u0027",
+              "Sentiment": {
+                "Positive": 0.8369003,
+                "Neutral": 0.15802556,
+                "Negative": 0.005074129
+              }
             }
           ],
           "Words": null
@@ -49,37 +54,72 @@
             {
               "Index": 0,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": "In May 2017, Ku Ja, a 19-year-old Chinese teenager and Go world champion, lost to AlphaGo, a powerful artificial intelligence (AI) program developed by Google. The game of Go is considered to be one of the most complex board games in the world. The number of possible positions on a Go board is greater than the number of atoms in the known universe, making it a significant challenge for AI. The victory of AlphaGo, a Western technology, over the human world champion was seen by some as a victory for Western technology companies over the rest of the world. In Beijing, however, the view was different. The victories were seen as a challenge for Chinese technology companies to catch up with the West in AI. This sentiment was echoed by the Chinese government, which made a push to become a global leader in AI. By 2022, China is expected to surpass the US as the world\u0027s largest market for AI applications."
+              "ChatGPTResponse": "In May 2017, Ku Ja, a 19-year-old Chinese teenager and Go world champion, lost to AlphaGo, a powerful artificial intelligence (AI) program developed by Google. The game of Go is considered to be one of the most complex board games in the world. The number of possible positions on a Go board is greater than the number of atoms in the known universe, making it a significant challenge for AI. The victory of AlphaGo, a Western technology, over the human world champion was seen by some as a victory for Western technology companies over the rest of the world. In Beijing, however, the view was different. The victories were seen as a challenge for Chinese technology companies to catch up with the West in AI. This sentiment was echoed by the Chinese government, which made a push to become a global leader in AI. By 2022, China is expected to surpass the US as the world\u0027s largest market for AI applications.",
+              "Sentiment": {
+                "Positive": 0.6182592,
+                "Neutral": 0.23243643,
+                "Negative": 0.14930439
+              }
             },
             {
               "Index": 1,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": "The game of Go is considered to be one of the most complex board games in the world, with more possible positions than there are atoms in the known universe. In May 2017, Ku Ja, a Chinese teenager and Go world champion, lost to AlphaGo, a powerful artificial intelligence program developed by Google. The victory of a Western technology over the human world champion was seen as a victory for Western technology companies over the rest of the world. In Beijing, however, the view was different. The victories were seen as a challenge for Chinese technology companies to catch up with the West in artificial intelligence. This sentiment was echoed by the Chinese government, which made a push to become a global leader in AI. By 2022, China is expected to surpass the US as the world\u0027s largest market for AI applications."
+              "ChatGPTResponse": "The game of Go is considered to be one of the most complex board games in the world, with more possible positions than there are atoms in the known universe. In May 2017, Ku Ja, a Chinese teenager and Go world champion, lost to AlphaGo, a powerful artificial intelligence program developed by Google. The victory of a Western technology over the human world champion was seen as a victory for Western technology companies over the rest of the world. In Beijing, however, the view was different. The victories were seen as a challenge for Chinese technology companies to catch up with the West in artificial intelligence. This sentiment was echoed by the Chinese government, which made a push to become a global leader in AI. By 2022, China is expected to surpass the US as the world\u0027s largest market for AI applications.",
+              "Sentiment": {
+                "Positive": 0.83529466,
+                "Neutral": 0.13686739,
+                "Negative": 0.027837953
+              }
             },
             {
               "Index": 2,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": "The text discusses artificial intelligence (AI), specifically deep learning and its history. The author, an AI researcher and professor at Carnegie Mellon University, talks about the early days of AI research in the 1950s, when the field\u0027s pioneers aimed to recreate human intelligence in machines. He discusses the different approaches to AI, such as rule-based systems and neural networks, and how the latter has led to the development of deep learning. The author then talks about the impact of deep learning on the field of AI and how it has made it possible for machines to outperform humans in certain tasks, such as playing the board game Go. He also discusses the potential for AI to transform various industries and how it could create new opportunities for people to rediscover what makes them human."
+              "ChatGPTResponse": "The text discusses artificial intelligence (AI), specifically deep learning and its history. The author, an AI researcher and professor at Carnegie Mellon University, talks about the early days of AI research in the 1950s, when the field\u0027s pioneers aimed to recreate human intelligence in machines. He discusses the different approaches to AI, such as rule-based systems and neural networks, and how the latter has led to the development of deep learning. The author then talks about the impact of deep learning on the field of AI and how it has made it possible for machines to outperform humans in certain tasks, such as playing the board game Go. He also discusses the potential for AI to transform various industries and how it could create new opportunities for people to rediscover what makes them human.",
+              "Sentiment": {
+                "Positive": 0.0477237,
+                "Neutral": 0.9475434,
+                "Negative": 0.004732889
+              }
             },
             {
               "Index": 3,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": "Deep learning is a type of artificial intelligence (AI) that uses algorithms to recognize patterns and correlations in data. This allows the algorithms to make decisions based on the data, often outperforming humans in certain tasks. Deep learning has its roots in the neural networks approach to AI, which aimed to mimic the human brain by constructing layers of artificial neurons. A breakthrough in training these layers allowed for the development of deep learning, which has been applied to various industries, including insurance and self-driving cars. Companies like Google and Facebook have invested heavily in deep learning research, and the technology is expected to continue to evolve and impact various industries. However, it is still narrow AI, meaning it is limited to specific domains, and is not capable of general AI, or the ability to do everything a human can."
+              "ChatGPTResponse": "Deep learning is a type of artificial intelligence (AI) that uses algorithms to recognize patterns and correlations in data. This allows the algorithms to make decisions based on the data, often outperforming humans in certain tasks. Deep learning has its roots in the neural networks approach to AI, which aimed to mimic the human brain by constructing layers of artificial neurons. A breakthrough in training these layers allowed for the development of deep learning, which has been applied to various industries, including insurance and self-driving cars. Companies like Google and Facebook have invested heavily in deep learning research, and the technology is expected to continue to evolve and impact various industries. However, it is still narrow AI, meaning it is limited to specific domains, and is not capable of general AI, or the ability to do everything a human can.",
+              "Sentiment": {
+                "Positive": 0.0113712335,
+                "Neutral": 0.98793596,
+                "Negative": 0.00069283193
+              }
             },
             {
               "Index": 4,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": "The text discusses the current state of artificial intelligence (AI) and how it is transitioning from the \u0027age of discovery\u0027 to the \u0027age of implementation.\u0027 The author argues that many recent advancements in AI are not fundamentally new, but rather the application of existing technologies, like deep learning, to new problems. This shift to implementation means that AI researchers and entrepreneurs need to focus on turning algorithms into sustainable businesses. The author also discusses the transition from the \u0027age of expertise\u0027 to the \u0027age of data,\u0027 where successful AI algorithms require large amounts of data, computing power, and strong algorithms. This shift has allowed countries like China to catch up with the United States in AI development."
+              "ChatGPTResponse": "The text discusses the current state of artificial intelligence (AI) and how it is transitioning from the \u0027age of discovery\u0027 to the \u0027age of implementation.\u0027 The author argues that many recent advancements in AI are not fundamentally new, but rather the application of existing technologies, like deep learning, to new problems. This shift to implementation means that AI researchers and entrepreneurs need to focus on turning algorithms into sustainable businesses. The author also discusses the transition from the \u0027age of expertise\u0027 to the \u0027age of data,\u0027 where successful AI algorithms require large amounts of data, computing power, and strong algorithms. This shift has allowed countries like China to catch up with the United States in AI development.",
+              "Sentiment": {
+                "Positive": 0.4066401,
+                "Neutral": 0.5886217,
+                "Negative": 0.004738187
+              }
             },
             {
               "Index": 5,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": "The text discusses the state of the tech industry in China and how it is different from that in Silicon Valley. In China, the tech industry is highly competitive, with companies constantly improving their products and innovating their business models to survive. This has led to the development of unique products and services, such as mobile payments and shared bikes, that do not have analogs in Silicon Valley. This has also allowed China to capture vast amounts of data that is useful for building profitable AI companies. The author argues that China\u0027s competitive tech industry and abundance of data will help it become a leader in the implementation of AI."
+              "ChatGPTResponse": "The text discusses the state of the tech industry in China and how it is different from that in Silicon Valley. In China, the tech industry is highly competitive, with companies constantly improving their products and innovating their business models to survive. This has led to the development of unique products and services, such as mobile payments and shared bikes, that do not have analogs in Silicon Valley. This has also allowed China to capture vast amounts of data that is useful for building profitable AI companies. The author argues that China\u0027s competitive tech industry and abundance of data will help it become a leader in the implementation of AI.",
+              "Sentiment": {
+                "Positive": 0.9441379,
+                "Neutral": 0.055267636,
+                "Negative": 0.0005945119
+              }
             },
             {
               "Index": 6,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": "China is set to overtake the US in the development and deployment of artificial intelligence (AI), resulting in increased productivity gains, according to Kai Fu Lee, the founder of Sinovation Ventures. The deployment of AI is predicted to add $15.7tn to global GDP, with China expected to take home nearly double North America\u0027s gains, at $7tn to $3.7tn by 2030. In the face of this shift, Americans are set to become accustomed to a loss of technological dominance, something that has not been seen for many years. Furthermore, AI-induced disruption to the political and economic order will alter how countries experience the phenomenon of digital globalisation."
+              "ChatGPTResponse": "China is set to overtake the US in the development and deployment of artificial intelligence (AI), resulting in increased productivity gains, according to Kai Fu Lee, the founder of Sinovation Ventures. The deployment of AI is predicted to add $15.7tn to global GDP, with China expected to take home nearly double North America\u0027s gains, at $7tn to $3.7tn by 2030. In the face of this shift, Americans are set to become accustomed to a loss of technological dominance, something that has not been seen for many years. Furthermore, AI-induced disruption to the political and economic order will alter how countries experience the phenomenon of digital globalisation.",
+              "Sentiment": {
+                "Positive": 0.9883122,
+                "Neutral": 0.01091987,
+                "Negative": 0.00076794205
+              }
             }
           ],
           "Words": null
@@ -98,57 +138,88 @@
             {
               "Index": 0,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": "Two Chinese copycats, Wang Shing and Shao Nay, have been successful by copying and improving upon Western technology. Many in the West see copying as a weakness and hold the belief that China is unable to innovate, but this view ignores the fact that copying can be a key part of the innovation process. Wang and Nay\u0027s success shows that copying is not always a negative and that it can be used as a stepping stone to innovation. Western companies should take note of this and not dismiss copying as a weakness, but rather consider it as a potential tool for innovation."
+              "ChatGPTResponse": "Two Chinese copycats, Wang Shing and Shao Nay, have been successful by copying and improving upon Western technology. Many in the West see copying as a weakness and hold the belief that China is unable to innovate, but this view ignores the fact that copying can be a key part of the innovation process. Wang and Nay\u0027s success shows that copying is not always a negative and that it can be used as a stepping stone to innovation. Western companies should take note of this and not dismiss copying as a weakness, but rather consider it as a potential tool for innovation.",
+              "Sentiment": {
+                "Positive": 0.9330666,
+                "Neutral": 0.061211113,
+                "Negative": 0.0057222852
+              }
             },
             {
               "Index": 1,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": "Chinese entrepreneurs are playing a central role in the rise of artificial intelligence (AI), with the country\u0027s gladiatorial approach to business paving the way for their success. AI is now one of the most talked-about topics among the global business elite and Beijing has seen an increase in the number of entrepreneurs who are not afraid to aggressively copy their rivals\u0027 products, cut prices and execute dirty tactics. This cut-throat attitude is helping to drive innovation in the country and will help to forge a generation of tenacious AI entrepreneurs. This could help China to establish itself as an AI superpower, challenging the US in the field."
+              "ChatGPTResponse": "Chinese entrepreneurs are playing a central role in the rise of artificial intelligence (AI), with the country\u0027s gladiatorial approach to business paving the way for their success. AI is now one of the most talked-about topics among the global business elite and Beijing has seen an increase in the number of entrepreneurs who are not afraid to aggressively copy their rivals\u0027 products, cut prices and execute dirty tactics. This cut-throat attitude is helping to drive innovation in the country and will help to forge a generation of tenacious AI entrepreneurs. This could help China to establish itself as an AI superpower, challenging the US in the field.",
+              "Sentiment": {
+                "Positive": 0.95893234,
+                "Neutral": 0.038518053,
+                "Negative": 0.0025495815
+              }
             },
             {
               "Index": 2,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": "China\u0027s growing strength in artificial intelligence (AI) is a result of the country\u0027s cultural acceptance of copying and a scarcity mentality, according to venture capitalist Kai Fu Lee. He said major breakthroughs in AI have yielded practical applications that are set to change people\u0027s lives. Chinese AI companies have already caught up with their US counterparts, and the government has released national plans to harness the technology. Lee said the Chinese have an ingrained \u0027scarcity mentality\u0027\u00A0and a willingness to dive into any promising new industry. He added that Chinese entrepreneurs are \u0027products of the now defunct one child policy\u0027."
+              "ChatGPTResponse": "China\u0027s growing strength in artificial intelligence (AI) is a result of the country\u0027s cultural acceptance of copying and a scarcity mentality, according to venture capitalist Kai Fu Lee. He said major breakthroughs in AI have yielded practical applications that are set to change people\u0027s lives. Chinese AI companies have already caught up with their US counterparts, and the government has released national plans to harness the technology. Lee said the Chinese have an ingrained \u0027scarcity mentality\u0027\u00A0and a willingness to dive into any promising new industry. He added that Chinese entrepreneurs are \u0027products of the now defunct one child policy\u0027.",
+              "Sentiment": {
+                "Positive": 0.90310115,
+                "Neutral": 0.09270156,
+                "Negative": 0.0041973004
+              }
             },
             {
               "Index": 3,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": "China\u0027s history of copying and its cultural values have helped shape the country\u0027s technology industry and its entrepreneurs. While copying has long been derided by Silicon Valley as a hindrance to innovation, China\u0027s cut-throat internet ecosystem has forced companies to innovate or face extinction. This has led to a generation of tenacious entrepreneurs who have been able to apply deep learning to real-world industries. Cultural norms, such as a scarcity mentality and acceptance of copying, have also played a role in shaping China\u0027s internet ecosystem. These factors, combined with the willingness to enter any promising new market, have created a psychological foundation for China\u0027s internet ecosystem."
+              "ChatGPTResponse": "China\u0027s history of copying and its cultural values have helped shape the country\u0027s technology industry and its entrepreneurs. While copying has long been derided by Silicon Valley as a hindrance to innovation, China\u0027s cut-throat internet ecosystem has forced companies to innovate or face extinction. This has led to a generation of tenacious entrepreneurs who have been able to apply deep learning to real-world industries. Cultural norms, such as a scarcity mentality and acceptance of copying, have also played a role in shaping China\u0027s internet ecosystem. These factors, combined with the willingness to enter any promising new market, have created a psychological foundation for China\u0027s internet ecosystem.",
+              "Sentiment": {
+                "Positive": 0.40757465,
+                "Neutral": 0.52041113,
+                "Negative": 0.07201424
+              }
             },
             {
               "Index": 4,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": "China\u0027s entrepreneurs are better equipped than their Western counterparts to survive the age of artificial intelligence because they are more willing to copy competitors and are more familiar with the Chinese market. China\u0027s \u0027copycat\u0027 culture and its history of grinding poverty means it has a \u0027scarcity mentality\u0027 that drives its entrepreneurs to innovate, according to Greg Walton, a former Google executive who has worked in both the US and China. He argues that China\u0027s entrepreneurs are more focused on making money than changing the world, and have to be more adaptable to survive. He said Silicon Valley\u0027s innovation mentality is a \u0027stumbling block\u0027 to true innovation, and China is better equipped to build on the work of others."
+              "ChatGPTResponse": "China\u0027s entrepreneurs are better equipped than their Western counterparts to survive the age of artificial intelligence because they are more willing to copy competitors and are more familiar with the Chinese market. China\u0027s \u0027copycat\u0027 culture and its history of grinding poverty means it has a \u0027scarcity mentality\u0027 that drives its entrepreneurs to innovate, according to Greg Walton, a former Google executive who has worked in both the US and China. He argues that China\u0027s entrepreneurs are more focused on making money than changing the world, and have to be more adaptable to survive. He said Silicon Valley\u0027s innovation mentality is a \u0027stumbling block\u0027 to true innovation, and China is better equipped to build on the work of others.",
+              "Sentiment": {
+                "Positive": 0.97501653,
+                "Neutral": 0.023642885,
+                "Negative": 0.0013405537
+              }
             },
             {
               "Index": 5,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 6,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 7,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 8,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 9,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 10,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             }
           ],
           "Words": null
@@ -167,57 +238,68 @@
             {
               "Index": 0,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 1,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 2,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 3,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 4,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 5,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 6,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 7,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 8,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 9,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 10,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             }
           ],
           "Words": null
@@ -236,47 +318,56 @@
             {
               "Index": 0,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 1,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 2,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 3,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 4,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 5,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 6,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 7,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 8,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             }
           ],
           "Words": null
@@ -295,62 +386,74 @@
             {
               "Index": 0,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 1,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 2,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 3,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 4,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 5,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 6,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 7,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 8,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 9,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 10,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 11,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             }
           ],
           "Words": null
@@ -369,57 +472,68 @@
             {
               "Index": 0,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 1,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 2,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 3,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 4,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 5,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 6,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 7,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 8,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 9,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 10,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             }
           ],
           "Words": null
@@ -438,47 +552,56 @@
             {
               "Index": 0,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 1,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 2,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 3,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 4,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 5,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 6,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 7,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             },
             {
               "Index": 8,
               "ChatGPTPrompt": null,
-              "ChatGPTResponse": null
+              "ChatGPTResponse": null,
+              "Sentiment": null
             }
           ],
           "Words": null
@@ -502,7 +625,7 @@
   {
     "Version": 1,
     "Audiobook": {
-      "Id": "flow",
+      "Id": null,
       "Title": "Flow",
       "Subtitle": "Living at the Peak of Your Abilities ",
       "Author": "Mihaly Csikszentmihalyi Ph.D.",
@@ -521,7 +644,7 @@
   {
     "Version": 1,
     "Audiobook": {
-      "Id": "rework",
+      "Id": null,
       "Title": "Rework",
       "Subtitle": null,
       "Author": "Jason Fried, David Heinemeier Hansson",
@@ -540,7 +663,7 @@
   {
     "Version": 1,
     "Audiobook": {
-      "Id": "richdadpoordad",
+      "Id": null,
       "Title": "Rich Dad Poor Dad",
       "Subtitle": "What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!",
       "Author": "Robert T. Kiyosaki",
@@ -559,7 +682,7 @@
   {
     "Version": 1,
     "Audiobook": {
-      "Id": "superintelligence",
+      "Id": null,
       "Title": "Superintelligence",
       "Subtitle": "Paths, Dangers, Strategies",
       "Author": "Nick Bostrom",
@@ -578,7 +701,7 @@
   {
     "Version": 1,
     "Audiobook": {
-      "Id": "thechinastudy",
+      "Id": null,
       "Title": "The China Study",
       "Subtitle": "The Most Comprehensive Study of Nutrition Ever Conducted and the Startling Implications for Diet, Weight Loss, and Long-Term Health ",
       "Author": "T. Colin Campbell PhD, Thomas M. Campbell II MD",
@@ -597,7 +720,7 @@
   {
     "Version": 1,
     "Audiobook": {
-      "Id": "thefivelovelanguages",
+      "Id": null,
       "Title": "The Five Love Languages",
       "Subtitle": "The Secret to Love That Lasts",
       "Author": " Gary Chapman",

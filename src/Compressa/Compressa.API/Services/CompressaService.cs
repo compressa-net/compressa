@@ -332,10 +332,17 @@ namespace Compressa.API.Services
                 metadata.Audiobook = new Audiobook();
             }
 
+            if (metadata.Audiobook.Id == null)
+            {
+                metadata.Audiobook.Id = Path.GetFileNameWithoutExtension(metadataFilename).ToLower();
+            }
+
             if (metadata.Audiobook.Chapters == null)
             {
                 metadata.Audiobook.Chapters = new AudiobookChapter[0];
             }
+
+            metadata.Audiobook.Chapters = metadata.Audiobook.Chapters.OrderBy(ch => ch.Index).ToArray();
 
             return metadata;
         }
@@ -458,6 +465,88 @@ namespace Compressa.API.Services
             }
 
             return metadata.ToArray();
+        }
+
+        public async Task<Segment[]> GetSentiment(string audiobookName, int chapterIndex)
+        {
+            _audiobooks.TryGetValue(audiobookName, out string metadataFilename);
+            metadataFilename = ChangeExtension(metadataFilename, $".json");
+
+            MetadataRoot metadata = LoadOrCreateMetadata(metadataFilename);
+
+            if ((metadata == null) || (metadata.Version != 1) || (metadata.Audiobook == null))
+            {
+                throw new Exception($"The metadata file for '{audiobookName}' was not found.");
+            }
+
+            if ((metadata.Audiobook.Chapters == null) || (metadata.Audiobook.Chapters.Count(ch => ch.Segments?.Length > 0) == 0))
+            {
+                throw new Exception($"The metadata file for '{audiobookName}' does not contain any segments.");
+            }
+
+            var segmentsToUpdate = new List<Segment>();
+
+            foreach (var chapter in metadata.Audiobook.Chapters)
+            {
+                if (chapter.Index == chapterIndex)
+                {
+                    foreach (var segment in chapter.Segments)
+                    {
+                        if ((!String.IsNullOrEmpty(segment.ChatGPTResponse)) && (segment.Sentiment == null))
+                        {
+                            segmentsToUpdate.Add(segment);
+                        }
+                    }
+                }
+            }
+
+            if (segmentsToUpdate.Count == 0)
+            {
+                return new Segment[0];
+            }
+
+            var inputsJson = String.Join(",", segmentsToUpdate.Select(s => $"\"{s.ChatGPTResponse}\""));
+            var rawContent = "{\"model\":\"finance-sentiment\",\"inputs\":[" + inputsJson + "]}";
+
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Post,
+                RequestUri = new Uri("https://api.cohere.ai/classify"),
+                Headers =
+                {
+                    { "accept", "application/json" },
+                    { "authorization", $"Bearer {_cohereKey}" },
+                },
+                Content = new StringContent(rawContent)
+                {
+                    Headers =
+                    {
+                        ContentType = new MediaTypeHeaderValue("application/json")
+                    }
+                }
+            };
+            using (var response = await client.SendAsync(request))
+            {
+                response.EnsureSuccessStatusCode();
+                var responseBody = await response.Content.ReadAsStringAsync();
+
+                var sentimentResponse = JsonSerializer.Deserialize<SentimentResponse>(responseBody);
+
+                for (int i = 0; i < segmentsToUpdate.Count; i++)
+                {
+                    segmentsToUpdate[i].Sentiment = new Sentiment()
+                    {
+                        Positive = (float)sentimentResponse.Classifications[i].Confidences.First(conf => conf.Option == "POSITIVE").Value,
+                        Neutral = (float)sentimentResponse.Classifications[i].Confidences.First(conf => conf.Option == "NEUTRAL").Value,
+                        Negative = (float)sentimentResponse.Classifications[i].Confidences.First(conf => conf.Option == "NEGATIVE").Value,
+                    };
+                }
+
+                UpdateMetadataFile(metadataFilename, metadata, metadata.Audiobook.Chapters.First(ch => ch.Index == chapterIndex), null);
+
+                return segmentsToUpdate.ToArray();
+            }
         }
     }
 }
