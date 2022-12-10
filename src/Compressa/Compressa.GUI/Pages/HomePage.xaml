@@ -47,18 +47,19 @@
                     <BindableLayout.ItemTemplate>
                         <DataTemplate x:DataType="m:Source">
                             <Grid RowDefinitions="30,230" WidthRequest="200">
-                                <Border Background="{StaticResource DarkBg2Brush}"
+                                <Button Clicked="Button_Clicked">
+                                </Button>
+                                    <Border Background="{StaticResource DarkBg2Brush}"
                                         Stroke="{StaticResource DarkBg2Brush}"
                                         StrokeThickness="1"
                                         Grid.Row="1"
                                         >
-                                    <Border.StrokeShape>
-                                        <RoundRectangle CornerRadius="16"/>
-                                    </Border.StrokeShape>
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="16"/>
+                                        </Border.StrokeShape>
 
-
-                                </Border>
-                                <VerticalStackLayout Grid.RowSpan="2" Margin="20,0,20,20"
+                                    </Border>
+                                    <VerticalStackLayout Grid.RowSpan="2" Margin="20,0,20,20"
                                                      VerticalOptions="End"
                                                      Spacing="6">
 

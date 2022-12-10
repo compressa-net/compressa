@@ -53,4 +53,14 @@ public partial class HomePage : ContentPage
 
         }
     }
+
+    async void Button_Clicked(object sender, EventArgs e)
+    {
+        var navigationParameter = new Dictionary<string, object>
+        {
+            { "Order", null }
+        };
+
+        await Shell.Current.GoToAsync($"///audiobooks");
+    }
 }
