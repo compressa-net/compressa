@@ -1,19 +1,37 @@
 # Compressa.NET
 Books, podcasts summarized for busy people
 
-![image](https://user-images.githubusercontent.com/910321/206859280-2b3876af-a662-453b-8c8d-1251c61cf15e.png)
+![image](https://user-images.githubusercontent.com/910321/206875910-52a29f87-0eb1-4588-b906-c19809a84f47.png)
+
+![image](https://user-images.githubusercontent.com/910321/206875918-1283b249-4873-4cb9-8554-b203778634cc.png)
+
+![image](https://user-images.githubusercontent.com/910321/206875927-df332a8f-bb3c-4b09-839e-f817056439af.png)
+
+![image](https://user-images.githubusercontent.com/910321/206875975-88669f9d-33d7-45c7-904e-5d1447f9f3cb.png)
 
 
 ## AI services that were explored
-- [x] Stable Diffusion - logo
-- [x] AssemblyAI - audio to text, chapter summary
-- [x] co:here - text compression (!! generated low quality summaries, I can't use them.)
-- [x] wordtune - text compression (!! they don't have a public API, I can't use them.)
-- [ ] ChatGPT - text compression (works very good, but no public API available yet)
-- [ ] Uberduck - text-to-speech (sounds good, integration should be straightforward)
-- [x] Microsoft Speech Studio - customized text-to-speech (!! seems like a good option for custom voices, but needs special permission)
-- [ ] Google Translate - translation
-- [x] GitHub Copilot - programming
+&check; Stable Diffusion - logo
+
+&check; AssemblyAI - audio to text, chapter summary
+
+&cross; co:here - text compression (!! generated low quality summaries, I can't use them.)
+
+&cross; wordtune - text compression (!! they don't have a public API, I can't use them.)
+
+&check; ChatGPT - text compression (works very good, but no public API available yet)
+
+&cross; Uberduck - text-to-speech (sounds good, integration should be straightforward)
+
+&cross; Microsoft Speech Studio - customized text-to-speech (!! seems like a good option for custom voices, but needs special permission)
+
+&cross; Google Translate - translation
+
+&cross; co:here - fine-tuned chat-bot for every book (!! I'm not sure it's possible)
+
+_ co:here - use their fine-tuned model for sentiment analyzis
+
+&check; GitHub Copilot - programming
 
 ## Steps to completion
 - [x] Start a new solution the basic templates of .NET 7 ASP.NET and MAUI.
@@ -22,9 +40,10 @@ Books, podcasts summarized for busy people
 - [x] Use ChatGPT to generate x4 and x16 compressed text
 - [x] Create a basic GUI
 - [x] List available audiobooks
-- [ ] Show the summaries for at least one book
-- [ ] Make the UI capable to change zoom levels amoung 4 levels (list of books, chapters + x64 summary, x16 summary and x4 summary)
+- [x] Show the summaries for at least one book
+- [x] Make the UI capable to change zoom levels amoung 4 levels (list of books, chapters + x64 summary, x16 summary and x4 summary)
 - [ ] Setup the domain and publish the app to [app.compressa.net](https://app.compressa.net)
+- [ ] (optional) Use co:here to build a book-centric chatbot
 - [ ] (optional) Generate AI-voices for the summaries
 - [ ] (optional) Use Google Translate API to translate the summaries to Spanish
 - [ ] Make a 2 minute video
