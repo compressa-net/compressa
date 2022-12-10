@@ -8,7 +8,7 @@ Books for busy people
 - [x] wordtune - text compression (!! they don't have a public API, I can't use them.)
 - [ ] ChatGPT - text compression (works very good, but no public API available yet)
 - [ ] Uberduck - text-to-speech (sounds good, integration should be straightforward)
-- [x] Microsoft Speech Studio - customized text-to-speech (!! seems like a good option for custom voices, but needs special permission from Microsoft)
+- [x] Microsoft Speech Studio - customized text-to-speech (!! seems like a good option for custom voices, but needs special permission)
 - [ ] Google Translate - translation
 - [x] GitHub Copilot - programming
 
