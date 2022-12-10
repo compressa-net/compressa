@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Compressa.API.Models.Audiobook
+namespace Compressa.API.Models.FFMPEG
 {
     public class Tags
     {
