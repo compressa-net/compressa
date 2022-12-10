@@ -15,8 +15,8 @@ Compressa is an book reader application for busy people
 ## Steps to completion
 - [x] Start a new solution the basic templates of .NET 7 ASP.NET and MAUI.
 - [x] Use FFMPEG to convert audible audiobooks to m4b and mp3 chapter files
-- [ ] Use the AssemblyAI service to transcribe the chapters, and test their summarization method
-- [ ] Use ChatGPT to generate x4 and x16 compressed text
+- [x] Use the AssemblyAI service to transcribe the chapters, and test their summarization method
+- [x] Use ChatGPT to generate x4 and x16 compressed text
 - [ ] Create a basic GUI
 - [ ] List available audiobooks
 - [ ] Show the summaries for at least one book
