@@ -1,10 +1,35 @@
-﻿namespace Compressa.GUI
+using Compressa.GUI.Pages;
+
+namespace Compressa.GUI;
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
+    public AppShell()
     {
-        public AppShell()
+        InitializeComponent();
+        BindingContext = this;
+        InitRoutes();
+    }
+
+    private void InitRoutes()
+    {
+        Routing.RegisterRoute(nameof(AddProductView), typeof(AddProductView));
+    }
+
+    private string selectedRoute;
+    public string SelectedRoute
+    {
+        get { return selectedRoute; }
+        set
         {
-            InitializeComponent();
+            selectedRoute = value;
+            OnPropertyChanged();
         }
+    }
+
+    async void OnMenuItemChanged(System.Object sender, CheckedChangedEventArgs e)
+    {
+        if (!String.IsNullOrEmpty(selectedRoute))
+            await Shell.Current.GoToAsync($"//{selectedRoute}");
     }
 }
