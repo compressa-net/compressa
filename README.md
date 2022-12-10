@@ -27,6 +27,10 @@ Books, podcasts summarized for busy people
 
 &cross; Google Translate - translation
 
+&cross; co:here - fine-tuned chat-bot for every book (!! I'm not sure it's possible)
+
+_ co:here - use their fine-tuned model for sentiment analyzis
+
 &check; GitHub Copilot - programming
 
 ## Steps to completion
