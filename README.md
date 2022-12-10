@@ -69,6 +69,6 @@ Artificial General Intelligence Artificial intelligence (AI) is a branch of comp
 * `verbose bullets`: 324 words, 2104 characters, x21 ratio
 
 ### Conclusion
-`gist` would be great for chapter titles
-`paragraph` will be shown under the chapter header
-`verbose bullets` will be the first level of zoom
+- `gist` would be great for chapter titles
+- `paragraph` will be shown under the chapter header
+- `verbose bullets` will be the first level of zoom
