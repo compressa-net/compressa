@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "Audiobook": {
+    "Title": "Superintelligence",
+    "Subtitle": "Paths, Dangers, Strategies",
+    "Author": "Nick Bostrom",
+    "NarratedBy": "Napoleon Ryan",
+    "Summary": "Superintelligence asks the questions: What happens when machines surpass humans in general intelligence? Will artificial agents save or destroy us? Nick Bostrom lays the foundation for understanding the future of humanity and intelligent life.",
+    "StoreLinks": [
+      {
+        "Store": "Audible",
+        "URL": "https://www.audible.com/pd/Superintelligence-Audiobook/B00LPMD72K"
+      }    
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "Version": 1,
+  "Audiobook": {
+    "Title": "Rework",
+    "Author": "Jason Fried, David Heinemeier Hansson",
+    "NarratedBy": "Mike Chamberlain",
+    "Summary": "From the founders of the trailblazing software company 37signals, here is a different kind of business book one that explores a new reality. Today, anyone can be in business. Tools that used to be out of reach are now easily accessible.",
+    "StoreLinks": [
+      {
+        "Store": "Audible",
+        "URL": "https://www.audible.com/pd/Rework-Audiobook/B0036FLXLQ"
+      }    
+    ]
+  }
+}

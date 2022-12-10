@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "Audiobook": {
+    "Title": "Flow",
+    "Subtitle": "Living at the Peak of Your Abilities ",
+    "Author": "Mihaly Csikszentmihalyi Ph.D.",
+    "NarratedBy": "Mihaly Csikszentmihalyi Ph.D.",
+    "Summary": "In flow, everyday experience becomes a moment by moment opportunity for joy and self-fulfillment. Flow is the brain-child of a fascinating psychologist, Mihaly Csikszentmihalyi, a renowned social scientist who has devoted his life's work to the study of what makes people truly happy, satisfied and fulfilled.",
+    "StoreLinks": [
+      {
+        "Store": "Audible",
+        "URL": "https://www.audible.com/pd/Flow-Audiobook/B00QU99KN8"
+      }    
+    ]
+  }
+}
