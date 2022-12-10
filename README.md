@@ -9,9 +9,21 @@ Books, podcasts summarized for busy people
 
 ![image](https://user-images.githubusercontent.com/910321/206875975-88669f9d-33d7-45c7-904e-5d1447f9f3cb.png)
 
+Audio processing by 
+
+![image](https://user-images.githubusercontent.com/910321/206879373-d3dc58fd-2584-46b3-8a20-468a08e409c8.png)
+
+Audio transcription and text summarization by
+
+![image](https://user-images.githubusercontent.com/910321/206879590-90a4d3a8-2511-42f6-96da-c536c5d37b48.png)
+
+Text sentiment detection by
+
+![image](https://user-images.githubusercontent.com/910321/206879433-d89bd3aa-bbf3-466c-bdc7-8543f3411e99.png)
+
 
 ## AI services that were explored
-&check; Stable Diffusion - logo
+&cross; Stable Diffusion - logo
 
 &check; AssemblyAI - audio to text, chapter summary
 
@@ -29,7 +41,7 @@ Books, podcasts summarized for busy people
 
 &cross; co:here - fine-tuned chat-bot for every book (!! I'm not sure it's possible)
 
-_ co:here - use their fine-tuned model for sentiment analyzis
+&check; co:here - use their fine-tuned model for sentiment analyzis
 
 &check; GitHub Copilot - programming
 
@@ -43,9 +55,10 @@ _ co:here - use their fine-tuned model for sentiment analyzis
 - [x] Show the summaries for at least one book
 - [x] Make the UI capable to change zoom levels amoung 4 levels (list of books, chapters + x64 summary, x16 summary and x4 summary)
 - [ ] Setup the domain and publish the app to [app.compressa.net](https://app.compressa.net)
-- [ ] (optional) Use co:here to build a book-centric chatbot
+- [x] (optional) Use co:here to build a book-centric chatbot
 - [ ] (optional) Generate AI-voices for the summaries
 - [ ] (optional) Use Google Translate API to translate the summaries to Spanish
+- [ ] Technical documentation
 - [ ] Make a 2 minute video
 - [ ] Submit the project on Devpost
 
