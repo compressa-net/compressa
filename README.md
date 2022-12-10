@@ -17,8 +17,8 @@ Books for busy people
 - [x] Use FFMPEG to convert audible audiobooks to m4b and mp3 chapter files
 - [x] Use the AssemblyAI service to transcribe the chapters, and test their summarization method
 - [x] Use ChatGPT to generate x4 and x16 compressed text
-- [ ] Create a basic GUI
-- [ ] List available audiobooks
+- [x] Create a basic GUI
+- [x] List available audiobooks
 - [ ] Show the summaries for at least one book
 - [ ] Make the UI capable to change zoom levels amoung 4 levels (list of books, chapters + x64 summary, x16 summary and x4 summary)
 - [ ] Make a 2 minute video
