@@ -85,5 +85,17 @@ namespace Compressa.API.Controllers
 
             return taskId;
         }
+
+        [HttpGet]
+        [Route("summarizechapter/{audiobookName}/{chapterIndex}")]
+        public int SummarizeChapter(string audiobookName, int chapterIndex)
+        {
+            int taskId = Task.Run(() =>
+            {
+                _compressaService.SummarizeChapter(audiobookName, chapterIndex);
+            }).Id;
+
+            return taskId;
+        }
     }
 }

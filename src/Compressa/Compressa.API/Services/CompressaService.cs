@@ -4,6 +4,7 @@ using System.Text.Json;
 using System.Transactions;
 using Compressa.API.Models.AssemblyAI;
 using Compressa.API.Models.Audiobook;
+using Compressa.API.Models.Cohere;
 using FFMpegCore;
 using FFMpegCore.Enums;
 using Microsoft.AspNetCore.Components.Forms;
@@ -185,8 +186,17 @@ namespace Compressa.API.Services
             _logger.LogInformation($"Uploading '{uploadFilename}' to AssemblyAI.");
             var uploadResult = client.UploadFileAsync(uploadFilename).GetAwaiter().GetResult();
 
+            TranscriptionResponse result = GetSummary(client, uploadResult, "informative", "bullets");
+
+            File.WriteAllText(jsonFilename, JsonSerializer.Serialize<TranscriptionResponse>(result, new JsonSerializerOptions() { WriteIndented = true }));
+
+            return result;
+        }
+
+        private TranscriptionResponse GetSummary(AssemblyAIApiClient client, UploadAudioResponse uploadResult, string summaryModel, string summaryType)
+        {
             // Submit file for transcription
-            var submissionResult = client.SubmitAudioFileAsync(uploadResult.UploadUrl, true, "informative", "bullets").GetAwaiter().GetResult();
+            var submissionResult = client.SubmitAudioFileAsync(uploadResult.UploadUrl, true, summaryModel, summaryType).GetAwaiter().GetResult();
             _logger.LogInformation($"File {submissionResult.Id} in status {submissionResult.Status}");
 
             // Query status of transcription until it's `completed`
@@ -198,17 +208,25 @@ namespace Compressa.API.Services
                 result = client.GetTranscriptionAsync(submissionResult.Id).GetAwaiter().GetResult();
             }
 
-            // Perform post-procesing with the result of the transcription
-            _logger.LogInformation($"File {result.Id} in status {result.Status}");
-            _logger.LogInformation($"{result.Words?.Count} words transcribed.");
-
-            File.WriteAllText(jsonFilename, JsonSerializer.Serialize<TranscriptionResponse>(result, new JsonSerializerOptions() { WriteIndented = true }));
-
             return result;
         }
 
-        public async void SummarizeChapter(string text)
+        public async Task<GenerateResponse> SummarizeChapter(string audiobookName, int chapterIndex)
         {
+            _audiobooks.TryGetValue(audiobookName, out string transcriptFilename);
+            transcriptFilename = ChangeExtension(transcriptFilename, $"_ch{chapterIndex:00}.json");
+            var summaryFilename = ChangeExtension(transcriptFilename, $"_ch{chapterIndex:00}_summary.json");
+
+            if ((String.IsNullOrEmpty(transcriptFilename)) || (!File.Exists(transcriptFilename)))
+            {
+                throw new Exception($"The JSON file for chapter {chapterIndex} of '{audiobookName}' was not found.");
+            }
+
+            var transcriptionResponse = JsonSerializer.Deserialize<TranscriptionResponse>(File.ReadAllText(transcriptFilename));
+
+            int maxTokens = 40;
+            float temperature = 0.6f;
+
             var client = new HttpClient();
             var request = new HttpRequestMessage
             {
@@ -218,9 +236,9 @@ namespace Compressa.API.Services
                 {
                     { "accept", "application/json" },
                     { "Cohere-Version", "2021-11-08" },
-                    { "authorization", "Bearer QtGMnAZxP80Jt6JqwPSVhL0FFV9PvWgFhGwwZa1G" },
+                    { "authorization", $"Bearer {_cohereKey}" },
                 },
-                Content = new StringContent("{\"model\":\"xlarge\",\"prompt\":\"" + text + "\",\"max_tokens\":40,\"temperature\":0.8,\"k\":0,\"p\":0.75}")
+                Content = new StringContent("{\"model\":\"xlarge\",\"prompt\":\"" + transcriptionResponse.Text + "\",\"max_tokens\":"+maxTokens+",\"temperature\":" + temperature.ToString("0.0", CultureInfo.InvariantCulture) + ",\"k\":0,\"p\":0.75}")
                 {
                     Headers =
                     {
@@ -231,8 +249,13 @@ namespace Compressa.API.Services
             using (var response = await client.SendAsync(request))
             {
                 response.EnsureSuccessStatusCode();
-                var body = await response.Content.ReadAsStringAsync();
-                Console.WriteLine(body);
+                var responseBody = await response.Content.ReadAsStringAsync();
+
+                var generateResponse = JsonSerializer.Deserialize<GenerateResponse>(responseBody);
+
+                File.WriteAllText(summaryFilename, JsonSerializer.Serialize<GenerateResponse>(generateResponse, new JsonSerializerOptions() { WriteIndented = true }));
+
+                return generateResponse;
             }
         }
     }

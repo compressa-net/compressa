@@ -65,7 +65,7 @@ namespace Compressa.API.Models.AssemblyAI
         {
             using (HttpClient httpClient = new HttpClient())
             {
-                httpClient.DefaultRequestHeaders.Add("Authorization", "6f315bd8dd8d4dc9b3658af66656b013");
+                httpClient.DefaultRequestHeaders.Add("Authorization", _apiToken);
 
                 var json = new
                 {
@@ -81,7 +81,7 @@ namespace Compressa.API.Models.AssemblyAI
 
                 var responseJson = response.Content.ReadAsStringAsync();
 
-                return JsonSerializer.DeserializeAsync<TranscriptionResponse>(responseJson.Result);
+                return JsonSerializer.Deserialize<TranscriptionResponse>(responseJson.Result);
             }
 
             //var request = new HttpRequestMessage(HttpMethod.Post, "v2/transcript");

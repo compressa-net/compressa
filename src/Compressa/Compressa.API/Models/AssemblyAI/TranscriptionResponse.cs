@@ -49,5 +49,17 @@ namespace Compressa.API.Models.AssemblyAI
 
         [JsonPropertyName("words")]
         public List<Word> Words { get; set; }
+
+        [JsonPropertyName("auto_chapters")]
+        public bool AutoChapters { get; set; }
+        [JsonPropertyName("summarization")]
+        public bool Summarization { get; set; }
+        [JsonPropertyName("summary_type")]
+        public string SummaryType { get; set; }
+        [JsonPropertyName("summary_model")]
+        public string SummaryModel { get; set; }
+        [JsonPropertyName("summary")]
+        public string Summary { get; set; }
+
     }
 }
