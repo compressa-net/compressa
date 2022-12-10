@@ -13,5 +13,6 @@ namespace Compressa.API.Services
         void SaveChaptersAsMP3s(string audiobookName);
         Task<AudiobookChapter> TranscribeChapter(string audiobookName, int chapterIndex);
         Task<GenerateResponse> SummarizeChapter(string audiobookName, int chapterIndex);
+        Audiobook TranscribeAudiobook(string audiobookName);
     }
 }

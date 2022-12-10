@@ -115,11 +115,6 @@ namespace Compressa.API.Services
 
             var chapters = JsonSerializer.Deserialize<ChaptersMetadata>(File.ReadAllText(filename));
 
-            foreach (var chapter in chapters.Chapters)
-            {
-                _logger.LogInformation($"Chapter {chapter.StartTime} - {chapter.EndTime} - {chapter.Tags.Title}");
-            }
-
             return chapters.Chapters;
         }
 
@@ -167,6 +162,22 @@ namespace Compressa.API.Services
             _logger.LogInformation($"FFMPEG {args.Percent}");
         }
 
+        public Audiobook TranscribeAudiobook(string audiobookName)
+        {
+            var chapters = ExtractChapterMetadata(audiobookName);
+
+            for (int i = 1; i <= chapters.Length; i++)
+            {
+                TranscribeChapter(audiobookName, i).Wait();
+            }
+
+            _audiobooks.TryGetValue(audiobookName, out string metadataFilename);
+            metadataFilename = ChangeExtension(metadataFilename, $".json");
+
+            MetadataRoot metadata = LoadOrCreateMetadata(metadataFilename);
+            return metadata.Audiobook;
+        }
+
         public async Task<AudiobookChapter> TranscribeChapter(string audiobookName, int chapterIndex)
         {
             _audiobooks.TryGetValue(audiobookName, out string uploadFilename);
@@ -207,32 +218,71 @@ namespace Compressa.API.Services
                 metadata.Audiobook.Chapters = chapters.ToArray();
             }
 
+            int summaryGenerationErrors = 0;
             if (String.IsNullOrEmpty(chapterToEdit.GistSummary))
             {
+                _logger.LogInformation($"Generating gist summary for '{uploadFilename}'.");
                 TranscriptionResponse result = GetSummary(client, uploadResult, "catchy", "gist");
-                chapterToEdit.GistSummary = result.Summary;
-                UpdateMetadataFile(metadataFilename, metadata, chapterToEdit, result);
+                if (result.Status == "error")
+                {
+                    summaryGenerationErrors++;
+                }
+                else
+                {
+                    chapterToEdit.GistSummary = result.Summary;
+                    UpdateMetadataFile(metadataFilename, metadata, chapterToEdit, result);
+                }
             }
 
             if (String.IsNullOrEmpty(chapterToEdit.ParagraphSummary))
             {
+                _logger.LogInformation($"Generating paragraph summary for '{uploadFilename}'.");
                 TranscriptionResponse result = GetSummary(client, uploadResult, "informative", "paragraph");
-                chapterToEdit.ParagraphSummary = result.Summary;
-                UpdateMetadataFile(metadataFilename, metadata, chapterToEdit, result);
+                if (result.Status == "error")
+                {
+                    summaryGenerationErrors++;
+                }
+                else
+                {
+                    chapterToEdit.ParagraphSummary = result.Summary;
+                    UpdateMetadataFile(metadataFilename, metadata, chapterToEdit, result);
+                }
             }
 
             if (String.IsNullOrEmpty(chapterToEdit.BulletsSummary))
             {
+                _logger.LogInformation($"Generating bullets summary for '{uploadFilename}'.");
                 TranscriptionResponse result = GetSummary(client, uploadResult, "informative", "bullets");
-                chapterToEdit.BulletsSummary = result.Summary;
-                UpdateMetadataFile(metadataFilename, metadata, chapterToEdit, result);
+                if (result.Status == "error")
+                {
+                    summaryGenerationErrors++;
+                }
+                else
+                {
+                    chapterToEdit.BulletsSummary = result.Summary;
+                    UpdateMetadataFile(metadataFilename, metadata, chapterToEdit, result);
+                }
             }
 
             if (String.IsNullOrEmpty(chapterToEdit.BulletsVerboseSummary))
             {
+                _logger.LogInformation($"Generating verbose bullets summary for '{uploadFilename}'.");
                 TranscriptionResponse result = GetSummary(client, uploadResult, "informative", "bullets_verbose");
-                chapterToEdit.BulletsVerboseSummary = result.Summary;
-                UpdateMetadataFile(metadataFilename, metadata, chapterToEdit, result);
+                if (result.Status == "error")
+                {
+                    summaryGenerationErrors++;
+                }
+                else
+                {
+                    chapterToEdit.BulletsVerboseSummary = result.Summary;
+                    UpdateMetadataFile(metadataFilename, metadata, chapterToEdit, result);
+                }
+            }
+
+            if (summaryGenerationErrors > 0)
+            {
+                _logger.LogError($"Summary generation failed for '{uploadFilename}' on {summaryGenerationErrors} occasion(s). I'll try to upload the file again, and retry.");
+                return TranscribeChapter(audiobookName, chapterIndex);
             }
 
             return chapterToEdit;
@@ -282,12 +332,13 @@ namespace Compressa.API.Services
 
             // Query status of transcription until it's `completed`
             TranscriptionResponse result = client.GetTranscriptionAsync(submissionResult.Id).GetAwaiter().GetResult();
-            while (!result.Status.Equals("completed"))
+            while (!result.Status.Equals("completed") && !result.Status.Equals("error"))
             {
                 _logger.LogInformation($"File {result.Id} in status {result.Status}");
                 Thread.Sleep(15000);
                 result = client.GetTranscriptionAsync(submissionResult.Id).GetAwaiter().GetResult();
             }
+            _logger.LogInformation($"Transaction finished with the status of '{result.Status}'.");
 
             return result;
         }

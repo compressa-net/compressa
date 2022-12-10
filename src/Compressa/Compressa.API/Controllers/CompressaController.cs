@@ -1,3 +1,4 @@
+using Compressa.API.Models.Metadata;
 using Compressa.API.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing.Constraints;
@@ -87,6 +88,18 @@ namespace Compressa.API.Controllers
         }
 
         [HttpGet]
+        [Route("transcribeaudiobook/{audiobookName}")]
+        public int TranscribeAudiobook(string audiobookName)
+        {
+            int taskId = Task.Run(() =>
+            {
+                _compressaService.TranscribeAudiobook(audiobookName);
+            }).Id;
+
+            return taskId;
+        }
+
+        [HttpGet]
         [Route("summarizechapter/{audiobookName}/{chapterIndex}")]
         public int SummarizeChapter(string audiobookName, int chapterIndex)
         {
@@ -96,6 +109,6 @@ namespace Compressa.API.Controllers
             }).Id;
 
             return taskId;
-        }
+        }        
     }
 }
