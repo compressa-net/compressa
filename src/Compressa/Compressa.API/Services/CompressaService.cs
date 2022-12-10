@@ -406,5 +406,58 @@ namespace Compressa.API.Services
                 return generateResponse;
             }
         }
+
+        public MetadataRoot[] GetAllMetadata(bool includeSummaries)
+        {
+            var metadataFiles = Directory.GetFiles(_mediaFolder, "*.json", SearchOption.AllDirectories);
+            var metadata = new List<MetadataRoot>();
+            foreach (var metadataFile in metadataFiles)
+            {
+                var metadataRoot = JsonSerializer.Deserialize<MetadataRoot>(File.ReadAllText(metadataFile));
+
+                if ((metadataRoot == null) || (metadataRoot.Version != 1) || (metadataRoot.Audiobook == null))
+                {
+                    continue;
+                }
+
+                // load the cover image
+                string coverFilename = ChangeExtension(metadataFile, ".jpg");
+                if (File.Exists(coverFilename))
+                {
+                    var coverImage = File.ReadAllBytes(coverFilename);
+                    // encode coverImage with Base64 encoder
+                    metadataRoot.Audiobook.CoverBase64 = System.Convert.ToBase64String(coverImage);
+                }
+
+                if (metadataRoot.Audiobook.Chapters == null)
+                {
+                    metadataRoot.Audiobook.Chapters = new AudiobookChapter[0];
+                }
+
+                foreach (AudiobookChapter chapter in metadataRoot.Audiobook.Chapters)
+                {
+                    chapter.Words = null;
+                    chapter.Transcript = null;
+
+                    if (chapter.Segments == null)
+                    {
+                        chapter.Segments = new Segment[0];
+                    }
+                    
+                    foreach (var segment in chapter.Segments)
+                    {
+                        segment.ChatGPTPrompt = null;
+                    }
+
+                    chapter.Segments = chapter.Segments.OrderBy(s => s.Index).ToArray();
+                }
+
+                metadataRoot.Audiobook.Chapters = metadataRoot.Audiobook.Chapters.OrderBy(s => s.Index).ToArray();
+
+                metadata.Add(metadataRoot);
+            }
+
+            return metadata.ToArray();
+        }
     }
 }

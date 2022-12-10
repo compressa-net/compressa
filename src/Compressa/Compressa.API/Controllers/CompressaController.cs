@@ -109,6 +109,13 @@ namespace Compressa.API.Controllers
             }).Id;
 
             return taskId;
-        }        
+        }
+
+        [HttpGet]
+        [Route("getallmetadata")]
+        public MetadataRoot[] GetAllMetadata(bool includeSummaries)
+        {
+            return _compressaService.GetAllMetadata(includeSummaries);
+        }
     }
 }

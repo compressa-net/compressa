@@ -31,5 +31,9 @@ namespace Compressa.Models.Metadata
                 Segments[i].ChatGPTPrompt = $"Summarize the following text with approximately {(sentencesPerSegment / 4) + 1} sentences: " + string.Join(" ", sentences.Skip(i * sentencesPerSegment).Take(sentencesPerSegment));
             }
         }
+        public override string ToString()
+        {
+            return $"{this.Index.ToString("00")}: {this.Title}";
+        }
     }
 }
