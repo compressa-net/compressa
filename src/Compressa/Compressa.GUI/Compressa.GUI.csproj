@@ -84,6 +84,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Pages\HomePage.xaml.cs">
+	    <DependentUpon>HomePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\YouTubePage.xaml.cs">
+	    <DependentUpon>YouTubePage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Pages\PodcastsPage.xaml.cs">
 	    <DependentUpon>PodcastsPage.xaml</DependentUpon>
 	  </Compile>
@@ -93,6 +99,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Pages\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\YouTubePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\PodcastsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

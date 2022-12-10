@@ -1,4 +1,5 @@
 using Compressa.GUI.Services;
+using FontAwesome;
 
 namespace Compressa.GUI.Models;
 
@@ -7,6 +8,13 @@ public static class AppData
     private static Random random = new Random();
     public static string[] Statuses = new string[] { "Ready to Pay", "Cooking", "Ready to Order" };
     public static List<int> Tables = new List<int> { 7, 8, 9, 10, 11, 12, 13, 14 };
+
+    public static List<Source> Sources = new List<Source>
+    {
+        new Source(){ Name = "Audiobooks", Description = "Audible", ItemCount = "7 audiobooks", Image = FontAwesomeIcons.FileAudio},
+        new Source(){ Name = "Podcasts",  Description = "Podcasts", ItemCount = "0 podcasts", Image = FontAwesomeIcons.Podcast},
+        new Source(){ Name = "YouTube channels", Description = "YouTube channels", ItemCount = "0 channels", Image = FontAwesomeIcons.Video},
+    };
 
     public static List<Item> Items = new List<Item>
     {

@@ -95,7 +95,7 @@
                 <RadioButton Value="audiobooks" Grid.Row="2"
                                     CheckedChanged="OnMenuItemChanged">
                     <RadioButton.Content>
-                        <Label Text="{x:Static fa:FontAwesomeIcons.Audible}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" TextColor="{StaticResource Primary}"/>
+                        <Label Text="{x:Static fa:FontAwesomeIcons.FileAudio}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" TextColor="{StaticResource Primary}"/>
                     </RadioButton.Content>
                 </RadioButton>
 
@@ -109,7 +109,7 @@
                 <RadioButton Value="youtube" Grid.Row="4"
                                 CheckedChanged="OnMenuItemChanged">
                     <RadioButton.Content>
-                        <Label Text="{x:Static fa:FontAwesomeIcons.Youtube}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" TextColor="{StaticResource Primary}"/>
+                        <Label Text="{x:Static fa:FontAwesomeIcons.Video}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" TextColor="{StaticResource Primary}"/>
                     </RadioButton.Content>
                 </RadioButton>
 
@@ -133,7 +133,7 @@
     </Shell.FlyoutContentTemplate>
 
     <FlyoutItem Title="Home" Route="home">
-        <ShellContent ContentTemplate="{DataTemplate pages:AudiobooksPage}"/>
+        <ShellContent ContentTemplate="{DataTemplate pages:HomePage}"/>
     </FlyoutItem>
     <FlyoutItem Title="Audiobooks" Route="audiobooks">
         <ShellContent ContentTemplate="{DataTemplate pages:AudiobooksPage}"/>
@@ -142,7 +142,7 @@
         <ShellContent ContentTemplate="{DataTemplate pages:PodcastsPage}"/>
     </FlyoutItem>
     <FlyoutItem Title="YouTube" Route="youtube">
-        <ShellContent ContentTemplate="{DataTemplate pages:EmptyPage}"/>
+        <ShellContent ContentTemplate="{DataTemplate pages:YouTubePage}"/>
     </FlyoutItem>
     <FlyoutItem Title="Settings" Route="settings">
         <ShellContent ContentTemplate="{DataTemplate pages:EmptyPage}"/>
