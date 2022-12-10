@@ -3,13 +3,13 @@ Compressa is an book reader application for busy people
 
 ## AI services that are used
 - [x] Stable Diffusion - logo
-- [ ] AssemblyAI - audio to text, chapter summary
+- [x] AssemblyAI - audio to text, chapter summary
 - [ ] co:here - text compression (!! co:here generated low quality results, I can't use them.)
 - [ ] wordtune - text compression (!! they don't have a public API, I can't use them.)
 - [ ] Uberduck - text-to-speech
 - [ ] Microsoft Speech Studio - customized text-to-speech
 - [ ] Google Translate - translation
-- [ ] GitHub Copilot
+- [x] GitHub Copilot - programming
 
 ## Steps to completion
 - [x] Start a new solution the basic templates of .NET 7 ASP.NET and MAUI.
