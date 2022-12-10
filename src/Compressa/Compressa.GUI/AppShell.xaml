@@ -120,7 +120,7 @@
                     </RadioButton.Content>
                 </RadioButton>
 
-                <RadioButton Value="message" Grid.Row="6"
+                <RadioButton Value="reader" Grid.Row="6"
                                     CheckedChanged="OnMenuItemChanged">
                     <RadioButton.Content>
                         <Label Text="{x:Static fa:FontAwesomeIcons.Envelope}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" TextColor="{StaticResource Primary}"/>
@@ -150,5 +150,7 @@
     <FlyoutItem Title="Message" Route="message">
         <ShellContent ContentTemplate="{DataTemplate pages:EmptyPage}"/>
     </FlyoutItem>
-    
+    <FlyoutItem Title="Reader" Route="reader">
+        <ShellContent ContentTemplate="{DataTemplate pages:ReaderPage}"/>
+    </FlyoutItem>
 </Shell>

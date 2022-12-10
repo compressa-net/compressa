@@ -47,8 +47,6 @@
                     <BindableLayout.ItemTemplate>
                         <DataTemplate x:DataType="m:Source">
                             <Grid RowDefinitions="30,230" WidthRequest="200">
-                                <Button Clicked="Button_Clicked">
-                                </Button>
                                     <Border Background="{StaticResource DarkBg2Brush}"
                                         Stroke="{StaticResource DarkBg2Brush}"
                                         StrokeThickness="1"
@@ -59,9 +57,13 @@
                                         </Border.StrokeShape>
 
                                     </Border>
-                                    <VerticalStackLayout Grid.RowSpan="2" Margin="20,0,20,20"
-                                                     VerticalOptions="End"
+                                <VerticalStackLayout Grid.RowSpan="2" Margin="20,150,20,20"
+                                                     VerticalOptions="Start"
                                                      Spacing="6">
+                                    
+                                    <HorizontalStackLayout Margin="0" Spacing="10">
+                                        <Button Text="{x:Static fa:FontAwesomeIcons.FolderOpen}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked" Padding="5" WidthRequest="150"/>
+                                    </HorizontalStackLayout>
 
                                     <Label Text="{Binding Name}" HorizontalOptions="Center" Style="{StaticResource Title2}" HorizontalTextAlignment="Center"/>
                                     <Label Text="{Binding ItemCount}" HorizontalOptions="Center"/>

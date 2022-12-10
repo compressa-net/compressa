@@ -53,4 +53,14 @@ public partial class AudiobooksPage : ContentPage
 
         }
     }
+
+    async void Button_Clicked(object sender, EventArgs e)
+    {
+        var navigationParameter = new Dictionary<string, object>
+        {
+            { "AudiobookId", "aisuperpowers" }
+        };
+
+        await Shell.Current.GoToAsync($"///reader", navigationParameter);
+    }
 }

@@ -58,13 +58,17 @@
 
 
                                 </Border>
-                                <VerticalStackLayout Grid.RowSpan="2" Margin="20,0,20,20"
-                                                     VerticalOptions="End"
+                                <VerticalStackLayout Grid.RowSpan="2" Margin="20,150,20,20"
+                                                     VerticalOptions="Start"
                                                      Spacing="6">
+
+                                    <HorizontalStackLayout Margin="0" Spacing="10">
+                                        <Button Text="{x:Static fa:FontAwesomeIcons.BookOpen}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked" Padding="5" WidthRequest="75"/>
+                                        <Button Text="{x:Static fa:FontAwesomeIcons.CommentDots}" FontFamily="FontAwesome" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Button_Clicked" Padding="5" WidthRequest="75"/>
+                                    </HorizontalStackLayout>
 
                                     <Label Text="{Binding Title}" HorizontalOptions="Center" Style="{StaticResource Title2}" HorizontalTextAlignment="Center"/>
                                     <Label Text="{Binding Author}" HorizontalOptions="Center" Style="{StaticResource Author}"/>
-                                    <!--<Label Text="20 Bowls available" HorizontalOptions="Center" Style="{StaticResource Subhead}"/>-->
                                 </VerticalStackLayout>
                                 <Image
                                     Grid.RowSpan="2" WidthRequest="132" HeightRequest="132"

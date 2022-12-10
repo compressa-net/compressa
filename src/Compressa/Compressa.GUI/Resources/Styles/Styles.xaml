@@ -130,6 +130,20 @@
                 Value="16"/>
         <Setter Property="FontFamily" Value="OpenSansSemiBold"/>
     </Style>
+    <Style TargetType="Label" x:Key="ReaderTitle">
+        <Setter Property="FontSize" Value="26"/>
+        <Setter Property="FontFamily" Value="OpenSansSemiBold"/>
+        <Setter Property="TextDecorations" Value="Underline"/>
+    </Style>
+    <Style TargetType="Label" x:Key="ReaderSubtitle">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontFamily" Value="OpenSansSemiBold"/>
+        <Setter Property="TextColor" Value="#aaffffff"/>
+    </Style>
+    <Style TargetType="Label" x:Key="ReaderText">
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="FontFamily" Value="OpenSansSemiBold"/>
+    </Style>
     <Style TargetType="Label"
             x:Key="Author">
         <Setter Property="FontSize"
