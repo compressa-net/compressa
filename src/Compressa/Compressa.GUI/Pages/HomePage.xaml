@@ -129,7 +129,7 @@
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Business</x:String>
                         <x:String>Finance</x:String>
-                        <x:String>Lucid Dreaming</x:String>
+                        <x:String>Health</x:String>
                         <x:String>Relationships</x:String>
                         <x:String>Technology</x:String>
                     </x:Array>

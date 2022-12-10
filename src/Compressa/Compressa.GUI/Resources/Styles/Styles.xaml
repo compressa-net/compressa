@@ -127,7 +127,13 @@
     <Style TargetType="Label"
             x:Key="Title2">
         <Setter Property="FontSize"
-                Value="18"/>
+                Value="16"/>
+        <Setter Property="FontFamily" Value="OpenSansSemiBold"/>
+    </Style>
+    <Style TargetType="Label"
+            x:Key="Author">
+        <Setter Property="FontSize"
+                Value="12"/>
         <Setter Property="FontFamily" Value="OpenSansSemiBold"/>
     </Style>
     <Style TargetType="Label"

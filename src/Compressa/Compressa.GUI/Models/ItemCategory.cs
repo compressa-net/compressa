@@ -4,7 +4,7 @@
     {
         Business,
         Finance,
-        LucidDreaming,
+        Health,
         Relationships,
         Technology,
     }

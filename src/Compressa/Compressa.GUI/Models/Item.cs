@@ -15,6 +15,15 @@ public partial class Item
     [ObservableProperty]
     double price;
 
+    [ObservableProperty]
+    string subtitle;
+
+    [ObservableProperty]
+    string author;
+
+    [ObservableProperty]
+    string summary;
+
     partial void OnQuantityChanged(int value)
     {
         OnPropertyChanged(nameof(SubTotal));

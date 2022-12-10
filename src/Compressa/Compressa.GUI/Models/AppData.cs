@@ -18,16 +18,13 @@ public static class AppData
 
     public static List<Item> Items = new List<Item>
     {
-        new Item(){ Title = "Japchae", Price    = 13.99, Quantity = 1, Image = "japchae.png", Category = ItemCategory.Business},
-        new Item(){ Title = "Jajangmyeon", Price = 14.99, Quantity = 1, Image = "jajangmyeon.png", Category = ItemCategory.Business},
-        new Item(){ Title = "Janchi Guksu", Price = 12.99, Quantity = 1, Image = "janchi_guksu.png", Category = ItemCategory.Business},
-        new Item(){ Title = "Budae Jjigae", Price = 14.99, Quantity = 1, Image = "budae_jjigae.png", Category = ItemCategory.Business},
-        new Item(){ Title = "Naengmyeon", Price = 12.99, Quantity = 1, Image = "naengmyeon.png", Category = ItemCategory.Business},
-        new Item(){ Title = "Soda", Price = 2.50, Quantity = 1, Category = ItemCategory.Relationships, Image = "soda.png"},
-        new Item(){ Title = "Iced Tea", Price = 3.50, Quantity = 1, Category = ItemCategory.Relationships, Image = "iced_tea.png"},
-        new Item(){ Title = "Hot Tea", Price = 4.00, Quantity = 1, Category = ItemCategory.Relationships, Image = "tea.png"},
-        new Item(){ Title = "Coffee", Price = 4.00, Quantity = 1, Category = ItemCategory.Relationships, Image = "coffee.png"},
-        new Item(){ Title = "Milk", Price = 5.00, Quantity = 1, Category = ItemCategory.Relationships, Image = "milk.png"},
+        new Item(){ Title = "AI Superpowers", Author = "Kai-Fu Lee", Image = "aisuperpowers.jpg", Category = ItemCategory.Technology},
+        new Item(){ Title = "Flow", Author = "Mihaly Csikszentmihalyi", Image = "flow.jpg", Category = ItemCategory.Relationships},
+        new Item(){ Title = "Rework", Author = "Jason Fried, David Heinemeier Hansson", Image = "rework.jpg", Category = ItemCategory.Business},
+        new Item(){ Title = "Rich Dad Poor Dad", Author = "Robert T. Kiyosaki", Image = "richdadpoordad.jpg", Category = ItemCategory.Finance},
+        new Item(){ Title = "Superintelligence", Author = "Kai-Fu Lee", Image = "superintelligence.jpg", Category = ItemCategory.Technology},
+        new Item(){ Title = "The China Study", Author = "Kai-Fu Lee", Image = "thechinastudy.jpg", Category = ItemCategory.Health},
+        new Item(){ Title = "The Five Love Languages", Author = "Kai-Fu Lee", Image = "thefivelovelanguages.jpg", Category = ItemCategory.Relationships},
     };
 
     public static List<Order> Orders { get; set; } = GenerateOrders(null);

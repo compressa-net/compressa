@@ -21,7 +21,7 @@ public partial class AudiobooksViewModel
     public AudiobooksViewModel()
     {
         _products = new ObservableCollection<Item>(
-            AppData.Items.Where(x => x.Category == ItemCategory.Business).ToList()
+            AppData.Items.ToList()
         );
     }
 
