@@ -78,9 +78,9 @@ It would be a win-win: fantastic way for us to consume these important works, an
 - [ ] (optional) Generate AI-voices for the summaries (skipped)
 - [ ] (optional) Use Google Translate API to translate the summaries to Spanish (skipped)
 - [ ] (optional) Publish the application on the Microsoft Store (failed)
-- [ ] Technical documentation
+- [x] Technical documentation
 - [x] Make a-2 minute video
-- [ ] Submit the project on Devpost
+- [ ] Submit the project on Devpost before 21:00
 
 ## Technical details
 
@@ -89,7 +89,7 @@ It would be a win-win: fantastic way for us to consume these important works, an
 
 There are three project in the Visual Studio solution: one for the backend, one for the frontend, one library for the shared classes.
 
-#### Backend web API - (Compressa.API)[https://github.com/compressa-net/compressa/tree/main/src/Compressa/Compressa.API]
+#### Backend web API - [Compressa.API](https://github.com/compressa-net/compressa/tree/main/src/Compressa/Compressa.API)
 
 The backend has multiple responsibilities:
  - Convert the Audible Audiobook format (AAX) into an open standard (M4B)
@@ -114,19 +114,24 @@ The backend also has a console output logger, where we can follow the different 
 You can call these functions easily by openning their URLs.
 
 https://localhost:7283/compressa/transcribechapter/AISuperpowers/08
+
 Looks for the chapter 8 MP3 of the book "AI Superpowers" and automatically uses AssemblyAI's API to transcribe that chapter. If it was successful it updates the metadata files.
 
 https://localhost:7283/compressa/getsentiment/AISuperpowers/04
+
 Similarly this one tries to open the files associated with AI Superpower's chapter 4, and run co:here's sentiment analizer.
 
 https://localhost:7283/compressa/getallmetadata
+
 This is probanly the easiest to test, because it returns all the metadata we have on the backend. This returned JSON file can be cached on the frontend for offline usage.
 
-#### .NET MAUI frontend (Compressa.GUI)[https://github.com/compressa-net/compressa/tree/main/src/Compressa/Compressa.GUI]
+#### .NET MAUI frontend [Compressa.GUI](https://github.com/compressa-net/compressa/tree/main/src/Compressa/Compressa.GUI)
 
 The frontend was based on a public MAUI template, [Microsoft's Point of Sale sample](https://docs.microsoft.com/de-de/samples/dotnet/maui-samples/apps-pointofsale/).
 
 My priority was to have the simplest design possible that is still functional. The frontend first consumed the backend's API, but then I realized that deploying a backend, having a fixed URL for it with SSL certificates is too much time and I decided to have a trick: I used caching when I called the backend, and I saved the cache. So now the frontend is able to retrieve the data from its cache and run without the presence of the backend.
+
+![image](https://user-images.githubusercontent.com/910321/206909620-b5922142-cd1f-4233-9664-3770b02c1329.png)
 
 ### How to compile it and run it
 
@@ -137,6 +142,8 @@ The most robust way to test it if you compile it from source. To do that you nee
 4. Open the `Compressa.sln` file from the `\src\Compressa` folder
 5. Select the `Compressa.GUI` project from the `Solution Explorer` on the right side, right click and `Set as Startup Project`
 6. Run the solution with the little green play button on the top bar (or press F5)
+
+IMPORTANT: This code is not production ready and it has my API keys for AssemblyAI and co:here! Feel free to use them for testing, just make sure that you don't share it with others.
 
 ## My Schedule
 
