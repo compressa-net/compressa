@@ -1,5 +1,7 @@
 # Compressa.NET
-Books, podcasts summarized for busy people
+## Books, podcasts summarized for busy people
+
+Compressa.NET application was built in a way that it can be deployed to Windows, Linux, Mac, Android and iOS.
 
 ![image](https://user-images.githubusercontent.com/910321/206875910-52a29f87-0eb1-4588-b906-c19809a84f47.png)
 
@@ -8,6 +10,9 @@ Books, podcasts summarized for busy people
 ![image](https://user-images.githubusercontent.com/910321/206875927-df332a8f-bb3c-4b09-839e-f817056439af.png)
 
 ![image](https://user-images.githubusercontent.com/910321/206875975-88669f9d-33d7-45c7-904e-5d1447f9f3cb.png)
+
+![image](https://user-images.githubusercontent.com/910321/206906709-ce2cf9e8-4e61-4d8b-a399-19783ca1ea7d.png)
+
 
 ### Audio processing by 
 
@@ -21,6 +26,12 @@ Books, podcasts summarized for busy people
 
 ![image](https://user-images.githubusercontent.com/910321/206879433-d89bd3aa-bbf3-466c-bdc7-8543f3411e99.png)
 
+## Application Installation
+This application was created with Microsoft latest, platform independent, open-source framework called .NET MAUI.
+
+The generated application packages can be downloaded from [the Releases page](https://github.com/compressa-net/compressa/releases).
+
+A video showing you the basic functionality [can be watched on YouTube](https://youtu.be/yu5_r_maWqg).
 
 ## AI services that were explored
 &cross; Stable Diffusion - logo
@@ -54,12 +65,13 @@ Books, podcasts summarized for busy people
 - [x] List available audiobooks
 - [x] Show the summaries for at least one book
 - [x] Make the UI capable to change zoom levels amoung 4 levels (list of books, chapters + x64 summary, x16 summary and x4 summary)
-- [ ] Setup the domain and publish the app to [app.compressa.net](https://app.compressa.net)
+- [x] Setup the domain and publish the app to [app.compressa.net](https://app.compressa.net)
 - [x] (optional) Use co:here to build a book-centric chatbot
-- [ ] (optional) Generate AI-voices for the summaries
-- [ ] (optional) Use Google Translate API to translate the summaries to Spanish
+- [ ] (optional) Generate AI-voices for the summaries (skipped)
+- [ ] (optional) Use Google Translate API to translate the summaries to Spanish (skipped)
+- [ ] (optional) Publish the application on the Microsoft Store (failed)
 - [ ] Technical documentation
-- [ ] Make a 2 minute video
+- [x] Make a-2 minute video
 - [ ] Submit the project on Devpost
 
 ## My Schedule
