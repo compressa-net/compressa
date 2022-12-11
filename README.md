@@ -33,6 +33,14 @@ The generated application packages can be downloaded from [the Releases page](ht
 
 A video showing you the basic functionality [can be watched on YouTube](https://youtu.be/yu5_r_maWqg).
 
+## Future Potencial
+
+I love technologies that make us more efficient or make our lifes easier. This app could help countless people who love to read, but have little time for it. It could mean a more efficient way to consume information from books.
+
+Integrating AI-generated voices would be a logical next step, and automatic translation should be fairly easy to implement too. I could image a business model where we contact authors diretly and share our revenue with them, based on their statistics in our app.
+
+It would be a win-win: fantastic way for us to consume these important works, and we would give the authors a new revenue channel to profit from.
+
 ## AI services that were explored
 &cross; Stable Diffusion - logo
 
@@ -83,14 +91,6 @@ A video showing you the basic functionality [can be watched on YouTube](https://
 ### Sunday (Publication and Presentation day)
 
 (note: all of my work was screen captured and available on request)
-
-## Future Potencial
-
-I love technologies that make us more efficient or make our lifes easier. This app could help countless people who love to read, but have little time for it. It could mean a more efficient way to consume information from books.
-
-Integrating AI-generated voices would be a logical next step, and automatic translation should be fairly easy to implement too. I could image a business model where we contact authors diretly and share our revenue with them, based on their statistics in our app.
-
-It would be a win-win: fantastic way for us to consume these important works, and we would give the authors a new revenue channel to profit from.
 
 ## Text summary tests
 
