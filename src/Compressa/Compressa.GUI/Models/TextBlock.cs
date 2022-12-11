@@ -19,4 +19,20 @@ public partial class TextBlock
 
     [ObservableProperty]
     float sentiment;
+
+    public bool IsSentimentPositive
+    {
+        get
+        {
+            return sentiment > 0.7;
+        }
+    }
+
+    public bool IsSentimentNegative
+    {
+        get
+        {
+            return sentiment < 0.0;
+        }
+    }
 }

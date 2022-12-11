@@ -29,9 +29,23 @@
                 <BindableLayout.ItemTemplate>
                     <DataTemplate x:DataType="m:TextBlock">
                         <VerticalStackLayout Margin="20,0,20,20" VerticalOptions="Center" MaximumWidthRequest="800" Spacing="6">
-                            <Label Text="{Binding Title}" Style="{StaticResource ReaderTitle}"/>
+                            <VerticalStackLayout.Resources>
+                                <Style x:Key="ColoredLabel" TargetType="Label">
+                                    <Setter Property="TextColor" Value="#94B7DC" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsSentimentPositive}" Value="True" TargetType="Label">
+                                            <Setter Property="TextColor" Value="#A5DBED" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding IsSentimentNegative}" Value="True" TargetType="Label">
+                                            <Setter Property="TextColor" Value="#9492BF" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </VerticalStackLayout.Resources>
+
+                            <Label Text="{Binding Title}" Style="{StaticResource ReaderTitle}" IsVisible="false"/>
                             <Label Text="{Binding Subtitle}" Style="{StaticResource ReaderSubtitle}"/>
-                            <Label Text="{Binding Text}" Style="{StaticResource ReaderText}"/>
+                            <Label Text="{Binding Text}" Style="{StaticResource ColoredLabel}"/>
                         </VerticalStackLayout>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
