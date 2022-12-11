@@ -7,9 +7,9 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="8D1C6CD3-CA27-4254-B76F-15B91335C418"
-    Publisher="CN=Andras Fuchs"
-    Version="1.0.9.0" />
+    Name="4014AndrasFuchs.Compressa.NET"	
+    Publisher="CN=C08D6640-92C7-44B6-AFEB-7F71E8FD74A3"
+    Version="1.1.12.0" />
 
   <Properties>
     <DisplayName>Compressa.NET</DisplayName>

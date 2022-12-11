@@ -34,7 +34,7 @@
 
 		<AssemblyName>Compressa.NET</AssemblyName>
 
-		<GenerateAppInstallerFile>True</GenerateAppInstallerFile>
+		<GenerateAppInstallerFile>False</GenerateAppInstallerFile>
 
 		<AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
 
@@ -51,6 +51,10 @@
 		<PackageCertificateThumbprint>04462D95CC8DBED8456A8BAE890D8B620CF01FB0</PackageCertificateThumbprint>
 
 		<AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+
+		<DefaultLanguage>en-us</DefaultLanguage>
+
+		<GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
 	</PropertyGroup>
 
 	
@@ -86,6 +90,14 @@
 	  <Content Remove="Resources\Raw\payment1.json" />
 	  <Content Remove="Resources\Raw\payment2.json" />
 	  <Content Remove="Resources\Raw\payment3.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiFont Remove="Resources\Fonts\fontawesome_6_free-solid-900.otf" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Fonts\fontawesome_6_free-solid-900.otf" />
 	</ItemGroup>
 
 	<ItemGroup>
