@@ -235,4 +235,6 @@ Publishing to the Microsoft Store isn't straightforward at all.
 
 - When we create a new MSIX file, the publishing profile (that is found in `Compressa.GUI\Properties\PublishProfiles`) must have its `SelfContained` value set to `true` and its `PublishAppxPackage` to `true`. 
 - The usable files including the MSIX file will be in the AppxPackageDir, and not in `PublishDir`!
-- If PublishReadyToRun is set to true, the process exists with an exception.
+- If `PublishReadyToRun` is set to `true`, the process exists with an exception.
+- If the installer is downloaded from GitHub then a certificate must be installed on the target system, which is technically difficult
+- Publishing to Microsoft Store feels like a nightmare, errors, troubshooting, and more errors :(
