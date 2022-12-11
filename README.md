@@ -62,8 +62,9 @@ A video showing you the basic functionality [can be watched on YouTube](https://
 - [x] Make the UI capable to change zoom levels amoung 4 levels (list of books, chapters + x64 summary, x16 summary and x4 summary)
 - [x] Setup the domain and publish the app to [app.compressa.net](https://app.compressa.net)
 - [x] (optional) Use co:here to build a book-centric chatbot
-- [ ] (optional) Generate AI-voices for the summaries
-- [ ] (optional) Use Google Translate API to translate the summaries to Spanish
+- [ ] (optional) Generate AI-voices for the summaries (skipped)
+- [ ] (optional) Use Google Translate API to translate the summaries to Spanish (skipped)
+- [ ] (optional) Publish the application on the Microsoft Store (failed)
 - [ ] Technical documentation
 - [ ] Make a 2 minute video
 - [ ] Submit the project on Devpost
