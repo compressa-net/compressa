@@ -9,8 +9,6 @@ Compressa.NET application was built in a way that it can be deployed to Windows,
 
 ![image](https://user-images.githubusercontent.com/910321/206875927-df332a8f-bb3c-4b09-839e-f817056439af.png)
 
-![image](https://user-images.githubusercontent.com/910321/206875975-88669f9d-33d7-45c7-904e-5d1447f9f3cb.png)
-
 ![image](https://user-images.githubusercontent.com/910321/206906709-ce2cf9e8-4e61-4d8b-a399-19783ca1ea7d.png)
 
 
