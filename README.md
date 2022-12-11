@@ -86,11 +86,22 @@ It would be a win-win: fantastic way for us to consume these important works, an
 
 ### How to compile and run it
 
+The most robust way to test it if you compile it from source. To do that you need the following steps:
+1. Install Visual Studio 2022 (the free Community Edition is fine)
+2. Make sure that you install the `ASP.NET and web development` and the `.NET MAUI Multi-platform App UI development` workloads
+3. Clone this repo
+4. Open the `Compressa.sln` file from the `\src\Compressa` folder
+5. Select the `Compressa.GUI` project from the `Solution Explorer` on the right side, right click and `Set as Startup Project`
+6. Run the solution with the little green play button on the top bar (or press F5)
+
 ### Project structure
+![image](https://user-images.githubusercontent.com/910321/206907696-67724d50-88fb-4818-abf5-a79b4786c64f.png)
 
-#### Backend web API
+There are three project in the Visual Studio solution: one for the backend, one for the frontend, one library for the shared classes.
 
-#### .NET MAUI frontend
+#### Backend web API (Compressa.API)
+
+#### .NET MAUI frontend (Compressa.GUI)
 
 ## My Schedule
 
