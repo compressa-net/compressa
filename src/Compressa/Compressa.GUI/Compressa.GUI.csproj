@@ -32,7 +32,25 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 
-		<AssemblyName>Compressa.GUI</AssemblyName>
+		<AssemblyName>Compressa.NET</AssemblyName>
+
+		<GenerateAppInstallerFile>True</GenerateAppInstallerFile>
+
+		<AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+
+		<AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+
+		<GenerateTestArtifacts>True</GenerateTestArtifacts>
+
+		<AppInstallerUri>https://app.compressa.net/</AppInstallerUri>
+
+		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+
+		<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+
+		<PackageCertificateThumbprint>04462D95CC8DBED8456A8BAE890D8B620CF01FB0</PackageCertificateThumbprint>
+
+		<AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
 	</PropertyGroup>
 
 	

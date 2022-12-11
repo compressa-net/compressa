@@ -8,12 +8,12 @@
 
   <Identity
     Name="8D1C6CD3-CA27-4254-B76F-15B91335C418"
-    Publisher="CN=User Name"
-    Version="1.0.0.0" />
+    Publisher="CN=Andras Fuchs"
+    Version="1.0.9.0" />
 
   <Properties>
-    <DisplayName>Compressa.GUI</DisplayName>
-    <PublisherDisplayName>Microsoft</PublisherDisplayName>
+    <DisplayName>Compressa.NET</DisplayName>
+    <PublisherDisplayName>Andras Fuchs</PublisherDisplayName>
     <Logo>appiconStoreLogo.png</Logo>
   </Properties>
 
@@ -31,8 +31,8 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="Compressa.GUI"
-        Description="Compressa.GUI"
+        DisplayName="Compressa.NET"
+        Description="Books, podcasts summarized for busy people"
         BackgroundColor="transparent"
         Square150x150Logo="appiconMediumTile.png"
         Square44x44Logo="appiconLogo.png">
