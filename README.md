@@ -9,15 +9,15 @@ Books, podcasts summarized for busy people
 
 ![image](https://user-images.githubusercontent.com/910321/206875975-88669f9d-33d7-45c7-904e-5d1447f9f3cb.png)
 
-Audio processing by 
+### Audio processing by 
 
 ![image](https://user-images.githubusercontent.com/910321/206879373-d3dc58fd-2584-46b3-8a20-468a08e409c8.png)
 
-Audio transcription and text summarization by
+### Audio transcription and text summarization by
 
 ![image](https://user-images.githubusercontent.com/910321/206879590-90a4d3a8-2511-42f6-96da-c536c5d37b48.png)
 
-Text sentiment detection by
+### Text sentiment detection by
 
 ![image](https://user-images.githubusercontent.com/910321/206879433-d89bd3aa-bbf3-466c-bdc7-8543f3411e99.png)
 
