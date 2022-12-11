@@ -89,7 +89,7 @@ It would be a win-win: fantastic way for us to consume these important works, an
 
 There are three project in the Visual Studio solution: one for the backend, one for the frontend, one library for the shared classes.
 
-#### Backend web API (Compressa.API)
+#### Backend web API - (Compressa.API)[https://github.com/compressa-net/compressa/tree/main/src/Compressa/Compressa.API]
 
 The backend has multiple responsibilities:
  - Convert the Audible Audiobook format (AAX) into an open standard (M4B)
@@ -102,7 +102,31 @@ The backend has multiple responsibilities:
  - Prepare the data for the front-end consumption
  - Expose many of the above functionalities as a standard RESTful Web API
 
-#### .NET MAUI frontend (Compressa.GUI)
+To accomplish all of these tasks I used FFMPEG, AssemblyAI, co:here and OpenGPT. FFMPEG has a C# library, but I wrote my own library to the others. Nearly all the step of this pipeline is now automated and accessible through the API interface.
+
+Here is a screenshot of its Swagger interface (that can be accessed at https://localhost:7283/swagger/index.html while running it locally):
+
+![image](https://user-images.githubusercontent.com/910321/206909030-94a7d433-8fe1-417d-834e-c41e1f3814ef.png)
+
+The backend also has a console output logger, where we can follow the different (often time-consuming) tasks:
+![image](https://user-images.githubusercontent.com/910321/206909255-e0a62241-6b95-43bd-86ba-e995e6f2a8b5.png)
+
+You can call these functions easily by openning their URLs.
+
+https://localhost:7283/compressa/transcribechapter/AISuperpowers/08
+Looks for the chapter 8 MP3 of the book "AI Superpowers" and automatically uses AssemblyAI's API to transcribe that chapter. If it was successful it updates the metadata files.
+
+https://localhost:7283/compressa/getsentiment/AISuperpowers/04
+Similarly this one tries to open the files associated with AI Superpower's chapter 4, and run co:here's sentiment analizer.
+
+https://localhost:7283/compressa/getallmetadata
+This is probanly the easiest to test, because it returns all the metadata we have on the backend. This returned JSON file can be cached on the frontend for offline usage.
+
+#### .NET MAUI frontend (Compressa.GUI)[https://github.com/compressa-net/compressa/tree/main/src/Compressa/Compressa.GUI]
+
+The frontend was based on a public MAUI template, [Microsoft's Point of Sale sample](https://docs.microsoft.com/de-de/samples/dotnet/maui-samples/apps-pointofsale/).
+
+My priority was to have the simplest design possible that is still functional. The frontend first consumed the backend's API, but then I realized that deploying a backend, having a fixed URL for it with SSL certificates is too much time and I decided to have a trick: I used caching when I called the backend, and I saved the cache. So now the frontend is able to retrieve the data from its cache and run without the presence of the backend.
 
 ### How to compile it and run it
 
