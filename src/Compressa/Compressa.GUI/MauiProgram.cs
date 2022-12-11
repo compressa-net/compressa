@@ -33,11 +33,9 @@ public static class MauiProgram
             .UseSkiaSharp()
             .ConfigureFonts(fonts =>
             {
+                fonts.AddFont("fa-solid-900.ttf", "FontAwesome");
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-SemiBold.ttf", "OpenSansSemiBold");
-                fonts.AddFont("Montserrat-Regular.ttf", "MontserratRegular");
-                fonts.AddFont("Montserrat-SemiBold.ttf", "MontserratSemiBold");
-                fonts.AddFont("Font Awesome 6 Free-Solid-900.otf", "FontAwesome");
                 fonts.AddFont("fabmdl2.ttf", "Fabric");
             });
 
