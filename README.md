@@ -233,4 +233,6 @@ The game of Go is considered to be one of the most complex board games in the wo
 
 Publishing to the Microsoft Store isn't straightforward at all.
 
-When we create a new MSIX file, the publishing profile (that is found in `Compressa.GUI\Properties\PublishProfiles`) must have its `SelfContained` value set to `true` and its `PublishAppxPackage` to `true`. The usable files including the MSIX file will be in the AppxPackageDir, and not in `PublishDir`!
+- When we create a new MSIX file, the publishing profile (that is found in `Compressa.GUI\Properties\PublishProfiles`) must have its `SelfContained` value set to `true` and its `PublishAppxPackage` to `true`. 
+- The usable files including the MSIX file will be in the AppxPackageDir, and not in `PublishDir`!
+- If PublishReadyToRun is set to true, the process exists with an exception.
