@@ -82,6 +82,16 @@ It would be a win-win: fantastic way for us to consume these important works, an
 - [x] Make a-2 minute video
 - [ ] Submit the project on Devpost
 
+## Technical details
+
+### How to compile and run it
+
+### Project structure
+
+#### Backend web API
+
+#### .NET MAUI frontend
+
 ## My Schedule
 
 ### Friday (Backend day)
