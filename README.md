@@ -1,7 +1,7 @@
 # Compressa.NET
 ## Books, podcasts summarized for busy people
 
-Compressa.NET application was built in a way that it can be deployed to Windows, Linux, Mac, Android and iOS.
+Compressa.NET application was built in a way that it can be deployed to Windows, Linux, Mac, Android and iOS, but since I have only Windows at the moment, only the Windows release is guarantied to work!
 
 ![image](https://user-images.githubusercontent.com/910321/206875910-52a29f87-0eb1-4588-b906-c19809a84f47.png)
 
@@ -29,7 +29,7 @@ This application was created with Microsoft latest, platform independent, open-s
 
 The generated application packages can be downloaded from [the Releases page](https://github.com/compressa-net/compressa/releases).
 
-A video showing you the basic functionality [can be watched on YouTube](https://youtu.be/yu5_r_maWqg).
+A video showing you the basic functionality [can be watched on YouTube](https://youtu.be/q9bRZmZh9nY).
 
 ## Future Potencial
 
