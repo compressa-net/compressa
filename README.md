@@ -84,7 +84,27 @@ It would be a win-win: fantastic way for us to consume these important works, an
 
 ## Technical details
 
-### How to compile and run it
+### Project structure
+![image](https://user-images.githubusercontent.com/910321/206907696-67724d50-88fb-4818-abf5-a79b4786c64f.png)
+
+There are three project in the Visual Studio solution: one for the backend, one for the frontend, one library for the shared classes.
+
+#### Backend web API (Compressa.API)
+
+The backend has multiple responsibilities:
+ - Convert the Audible Audiobook format (AAX) into an open standard (M4B)
+ - Extract the chapter information from the M4B into JSON
+ - Split the M4B file into separate MP3 files, one file per chapter
+ - Transcribe the MP3s one by one
+ - Summarize the text from the chapter on 3 different levels
+ - Analyze those text and guess their sentiment
+ - Save and update all the metadata associated with the audiobooks
+ - Prepare the data for the front-end consumption
+ - Expose many of the above functionalities as a standard RESTful Web API
+
+#### .NET MAUI frontend (Compressa.GUI)
+
+### How to compile it and run it
 
 The most robust way to test it if you compile it from source. To do that you need the following steps:
 1. Install Visual Studio 2022 (the free Community Edition is fine)
@@ -93,15 +113,6 @@ The most robust way to test it if you compile it from source. To do that you nee
 4. Open the `Compressa.sln` file from the `\src\Compressa` folder
 5. Select the `Compressa.GUI` project from the `Solution Explorer` on the right side, right click and `Set as Startup Project`
 6. Run the solution with the little green play button on the top bar (or press F5)
-
-### Project structure
-![image](https://user-images.githubusercontent.com/910321/206907696-67724d50-88fb-4818-abf5-a79b4786c64f.png)
-
-There are three project in the Visual Studio solution: one for the backend, one for the frontend, one library for the shared classes.
-
-#### Backend web API (Compressa.API)
-
-#### .NET MAUI frontend (Compressa.GUI)
 
 ## My Schedule
 
