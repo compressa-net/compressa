@@ -29,7 +29,7 @@ This application was created with Microsoft latest, platform independent, open-s
 
 The generated application packages can be downloaded from [the Releases page](https://github.com/compressa-net/compressa/releases).
 
-A video showing you the basic functionality [can be watched on YouTube](https://youtu.be/yu5_r_maWqg).
+A video showing you the basic functionality [can be watched on YouTube](https://youtu.be/q9bRZmZh9nY).
 
 ## Future Potencial
 
