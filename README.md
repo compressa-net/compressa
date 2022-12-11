@@ -21,6 +21,12 @@ Books, podcasts summarized for busy people
 
 ![image](https://user-images.githubusercontent.com/910321/206879433-d89bd3aa-bbf3-466c-bdc7-8543f3411e99.png)
 
+## Application Installation
+This application was created with Microsoft latest, platform independent, open-source framework called .NET MAUI.
+
+The generated application packages can be downloaded from [the Releases page](https://github.com/compressa-net/compressa/releases).
+
+A video showing you the basic functionality can be watched on YouTube.
 
 ## AI services that were explored
 &cross; Stable Diffusion - logo
@@ -54,7 +60,7 @@ Books, podcasts summarized for busy people
 - [x] List available audiobooks
 - [x] Show the summaries for at least one book
 - [x] Make the UI capable to change zoom levels amoung 4 levels (list of books, chapters + x64 summary, x16 summary and x4 summary)
-- [ ] Setup the domain and publish the app to [app.compressa.net](https://app.compressa.net)
+- [x] Setup the domain and publish the app to [app.compressa.net](https://app.compressa.net)
 - [x] (optional) Use co:here to build a book-centric chatbot
 - [ ] (optional) Generate AI-voices for the summaries
 - [ ] (optional) Use Google Translate API to translate the summaries to Spanish
