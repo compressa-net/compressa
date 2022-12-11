@@ -228,3 +228,9 @@ Summarize the following text with approximately 13 sentences: Money for AI start
 ```
 The game of Go is considered to be one of the most complex board games in the world, with more possible positions than there are atoms in the known universe. In May 2017, Ku Ja, a Chinese teenager and Go world champion, lost to AlphaGo, a powerful artificial intelligence program developed by Google. The victory of a Western technology over the human world champion was seen as a victory for Western technology companies over the rest of the world. In Beijing, however, the view was different. The victories were seen as a challenge for Chinese technology companies to catch up with the West in artificial intelligence. This sentiment was echoed by the Chinese government, which made a push to become a global leader in AI. By 2022, China is expected to surpass the US as the world's largest market for AI applications.
 ```
+
+## Challenges regarding the publishing
+
+Publishing to the Microsoft Store isn't straightforward at all.
+
+When we create a new MSIX file, the publishing profile (that is found in `Compressa.GUI\Properties\PublishProfiles`) must have its `SelfContained` value set to `true` and its `PublishAppxPackage` to `true`. The usable files including the MSIX file will be in the AppxPackageDir, and not in `PublishDir`!
