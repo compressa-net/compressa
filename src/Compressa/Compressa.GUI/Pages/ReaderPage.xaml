@@ -31,13 +31,13 @@
                         <VerticalStackLayout Margin="20,0,20,20" VerticalOptions="Center" MaximumWidthRequest="800" Spacing="6">
                             <VerticalStackLayout.Resources>
                                 <Style x:Key="ColoredLabel" TargetType="Label">
-                                    <Setter Property="TextColor" Value="#94B7DC" />
+                                    <Setter Property="TextColor" Value="#FFFFFF" />
                                     <Style.Triggers>
                                         <DataTrigger Binding="{Binding IsSentimentPositive}" Value="True" TargetType="Label">
-                                            <Setter Property="TextColor" Value="#A5DBED" />
+                                            <Setter Property="TextColor" Value="#E0FFE0" />
                                         </DataTrigger>
                                         <DataTrigger Binding="{Binding IsSentimentNegative}" Value="True" TargetType="Label">
-                                            <Setter Property="TextColor" Value="#9492BF" />
+                                            <Setter Property="TextColor" Value="#FFE0E0" />
                                         </DataTrigger>
                                     </Style.Triggers>
                                 </Style>
