@@ -20,6 +20,10 @@ Compressa.NET application was built in a way that it can be deployed to Windows,
 
 ![image](https://user-images.githubusercontent.com/910321/206879590-90a4d3a8-2511-42f6-96da-c536c5d37b48.png)
 
+### Text summarization by
+
+![image](https://user-images.githubusercontent.com/910321/207728955-0ac900ef-083f-49c4-abe5-09c37b23f143.png)
+
 ### Text sentiment detection by
 
 ![image](https://user-images.githubusercontent.com/910321/206879433-d89bd3aa-bbf3-466c-bdc7-8543f3411e99.png)
