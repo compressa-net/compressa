@@ -1,7 +1,7 @@
 # Compressa.NET
 ## Books, podcasts summarized for busy people
 
-Compressa.NET application was built in a way that it can be deployed to Windows, Mac, Android and iOS, but since I have only Windows at the moment, only the Windows release is guarantied to work!
+Compressa.NET application was built in a way that it can be deployed to Windows, Mac, Android and iOS, but only the Windows release is guarantied to work for now!
 
 ![image](https://user-images.githubusercontent.com/910321/206875910-52a29f87-0eb1-4588-b906-c19809a84f47.png)
 
