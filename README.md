@@ -165,6 +165,12 @@ The target is to have multiple levels of compression.
 (c) a x16 compression of bullet points
 (d) a x4 compression for the sections
 
+## Chapter sizes in AI Superpowers
+2nd - 7'465 words, 45'355 words, 8'674 tokens
+3rd - 10'408 words, 62'705 characters, 12'511 tokens
+4th - 10'685 words, 64'311 characters, 12'576 tokens
+5th - 8'066 words, 49'465 characters, 9'443 tokens
+
 ### wordtune
 
 #### Input text (1248 words, 7876 characters)
